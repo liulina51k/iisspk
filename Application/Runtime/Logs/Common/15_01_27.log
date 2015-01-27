@@ -1,0 +1,4090 @@
+[ 2015-01-27T10:13:11+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-01-27T10:13:11+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Favicon
+
+[ 2015-01-27T15:54:18+08:00 ] 127.0.0.1 /index.php/style/pk.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Style
+
+[ 2015-01-27T15:54:18+08:00 ] 127.0.0.1 /index.php/style/basic.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Style
+
+[ 2015-01-27T15:54:18+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/pk_yes_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/pk_no_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/login_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/pk_texttj.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/register_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:54:19+08:00 ] 127.0.0.1 /index.php/images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/pk_yes_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:35+08:00 ] 127.0.0.1 /index.php/images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/images/login_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/images/pk_no_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/images/register_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/images/pk_texttj.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:36+08:00 ] 127.0.0.1 /index.php/images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031250s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.078125s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:41+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pk_no_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pk_texttj.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/login_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/register_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pk_yes_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T15:55:42+08:00 ] 127.0.0.1 /index.php/images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Images
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:23+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:24+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:28+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:29+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:29+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:29+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:29+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:29+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:29+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:29+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:30+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:01:35+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Style/pk.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Style/basic.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_yes_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_no_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/login_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/register_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_texttj.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:55+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Style/basic.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Style/pk.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:58+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_yes_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_no_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/login_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/register_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_texttj.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:03:59+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Style/basic.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Style/pk.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_pk_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/top_head_logo.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_yes_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/111421_645.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_red.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_blue.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_no_botton.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_tank.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/login_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_texttj.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:40+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/register_bot.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:41+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pk_h1bg_r.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:41+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/ad.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:21:41+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:41+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:21:41+08:00 ] 127.0.0.1 /index.php/__PUBLIC__/Images/pic.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:__PUBLIC__
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:31:27+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:31:28+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:31:28+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:31:28+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:28+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:31:59+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:32:00+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:50+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:51+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:49:51+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:49:51+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:49:51+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:49:51+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:49:51+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:49:51+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:10+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:11+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:11+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:11+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:11+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:11+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:11+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:11+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:13+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:13+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:13+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:14+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:29+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:30+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:30+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:30+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:30+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:30+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:50:30+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:50:30+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:52:53+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:52:54+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:52:54+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:52:54+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:04+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:05+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:05+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:05+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:05+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:05+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:05+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:05+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:07+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:08+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:08+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:08+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:08+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:08+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:56:08+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:56:08+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:04+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:05+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:05+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:05+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:23+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:24+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:57:24+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:57:24+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /index.php/js/log.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /index.php/js/jquery.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /index.php/js/logAdvanced.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /index.php/js/function.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:59:32+08:00 ] 127.0.0.1 /index.php/js/function_004.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:33+08:00 ] 127.0.0.1 /index.php/js/function_003.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:33+08:00 ] 127.0.0.1 /index.php/js/function_002.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:33+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:59:33+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:59:33+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:59:33+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:59:33+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T16:59:33+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T16:59:34+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T17:06:30+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:06:30+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T17:06:30+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:06:30+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T17:06:30+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T17:06:30+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:06:30+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:06:30+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:06:30+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T17:21:32+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T17:21:32+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T17:21:32+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:21:32+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:21:32+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:21:32+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:21:32+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:21:32+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:21:33+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:21:33+08:00 ] 127.0.0.1 /index.php/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T17:21:33+08:00 ] 127.0.0.1 /index.php/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Js
+
+[ 2015-01-27T17:46:25+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:46:25+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:46:25+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:46:25+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:46:25+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:46:25+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:46:25+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:30+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:30+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:30+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:30+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:30+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:30+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:30+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:32+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:32+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:33+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:33+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:33+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:33+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:33+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:54+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:54+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:55+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:55+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:55+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:55+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:47:55+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:48:15+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:48:15+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:48:16+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:48:16+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:48:16+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:54:55+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:54:55+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:54:55+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:54:55+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:54:55+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:54:55+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:54:56+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:58:12+08:00 ] 127.0.0.1 /Public/Images/c.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:58:12+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:58:12+08:00 ] 127.0.0.1 /Public/images/pk/pk_textbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:58:12+08:00 ] 127.0.0.1 /Public/images/pk/block_bk_loginbg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:58:12+08:00 ] 127.0.0.1 /Public/images/pk/vs_border.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:Public
+
+[ 2015-01-27T17:58:12+08:00 ] 127.0.0.1 /Public/Images/ecom_002
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+ERR: 无法加载模块:Public
+

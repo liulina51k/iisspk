@@ -2,8 +2,15 @@
 namespace Home\Model;
 use Think\Model;
 class PkModel extends Model{
-	/*public function ls(){
-		$arr = $this->select();
-		return $arr;
-	}*/
+	/**
+	*  取得PK言论
+	*/
+	public function get_pk()
+	{
+	    static $pkarr = array();
+	    
+	    $pkarr = $this->select();
+	    printr($pkarr);
+		return $field ? $pkarr[$field] : $pkarr;
+	}
 }

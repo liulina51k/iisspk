@@ -1,0 +1,64 @@
+[27-Jan-2015 11:33:57 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:34:41 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Common\functions.php on line 334
+[27-Jan-2015 11:34:45 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Common\functions.php on line 334
+[27-Jan-2015 11:34:48 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Common\functions.php on line 334
+[27-Jan-2015 11:36:48 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Common\functions.php on line 334
+[27-Jan-2015 11:36:52 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Common\functions.php on line 334
+[27-Jan-2015 11:37:10 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:37:14 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:37:15 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:37:17 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:37:33 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:37:36 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:37:37 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:37:39 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:40:12 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:40:33 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:40:34 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:41:04 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:41:27 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 257
+[27-Jan-2015 11:41:36 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 11:47:04 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 13:11:01 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 13:11:08 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 13:11:11 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 13:11:14 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 13:11:17 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 13:11:19 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 13:11:22 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 13:11:25 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 13:12:18 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 13:58:24 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 40961 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 331
+[27-Jan-2015 14:30:47 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:16 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:17 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:17 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:17 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:17 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:18 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:18 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:18 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:18 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:19 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:31:36 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:34:00 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:34:01 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:34:01 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:34:01 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:34:01 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:34:02 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 14:34:02 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 66
+[27-Jan-2015 17:11:47 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 8
+[27-Jan-2015 17:12:49 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Think.class.php on line 8
+[27-Jan-2015 17:13:14 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Common\functions.php on line 334
+[27-Jan-2015 17:22:25 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Model.class.php on line 11
+[27-Jan-2015 17:22:42 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 728
+[27-Jan-2015 17:23:33 PRC] PHP Fatal error:  Allowed memory size of 536870912 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Model.class.php on line 11
+[27-Jan-2015 17:24:21 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 728
+[27-Jan-2015 17:32:20 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Model.class.php on line 11
+[27-Jan-2015 17:32:22 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Model.class.php on line 11
+[27-Jan-2015 17:32:23 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Model.class.php on line 11
+[27-Jan-2015 17:32:24 PRC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Model.class.php on line 11
+[27-Jan-2015 17:32:55 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 539
+[27-Jan-2015 17:54:06 PRC] PHP Fatal error:  Cannot redeclare Home\Controller\PkController::pk_list() in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 13
+[27-Jan-2015 17:54:18 PRC] PHP Fatal error:  Cannot redeclare Home\Controller\PkController::pk_list() in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 13
