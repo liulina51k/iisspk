@@ -62,3 +62,55 @@
 [27-Jan-2015 17:32:55 PRC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 261904 bytes) in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 539
 [27-Jan-2015 17:54:06 PRC] PHP Fatal error:  Cannot redeclare Home\Controller\PkController::pk_list() in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 13
 [27-Jan-2015 17:54:18 PRC] PHP Fatal error:  Cannot redeclare Home\Controller\PkController::pk_list() in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 13
+[28-Jan-2015 11:28:41 PRC] PHP Parse error:  syntax error, unexpected T_ENDFOREACH in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\ea5f552e142926fca1d6d3cfef4b143d.php on line 182
+[28-Jan-2015 13:58:00 Asia/Shanghai] PHP Fatal error:  Call to undefined function import() in D:\chinaiiss\iisspk\index.php on line 23
+[28-Jan-2015 14:18:44 PRC] PHP Fatal error:  Class 'Home\Model\IPage' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:30:36 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 21
+[28-Jan-2015 14:30:37 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 21
+[28-Jan-2015 14:30:37 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 21
+[28-Jan-2015 14:30:39 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 21
+[28-Jan-2015 14:30:39 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 21
+[28-Jan-2015 14:31:32 PRC] PHP Parse error:  syntax error, unexpected '.', expecting ',' or ';' in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 4
+[28-Jan-2015 14:31:34 PRC] PHP Parse error:  syntax error, unexpected '.', expecting ',' or ';' in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 4
+[28-Jan-2015 14:31:34 PRC] PHP Parse error:  syntax error, unexpected '.', expecting ',' or ';' in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 4
+[28-Jan-2015 14:31:36 PRC] PHP Parse error:  syntax error, unexpected '.', expecting ',' or ';' in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 4
+[28-Jan-2015 14:31:56 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:31:58 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:31:59 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:31:59 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:00 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:00 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:00 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:01 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:01 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:01 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:02 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:02 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:02 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:03 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:03 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:03 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:04 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:04 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:32:04 PRC] PHP Fatal error:  Class 'Components\Page' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:39:26 PRC] PHP Fatal error:  Call to private Components\Page::__construct() from context 'Home\Model\PkModel' in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 22
+[28-Jan-2015 14:42:26 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:42:28 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:42:48 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:42:49 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:42:49 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:42:50 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:42:50 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:42:50 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:43:04 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:43:05 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:43:05 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:43:05 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:43:05 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:43:05 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:43:06 PRC] PHP Fatal error:  Class 'Components\IPage' not found in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 21
+[28-Jan-2015 14:45:16 PRC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 12
+[28-Jan-2015 14:45:18 PRC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 12
+[28-Jan-2015 14:45:18 PRC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 12
+[28-Jan-2015 14:45:18 PRC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 12
+[28-Jan-2015 18:02:54 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30

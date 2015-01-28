@@ -7,13 +7,9 @@
 <title>辩论pk台_战略网</title>
 <link href="__PUBLIC__/Style/basic.css" rel="stylesheet" type="text/css">
 <link href="__PUBLIC__/Style/pk.css" rel="stylesheet" type="text/css">
-<script src="js/logAdvanced.js" async="" charset="utf-8"></script>
-<script src="js/log.js" async="" charset="utf-8"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/function.js"></script>
-<script type="text/javascript" src="js/function_004.js"></script>
-<script type="text/javascript" src="js/function_003.js"></script>
-<script type="text/javascript" src="js/function_002.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/function.comm.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/function.cookie.js"></script>
 <script>
 
 function checkform(id){
@@ -161,7 +157,7 @@ function showheight(){
  <foreach name="list" item="vo" key="k">
  <if condition="$k % 2 eq 0">
   <div class="pk_new">
-      <h1>话题:<a href="http://www.chinaiiss.com/pk/index/434" title="{$vo.title}" target="_blank">{$vo.title}</a></h1>
+      <h1>话题:<a href="{$vo.pkurl}" title="{$vo.title}" target="_blank">{$vo.title}</a></h1>
     <div class="pk_more">
       <div class="pkm_view">
         <div class="pkm_yes">
@@ -173,8 +169,8 @@ function showheight(){
         <div class="clear"></div>
         <div class="pk_jdt">
             <div class="pk_jdt_num">{$vo.agreevote} / {$vo.opposevote}</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang" style="width:30%"></span><span class="fanfang" style="width:70%"></span></div>
+            <div class="pk_jdt_a"><a class="zczhengfang" onclick="pkvote({$vo.id}, 'agree');" style="cursor:pointer;"></a><a class="zcfanfang" onclick="pkvote({$vo.id}, 'oppose');" style="cursor:pointer;"></a></div>
+            <div class="pk_jdt_nr"><span class="zhengfang" style="width:{$vo.point_good}"></span><span class="fanfang" style="width:{$vo.point_bad}"></span></div>
         </div>
       </div>
     </div>
@@ -186,7 +182,7 @@ function showheight(){
   <foreach name="list" item="vo" key="k">
   <if condition="$k % 2 eq 1">
   <div class="pk_new">
-      <h1>话题:<a href="http://www.chinaiiss.com/pk/index/434" title="{$vo.title}" target="_blank">{$vo.title}</a></h1>
+      <h1>话题:<a href="{$vo.pkurl}" title="{$vo.title}" target="_blank">{$vo.title}</a></h1>
     <div class="pk_more">
       <div class="pkm_view">
         <div class="pkm_yes">
@@ -199,7 +195,7 @@ function showheight(){
         <div class="pk_jdt">
             <div class="pk_jdt_num">{$vo.agreevote} / {$vo.opposevote}</div>
             <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang" style="width:30%"></span><span class="fanfang" style="width:70%"></span></div>
+            <div class="pk_jdt_nr"><span class="zhengfang" style="width:{$vo.point_good}"></span><span class="fanfang" style="width:{$vo.point_bad}"></span></div>
         </div>
       </div>
     </div>

@@ -7,13 +7,9 @@
 <title>辩论pk台_战略网</title>
 <link href="/Public/Style/basic.css" rel="stylesheet" type="text/css">
 <link href="/Public/Style/pk.css" rel="stylesheet" type="text/css">
-<script src="js/logAdvanced.js" async="" charset="utf-8"></script>
-<script src="js/log.js" async="" charset="utf-8"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/function.js"></script>
-<script type="text/javascript" src="js/function_004.js"></script>
-<script type="text/javascript" src="js/function_003.js"></script>
-<script type="text/javascript" src="js/function_002.js"></script>
+<script type="text/javascript" src="/Public/Js/jquery.js"></script>
+<script type="text/javascript" src="/Public/Js/function.comm.js"></script>
+<script type="text/javascript" src="/Public/Js/function.cookie.js"></script>
 <script>
 
 function checkform(id){
@@ -161,240 +157,50 @@ function showheight(){
     <h1><span class="fright"><img src="/Public/Images/pk_h1bg_r.jpg"></span><a class="gdpk"></a></h1>
   </div>
   <div class="main_left">
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
+ <?php if(is_array($list)): foreach($list as $k=>$vo): if($k % 2 == 0): ?><div class="pk_new">
+      <h1>话题:<a href="<?php echo ($vo["pkurl"]); ?>" title="<?php echo ($vo["title"]); ?>" target="_blank"><?php echo ($vo["title"]); ?></a></h1>
     <div class="pk_more">
       <div class="pkm_view">
         <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
+          <p title="<?php echo ($vo["agreetitle"]); ?>"><?php echo ($vo["agreetitle"]); ?></p>
          </div>
         <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
+          <p title="<?php echo ($vo["opposetitle"]); ?>"><?php echo ($vo["opposetitle"]); ?></p>
           </div>
         <div class="clear"></div>
         <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang" style="width:30%"></span><span class="fanfang" style="width:70%"></span></div>
+            <div class="pk_jdt_num"><?php echo ($vo["agreevote"]); ?> / <?php echo ($vo["opposevote"]); ?></div>
+            <div class="pk_jdt_a"><a class="zczhengfang" onclick="pkvote(<?php echo ($vo["id"]); ?>, 'agree');" style="cursor:pointer;"></a><a class="zcfanfang" onclick="pkvote(<?php echo ($vo["id"]); ?>, 'oppose');" style="cursor:pointer;"></a></div>
+            <div class="pk_jdt_nr"><span class="zhengfang" style="width:<?php echo ($vo["point_good"]); ?>"></span><span class="fanfang" style="width:<?php echo ($vo["point_bad"]); ?>"></span></div>
         </div>
       </div>
     </div>
-    </div>
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
+    </div><?php endif; endforeach; endif; ?> 
   </div>
   <div class="main_right">
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
+  <?php if(is_array($list)): foreach($list as $k=>$vo): if($k % 2 == 1): ?><div class="pk_new">
+      <h1>话题:<a href="<?php echo ($vo["pkurl"]); ?>" title="<?php echo ($vo["title"]); ?>" target="_blank"><?php echo ($vo["title"]); ?></a></h1>
     <div class="pk_more">
       <div class="pkm_view">
         <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
+          <p title="<?php echo ($vo["agreetitle"]); ?>"><?php echo ($vo["agreetitle"]); ?></p>
          </div>
         <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
+          <p title="<?php echo ($vo["opposetitle"]); ?>"><?php echo ($vo["opposetitle"]); ?></p>
           </div>
         <div class="clear"></div>
         <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
+            <div class="pk_jdt_num"><?php echo ($vo["agreevote"]); ?> / <?php echo ($vo["opposevote"]); ?></div>
             <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
+            <div class="pk_jdt_nr"><span class="zhengfang" style="width:<?php echo ($vo["point_good"]); ?>"></span><span class="fanfang" style="width:<?php echo ($vo["point_bad"]); ?>"></span></div>
         </div>
       </div>
     </div>
-    </div>
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
+    </div><?php endif; endforeach; endif; ?>
   </div>
   <div class="clear"></div>
 	<div class="xy">
-            <div class="pages_fy"><div class="pages"><span class="cur">1</span><a href="http://mil.chinaiiss.com/html/20136/1/a5f14c_1.html">2</a><a href="http://mil.chinaiiss.com/html/20136/1/a5f14c_2.html">3</a><span style="border:0px solid;">...</span><a href="http://mil.chinaiiss.com/html/20136/1/a5f14c_16.html">17</a><a href="http://mil.chinaiiss.com/html/20136/1/a5f14c_17.html">18</a><a href="http://mil.chinaiiss.com/html/20136/1/a5f14c_1.html">下一页</a><span class="jump_page"><p class="fl">至</p> <input class="int_jump" id="int_jump" type="text"> 页</span><a href="###" target="_self" id="jump" onclick="page('mutipage');">跳转</a><input id="pagecount" value="18" type="hidden"><input id="pageUrl" value="http://mil.chinaiiss.com/html/20136/1/a5f14c.html" type="hidden"><input id="style" value="mutipage" type="hidden"></div></div>
+            <?php echo ($show); ?>
        </div>
 </div>
 <div class="Blank"></div>
