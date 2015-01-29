@@ -49,7 +49,7 @@ class PkController extends Controller {
 		 }else{
 			$callback = '';
 		 }
-        printr(1);
+        
 		$db = & IFactory::getDB();
 		$votefield = $paramarr[1]=='agree' ? 'agreevote' : 'opposevote';
 		$sql = "update iiss_pk set $votefield=$votefield+1 where id=".self::$id;
