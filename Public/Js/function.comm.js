@@ -299,7 +299,6 @@ function pkvote(id, type, text, url){
 		var cookie = '';
 	}
 	if(cookie==''){
-		alert(1);
 		var geturl = "http://www.iisspk.com/index.php/Home/Pk/pk_ajax_vote/parameter/"+id+"_"+type+"/r/"+rand()+"/json/1/jsoncallback/?";
 		$.getJSON(geturl, function(json){
 

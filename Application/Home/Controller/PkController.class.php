@@ -26,10 +26,10 @@ class PkController extends Controller {
     	$paramarr = explode('_', $param);
         $id = !empty($paramarr[0]) ? intval($paramarr[0]) : 0;
     	$voteip = getClientIP();
-		$ckey = 'voteip'.$id;
+        $ckey = 'voteip'.$id;
 		 
-		//记录这次点记写入COOKIE
-	    if(isset($_COOKIE[$ckey]) && $_COOKIE[$ckey ] ==$voteip){
+        //记录这次点记写入COOKIE
+	if(isset($_COOKIE[$ckey]) && $_COOKIE[$ckey ] ==$voteip){
              if(!empty($json)){
 				$callback = $_GET['jsoncallback'];
 				$strreturn = json_encode('true||##你已经投过票了');

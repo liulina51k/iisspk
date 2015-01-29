@@ -11,9 +11,6 @@ $siteroot = explode(DS, dirname(__FILE__));
 array_pop($siteroot);
 define('I_ROOT', implode(DS, $siteroot));
 
-//调用通用函数
-include_once(I_ROOT.'/common.fun.php');
-printr(I_ROOT);
 $mtime = explode(' ', microtime());
 $_IGLOBAL['timestamp'] = $mtime[1];
 
