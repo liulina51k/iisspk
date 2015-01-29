@@ -74,7 +74,7 @@ function pklogin(){
 		return;
 	}
 
-	var url = siteurl+"/do.php?inajax=1&do=user&ac=pk_login&parameter="+username+"_"+password+"&json=1&jsoncallback=?";
+	var url = "http://www.iisspk.com/index.php/Home/Pk/pk_ajax_login/parameter/"+username+"_"+password+"/json/1/jsoncallback/?";
 	$.getJSON(url,function(json){
 		if ( json.logininfo) {
 			alert(json.logininfo);
@@ -159,24 +159,14 @@ function showheight(){
   <div class="main_l">
     <div class="block">
       <h1><span class="fright"><img src="/Public/Images/pk_h1bg_r.jpg"></span><a class="bjzl"></a></h1>
-      <p>　　若没有俄罗斯和中国的合作，泄密者爱德华·斯诺登上月就不可能乘飞机从香港前往莫斯科。在斯诺登事件中，这两个国家的行为表明，它们的态度
-        日益坚定，愿意在损害美国利益的情况下采取行动。除了保护斯诺登之外，中国与俄罗斯对叙利亚的政策让联合国安理会瘫痪了两年，阻止了国际联合行动。中国对
-        美国企业的黑客入侵以及俄罗斯对邻国的网络入侵也引起了华盛顿的担忧。为增强合作的新潜力，中国目前正在与俄罗斯举行其有史以来规模最大的海上联合军演。
-        [<a class="blue" href="http://mil.chinaiiss.com/html/20137/8/a6049c.html" target="_blank">详细背景资料</a>] </p>
+      <p>　<?php echo (substr($pkinfo["context"],0,1000)); if($url != ''): ?>[<a class="blue" href="<?php echo ($url); ?>" target="_blank">详细背景资料</a>]<?php endif; ?></p>
     </div>
   </div>
   <div class="main_r">
     <div class="block">
-      <h1><span class="fright"><img src="/Public/Images/pk_h1bg_r.jpg"></span><span class="fright"><a href="http://www.chinaiiss.com/pkt/plist/1">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
+      <h1><span class="fright"><img src="/Public/Images/pk_h1bg_r.jpg"></span><span class="fright"><a href="/index.php/Home/Pk/pk_list">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
       <ul>
-        <li><a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？">中东格局面临重新洗牌，中国是否应主动介入？</a></li>
-        <li><a href="http://www.chinaiiss.com/pk/index/433" title="中国是否会从美国手中接过中东领导权？">中国是否会从美国手中接过中东领导权？</a></li>
-        <li><a href="http://www.chinaiiss.com/pk/index/432" title="中国是否将成为比美国更好的超级大国？">中国是否将成为比美国更好的超级大国？</a></li>
-        <li><a href="http://www.chinaiiss.com/pk/index/431" title="中国以德报怨是否能换取菲越不折腾？">中国以德报怨是否能换取菲越不折腾？</a></li>
-        <li><a href="http://www.chinaiiss.com/pk/index/430" title="中国是否应该将斯诺登引渡回美国？">中国是否应该将斯诺登引渡回美国？</a></li>
-        <li><a href="http://www.chinaiiss.com/pk/index/429" title="中国对斯诺登事件是否应该积极出手干预？">中国对斯诺登事件是否应该积极出手干预？</a></li>
-        <li><a href="http://www.chinaiiss.com/pk/index/428" title="吴伯雄访问大陆是否在为“习马会”铺路？">吴伯雄访问大陆是否在为“习马会”铺路？</a></li>
-        <li><a href="http://www.chinaiiss.com/pk/index/427" title="中美所谓新型大国关系是否包含“G2”构想？">中美所谓新型大国关系是否包含“G2”构想？</a></li>
+        <?php if(is_array($pklist)): foreach($pklist as $k=>$vo): if(($k >= 0 ) AND ($k < 8)): ?><li><a href="<?php echo ($vo["pkurl"]); ?>" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a></li><?php endif; endforeach; endif; ?>
       </ul>
     </div>
   </div>
@@ -189,22 +179,22 @@ function showheight(){
   <div class="pk_img">
     <div class="main_left">
       <div class="pk_yes">
-        <h1>正方:中俄都面对美巨大的战略压力 抱团应对有效合理</h1>
+        <h1>正方:<?php echo ($pkinfo["agreeguide"]); ?></h1>
         <form>
-          <input onclick="pkvote(435, 'agree');return false;" src="/Public/Images/pk_yes_botton.jpg" type="image">
-          <span>[<a class="red" id="agree435">5155</a> 票]</span>
+          <input onclick="pkvote(<?php echo ($pkinfo["id"]); ?>, 'agree');return false;" src="/Public/Images/pk_yes_botton.jpg" type="image">
+          <span>[<a class="red" id="agree<?php echo ($pkinfo["id"]); ?>"><?php echo ($pkinfo["agreevote"]); ?></a> 票]</span>
         </form>
-        <p>俄罗斯和中国似乎已经认定，要更好地推进自身利益，必须灭灭华盛顿的威风。随着这种共同利益感的形成，俄罗斯与中国日益紧密的合作会对美国构成严重的风险。 </p>
+        <p><?php echo ($pkinfo["agreeintro"]); ?></p>
       </div>
     </div>
     <div class="main_right">
       <div class="pk_no">
-        <h1>反方:中俄并不是亲密无间 部分合作并不是结盟的全部</h1>
+        <h1>反方:<?php echo ($pkinfo["opposeguide"]); ?></h1>
         <form>
-          <input onclick="pkvote(435, 'oppose');" src="/Public/Images/pk_no_botton.jpg" type="image">
-          <span>[<a class="blue" id="oppose435">1379</a> 票]</span>
+          <input onclick="pkvote(<?php echo ($pkinfo["id"]); ?>, 'oppose');" src="/Public/Images/pk_no_botton.jpg" type="image">
+          <span>[<a class="blue" id="oppose<?php echo ($pkinfo["id"]); ?>"><?php echo ($pkinfo["opposevote"]); ?></a> 票]</span>
         </form>
-        <p>中国和俄罗斯仍然因互不信任的历史、相互冲突的经济利益以及对中国的领土野心的巨大担忧。中国对朝鲜的担忧胜过俄罗斯，而莫斯科在叙利亚的赌注比北京大。</p>
+        <p><?php echo ($pkinfo["opposeintro"]); ?></p>
       </div>
     </div>
     <div class="clear"></div>
@@ -218,7 +208,7 @@ function showheight(){
 <div id="main">
   <div class="comment_bg">
     <div class="com_login">
-      <p class="fright">(评论<a class="red" id="comment_total">42</a>条 <a class="red">1953</a>名网友参与)</p>
+      <p class="fright">(评论<a class="red" id="comment_total">0</a>条 <a class="red"><?php echo ($pkinfo["clicks"]); ?></a>名网友参与)</p>
       <div id="com_login">
         <form onsubmit="return false;">
           用户名
@@ -777,122 +767,46 @@ function showheight(){
     <h1><span class="fright"><img src="/Public/Images/pk_h1bg_r.jpg"></span><span class="fright"><a href="http://www.chinaiiss.com/pkt/plist/1" target="_blank">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
   </div>
   <div class="main_left">
-  <div class="pk_new">
-      <h1>第333期:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
+  <?php if(is_array($pklist)): foreach($pklist as $k=>$vo): if(($k < 6) AND ($k % 2 == 0)): ?><div class="pk_new">
+      <h1>话题:<a href="<?php echo ($vo["pkurl"]); ?>" title="<?php echo ($vo["title"]); ?>" target="_blank"><?php echo ($vo["title"]); ?></a></h1>
     <div class="pk_more">
       <div class="pkm_view">
         <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
+          <p title="<?php echo ($vo["agreetitle"]); ?>"><?php echo ($vo["agreetitle"]); ?></p>
          </div>
         <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
+          <p title="<?php echo ($vo["opposetitle"]); ?>"><?php echo ($vo["opposetitle"]); ?></p>
           </div>
         <div class="clear"></div>
         <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang" style="width:30%"></span><span class="fanfang" style="width:70%"></span></div>
+            <div class="pk_jdt_num"><?php echo ($vo["agreevote"]); ?> / <?php echo ($vo["opposevote"]); ?></div>
+            <div class="pk_jdt_a"><a class="zczhengfang" onclick="pkvote(<?php echo ($vo["id"]); ?>, 'agree');" style="cursor:pointer;"></a><a class="zcfanfang" onclick="pkvote(<?php echo ($vo["id"]); ?>, 'oppose');" style="cursor:pointer;"></a></div>
+            <div class="pk_jdt_nr"><span class="zhengfang" style="width:<?php echo ($vo["point_good"]); ?>%"></span><span class="fanfang" style="width:<?php echo ($vo["point_bad"]); ?>%"></span></div>
         </div>
       </div>
     </div>
-    </div>
-  <div class="pk_new">
-      <h1>话题:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  <div class="pk_new">
-      <h1>话题:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
+    </div><?php endif; endforeach; endif; ?>
   </div>
   <div class="main_right">
-  <div class="pk_new">
-      <h1>话题:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
+  <?php if(is_array($pklist)): foreach($pklist as $k=>$vo): if(($k < 6) AND ($k % 2 == 1)): ?><div class="pk_new">
+      <h1>话题:<a href="<?php echo ($vo["pkurl"]); ?>" title="<?php echo ($vo["title"]); ?>" target="_blank"><?php echo ($vo["title"]); ?></a></h1>
     <div class="pk_more">
       <div class="pkm_view">
         <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
+          <p title="<?php echo ($vo["agreetitle"]); ?>"><?php echo ($vo["agreetitle"]); ?></p>
          </div>
         <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
+          <p title="<?php echo ($vo["opposetitle"]); ?>"><?php echo ($vo["opposetitle"]); ?></p>
           </div>
         <div class="clear"></div>
         <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
+            <div class="pk_jdt_num"><?php echo ($vo["agreevote"]); ?> / <?php echo ($vo["opposevote"]); ?></div>
+            <div class="pk_jdt_a"><a class="zczhengfang" onclick="pkvote(<?php echo ($vo["id"]); ?>, 'agree');" style="cursor:pointer;"></a><a class="zcfanfang" onclick="pkvote(<?php echo ($vo["id"]); ?>, 'oppose');" style="cursor:pointer;"></a></div>
+            <div class="pk_jdt_nr"><span class="zhengfang" style="width:<?php echo ($vo["point_good"]); ?>%"></span><span class="fanfang" style="width:<?php echo ($vo["point_bad"]); ?>%"></span></div>
         </div>
       </div>
     </div>
-    </div>
-  <div class="pk_new">
-      <h1>话题:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
-  <div class="pk_new">
-      <h1>话题:<a href="http://www.chinaiiss.com/pk/index/434" title="中东格局面临重新洗牌，中国是否应主动介入？" target="_blank">中东格局面临重新洗牌，中国是否应主动介入？</a></h1>
-    <div class="pk_more">
-      <div class="pkm_view">
-        <div class="pkm_yes">
-          <p title="中国唯有主动出击，才能在中东扩大自身影响力">正方：中国唯有主动出击，才能在中东扩大自身影响力</p>
-         </div>
-        <div class="pkm_no">
-          <p title="中东是战争的火药桶 一旦进入很难会全身而退">反方：中东是战争的火药桶 一旦进入很难会全身而退</p>
-          </div>
-        <div class="clear"></div>
-        <div class="pk_jdt">
-            <div class="pk_jdt_num">18836 / 30336</div>
-            <div class="pk_jdt_a"><a href="#" class="zczhengfang"></a><a href="#" class="zcfanfang"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang"></span><span class="fanfang"></span></div>
-        </div>
-      </div>
-    </div>
-    </div>
+    </div><?php endif; endforeach; endif; ?>
   </div>
   <div class="clear"></div>
   <div class="Blank"></div>

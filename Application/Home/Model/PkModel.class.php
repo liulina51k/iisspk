@@ -7,47 +7,34 @@ class PkModel extends Model{
 	*  取得PK言论
 	*/
 	public function get_pk(){
-	    $pkarr = $this->select();
-	    printr($pkarr);
-            return $field ? $pkarr[$field] : $pkarr;
+		$pid = I('pid');
+	    $pkarr['info'] = $this->where("id=$pid")->select();
+	    $pkarr['list'] = $this->where("id!=$pid")->order("pubdate")->limit(14)->select();
+	    foreach($pkarr['list'] as $k=>$v){
+	    	$pkarr['list'][$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
+        	$pkarr['list'][$k]['point_bad']  = floor(($v['opposevote']/($v['agreevote']+$v['opposevote']))*100);
+	    	$pkarr['list'][$k]['pkurl'] = 'http://www.iisspk.com/index.php/Home/Pk/pk_home/pid/'.$v['id'];
+	    }
+	   //printr($pkarr);
+	    return $pkarr;
 	}
     /*
      * 取得pk话题列表
      */
     public function pk_list(){
         $count = $this->count();// 查询满足要求的总记录数
-        $page = new \Think\Page($count,12);
-        $style="
-       <div class='xy'>
-			<div class='pages_fy'>
-			<div class='pages'>
-			%FIRST%
-			%UP_PAGE%
-			%LINK_PAGE%			
-			%DOWN_PAGE%
-			%END%
-			</div></div>
-		</div>";
-		$page->lastSuffix=false;//定义尾页不为总数
-		$page->setConfig('first','首页');
-        $page->setConfig('last','尾页');
-        $page->setConfig('next','下一页');
-        $page->setConfig('prev','上一页');
-        $page->setConfig('theme',$style);
-        $show = $page->show();
-        $list = $this->order('pubdate')->limit($page->firstRow.','.$page->listRows)->select();
+        $page = new \Think\Page($count,12); //生成tp自带的分页类对象
+        $list = $this->order('pubdate')->limit($page->firstRow.','.$page->listRows)->select();//取得列表
+        
         foreach($list as $k => $v){
         	$list[$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
         	$list[$k]['point_bad'] = floor(($v['opposevote']/($v['agreevote']+$v['opposevote']))*100);
-        	$list[$k]['pkurl'] = 'http://www.iisspk.com/index.php/Home/Pk/pk_home';
+        	$list[$k]['pkurl'] = 'http://www.iisspk.com/index.php/Home/Pk/pk_home/pid/'.$v['id'];
         }
         
-        $page = new \Think\Page($count,6);
-        
-       /* $pkid = $this -> getField('id');
-        $curpage = $pkid ? $pkid : 1;
-        $show = showPage($count,12,$curpage,makesiteurl('html','Home','Pk','pk_list',$curpage));
-        printr($show);*/
+        $p = I('p',1);//获得p参数的值
+        $curpage = $p;
+        $show = showPage($count,12,$curpage,makesiteurl('html','Home','Pk','pk_list','{pagenum}'),'pkt');//取得分页url样式
         $data = array('show'=>$show,'list'=>$list);
         return $data;
     }

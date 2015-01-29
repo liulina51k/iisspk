@@ -27,7 +27,7 @@ function clearcookie() {
 */
 function ssetcookie($var, $value, $life=0) {
 	global $_IGLOBAL, $_SERVER;
-	setcookie($var, $value, $life?($_IGLOBAL['timestamp']+$life):0, IConfig::COOKIEPATH, IConfig::COOKIEDOMAIN, $_SERVER['SERVER_PORT']==443?1:0);
+	setcookie($var, $value, $life?($_IGLOBAL['timestamp']+$life):0, C('COOKIE_PATH'), C('COOKIE_DOMAIN'), $_SERVER['SERVER_PORT']==443?1:0);
 }
 
 //产生form防伪码
@@ -83,8 +83,12 @@ function makesiteurl($fix = ''){
 	for($i = 1; $i<$num_args; $i++){
 		 $url .= func_get_arg($i).'/';
 	}
+	$url = substr($url,0,-1);
+	$dirarr = explode('/',$url);
+	$page = array_pop($dirarr);
+	$url = implode('/',$dirarr);
 	$fix = $fix ? '.'.$fix : '';
-	return BASESITE.'/index.php/'.substr($url,0,-1).$fix;
+	return 'http://www.iisspk.com/index.php/'.$url.'/p/'.$page.$fix;
 }
 /**
 * 取得客户端IP

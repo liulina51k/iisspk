@@ -114,3 +114,31 @@
 [28-Jan-2015 14:45:18 PRC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 12
 [28-Jan-2015 14:45:18 PRC] PHP Fatal error:  Cannot access parent:: when current class scope has no parent in D:\chinaiiss\iisspk\Application\Components\Page.class.php on line 12
 [28-Jan-2015 18:02:54 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:32:47 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:32:49 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:32:49 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:32:52 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:32:53 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:32:54 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:32:54 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:32:54 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:36:21 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:36:22 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:36:22 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:36:22 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:36:22 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:37:40 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 10:37:51 PRC] PHP Fatal error:  Class 'IConfig' not found in D:\chinaiiss\iisspk\Application\Components\common.fun.php on line 30
+[29-Jan-2015 11:21:43 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 58
+[29-Jan-2015 17:28:11 PRC] PHP Fatal error:  Call to a member function checkUser() on a non-object in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 77
+[29-Jan-2015 17:28:30 PRC] PHP Fatal error:  Call to a member function checkUser() on a non-object in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 77
+[29-Jan-2015 17:39:06 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 81
+[29-Jan-2015 17:40:09 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 81
+[29-Jan-2015 17:40:11 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 81
+[29-Jan-2015 17:40:11 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 81
+[29-Jan-2015 17:40:12 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 81
+[29-Jan-2015 17:40:12 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 81
+[29-Jan-2015 17:40:12 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 81
+[29-Jan-2015 17:40:12 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 81
+[29-Jan-2015 17:40:36 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 81
+[29-Jan-2015 17:40:36 PRC] PHP Fatal error:  Class 'Components\Source\User' not found in D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php on line 81
