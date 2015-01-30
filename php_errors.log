@@ -189,3 +189,41 @@
 [30-Jan-2015 15:42:35 PRC] PHP Fatal error:  Class 'Home\Model\IComment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 19
 [30-Jan-2015 15:42:37 PRC] PHP Fatal error:  Class 'Home\Model\IComment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 19
 [30-Jan-2015 15:42:37 PRC] PHP Fatal error:  Class 'Home\Model\IComment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 19
+[30-Jan-2015 16:12:53 PRC] PHP Fatal error:  Class 'ICategory' not found in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 295
+[30-Jan-2015 16:12:54 PRC] PHP Fatal error:  Class 'ICategory' not found in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 295
+[30-Jan-2015 16:12:56 PRC] PHP Fatal error:  Class 'ICategory' not found in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 295
+[30-Jan-2015 16:19:42 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:19:43 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:19:44 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:19:44 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:19:45 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:19:46 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:19:58 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:19:59 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:20:00 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:20:06 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:21:51 PRC] PHP Fatal error:  Class 'ICategory' not found in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 293
+[30-Jan-2015 16:23:39 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:23:40 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:23:42 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:24:25 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:25:09 PRC] PHP Fatal error:  Class 'Components\ICategory' not found in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 294
+[30-Jan-2015 16:25:14 PRC] PHP Fatal error:  Class 'Components\ICategory' not found in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 294
+[30-Jan-2015 16:25:16 PRC] PHP Fatal error:  Class 'Components\ICategory' not found in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 294
+[30-Jan-2015 16:28:31 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 19
+[30-Jan-2015 16:28:40 PRC] PHP Fatal error:  Class 'Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 19
+[30-Jan-2015 16:28:58 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 19
+[30-Jan-2015 16:28:59 PRC] PHP Fatal error:  Class 'Home\Model\Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 19
+[30-Jan-2015 16:29:07 PRC] PHP Fatal error:  Class 'Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 19
+[30-Jan-2015 16:29:51 PRC] PHP Fatal error:  Class 'Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:29:53 PRC] PHP Fatal error:  Class 'Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:29:54 PRC] PHP Fatal error:  Class 'Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:29:54 PRC] PHP Fatal error:  Class 'Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:29:55 PRC] PHP Fatal error:  Class 'Comment' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 23
+[30-Jan-2015 16:30:05 PRC] PHP Fatal error:  Class 'ICategory' not found in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 294
+[30-Jan-2015 16:30:06 PRC] PHP Fatal error:  Class 'ICategory' not found in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 294
+[30-Jan-2015 16:30:45 PRC] PHP Fatal error:  Class 'ICategory' not found in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 293
+[30-Jan-2015 16:33:46 PRC] PHP Fatal error:  Call to a member function get() on a non-object in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 551
+[30-Jan-2015 16:35:19 PRC] PHP Fatal error:  Call to a member function get() on a non-object in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 550
+[30-Jan-2015 16:35:20 PRC] PHP Fatal error:  Call to a member function get() on a non-object in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 550
+[30-Jan-2015 16:35:20 PRC] PHP Fatal error:  Call to a member function get() on a non-object in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 550

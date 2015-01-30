@@ -12,6 +12,8 @@ class PkController extends Controller {
        $pkarr = $this->_instance->get_pk();
        $this->assign('pkinfo',$pkarr['info'][0]);
        $this->assign('pklist',$pkarr['list']);
+       //$this->assign('goodcomm',$pkarr['goodcomm']);
+       //$this->assign('badcomm',$pkarr['badcomm']);
        $this->display();
     }
 }

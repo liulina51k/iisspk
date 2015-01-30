@@ -1,6 +1,6 @@
 //设置全局变量
-var siteurl = "http://www.top0001.com";
-var staticurl = "http://static.top0001.com";
+var siteurl = "http://enchinaiiss.com";
+var staticurl = "http://static.enchinaiiss.com";
 var sitename = "战略网";
 //加载执行
 $(function(){

@@ -282,29 +282,27 @@ class CommentRequest {
 class Comment
 {
 	private $_ocate;
-	private $_cachefile = 'info/infocomment.php';
 	public  $oRequest = null;
-	
 	private $_tablename = 'iiss_infocomment';
 	private $_commentdb = null;
 	private $_fields = array('id', 'infoid', 'categoryid', 'modelid', 'userid', 'username', 'quoteuserid', 'quoteusername', 'flag', 'postip', 'ischeck', 'postdate', 'bad', 'good', 'type', 'quote', 'floor', 'position', 'isrecomm', 'isread', '`from`', 'subject', 'content');
-	
-	/*private function __construct(){
+
+	public function __construct(){
 		
-		import('category', 'source');
-		$this->_ocate = & ICategory::getInstance();
+		//import('category', 'source');
+		//$this->_ocate = & ICategory::getInstance();
 		
-		$this->_commentdb = & IFactory::getCommentDB();
+		//$this->_commentdb = & IFactory::getCommentDB();
 		
 		$this->oRequest = new CommentRequest();
 		$this->set_remote_ip(getClientIP());
 		
-	}*/
+	}
 
     /**
     * 获得单一实例
     */
-    /*
+  /*
     public static function getInstance()
     {
 		static $instance;
@@ -549,7 +547,7 @@ class Comment
 			'infoid'=>$infoid,
 			't'=>$type,
 			'day'=>$day
-		);
+		);printr($this->oRequest->get('getPKReComment', $param));
 		return $this->oRequest->get('getPKReComment', $param);
 	}
 	/**

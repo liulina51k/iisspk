@@ -14,6 +14,8 @@ return array(
     'URL_ROUTER_ON'   => true, 
     'URL_ROUTE_RULES'=>array(
        'pkt/plist/:p' => 'Pkt/plist',
+       'pkt/app/:id' => 'Pkt/app',
+       'pkt/app/:p' => 'Pkt/app',
        'pk/index/:id' => 'Pk/index',
     ),
 );

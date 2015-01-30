@@ -16,7 +16,10 @@ class PktController extends Controller {
     }
     //正方评论列表
     public function app(){
-    	
+      $data = $this->_instance->comment_list();
+      $this->assign('show',$data['show']);
+      $this->assign('list',$data['list']);
+      $this->display();
     }
     //反方评论列表
     public function opp(){

@@ -251,510 +251,72 @@ function showheight(){
   <div class="main_left">
     <div class="hot_red">
       <h1><a></a></h1>
-      <div class="review" id="cmmtop_756783">
+      <?php if(is_array($goodcomm)): foreach($goodcomm as $key=>$vo): ?><div class="review" id="cmmtop_<?php echo ($vo["id"]); ?>">
         <dl>
-          <dt><em>2013-7-08 11:54:12</em><a href="#">没当上将军</a></dt>
-          <dd>
-            <p>这世界只要有美国存在，中俄两国就必须存小异求大同，联合对抗美国的战略压力就是两国高于一切的最大共同利益。</p>
+          <dt><em><?php echo ($vo["postdate"]); ?></em><a href="#"><?php echo ($vo["username"]); ?></a></dt>
+          
+           <?php if($vo["quotecomm"] != ''): ?><dd>
+	           <div class="bg">引用：<?php echo ($vo["quotecomm"]["username"]); ?></a><br />
+					<span>
+					<p><?php echo ($vo["quotecomm"]["content"]); ?></p>
+					</span>
+			   </div>
+		   </dd><?php endif; ?>
+		   <dd><p><?php echo ($vo["content"]); ?></p></dd>
           </dd>
           <dd class="bot_bit">
             <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
+              <li><a class="support" href="javascript:regoodtop(<?php echo ($vo["id"]); ?>);">支持</a><span class="colorred"><b id="topgood<?php echo ($vo["id"]); ?>"><?php echo ($vo["good"]); ?></b>票</span></li>
+              <li><a class="support" href="javascript:rebadtop(<?php echo ($vo["id"]); ?>);">反对</a><span class="colorblue"><b id="topbad<?php echo ($vo["id"]); ?>"><?php echo ($vo["bad"]); ?></b>票</span></li>
+              <li><a class="blackonline" href="javascript:recommenttop(<?php echo ($vo["id"]); ?>);">回复此评论</a></li>
+              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk(<?php echo ($pkinfo["id"]); ?>,'<?php echo (strip_tags($vo["content"])); ?>','appyes');">转发</a></li>
             </ul>
             <br class="clear">
           </dd>
         </dl>
-      </div>
-      <div class="review_more"><a class="blueonline" href="http://www.chinaiiss.com/pkt/app/435">查看全部评论&gt;&gt;</a></div>
+      </div><?php endforeach; endif; ?>
+      <div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/app/<?php echo ($pkinfo["id"]); ?>">查看全部评论&gt;&gt;</a></div>
     </div>
-    <div class="review_bk">
-      <div id="">
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-09 08:47:23</em><a class="grayfont">47楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>目前美国佬独大，必然会是中 俄PK美！今后中国佬独大，必然会是俄 美PK中！将来俄国佬独大，必然会是中 美PK俄！轮回嘿嘿！</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-09 00:47:19</em><a class="grayfont">42楼</a><a target="_blank">中年男子</a></dt>
-            <dd>
-              <p>我坚持世界统一</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-09 00:45:10</em><a class="grayfont">41楼</a><a target="_blank">中年男子</a></dt>
-            <dd>
-              <p>为何不实行世界统一管理更好的为人民服务 建造美好未来</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-09 00:42:48</em><a class="grayfont">40楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>美国现在是我们最大敌人。</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 23:36:23</em><a class="grayfont">39楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>把俄中的“实用主义”推广到全球！</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 23:31:53</em><a class="grayfont">38楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>新建一条链接世界的互联星空网（排除美国）</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 23:28:51</em><a class="grayfont">37楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>新建一条链接世界金融结算的光纤！（排除美国）</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 23:25:17</em><a class="grayfont">36楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>不用美元！世界各国贸易，货币互换！</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 23:18:16</em><a class="grayfont">35楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>美国和加拿大 墨西哥也有大片的领土争议！可以挑动一下。</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 23:13:01</em><a class="grayfont">34楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>俄中军火公司也可以合资联营。</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 23:07:44</em><a class="grayfont">33楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>美洲地区，中东地区是武器的大市场，俄中可以大胆挺进！</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 23:03:23</em><a class="grayfont">32楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>俄中向美洲，中东卖先进的武器，比打口水仗好！实在！管用！</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 22:51:44</em><a class="grayfont">31楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>对付美国的霸道，俄中可以向美洲，中东卖先进的武器！</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 22:04:05</em><a class="grayfont">30楼</a><a target="_blank">战略网网友</a></dt>
-            <dd>
-              <p>中俄只有联手才不会被美帝牵着鼻子走！！中俄现在都有共同的利益</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 21:40:50</em><a class="grayfont">29楼</a><a target="_blank">丘比特之箭</a></dt>
-            <dd>
-              <div class="bg">引用：默贾宸<br>
-                <span>
-                <p>首先，美国可能不存在吗？这是不可能的假设。再者，美国与中俄之间有很多利益交织，假如按您说的美国不存在了，就意味着中俄的国际市场小了些，这对中俄经济的发展不见得是好事，而一个国家的经济是最重要的，从某种意义上来说，甚至比军事还重要。</p>
-                </span></div>
-            </dd>
-            <dd>
-              <p>中国爆发战火，习近平在那里天天泡彭丽媛，我们浴血拼杀没有我们什么事情，太不公平了，起码把习明泽给我们玩玩。</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="#">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-      </div>
-      <div class="review_more"><a class="blueonline" href="http://www.chinaiiss.com/pkt/app/435">查看全部评论&gt;&gt;</a></div>
-    </div>
+    
+	<div class="review_bk"><a name="new_comment_view"></a>
+		<div id="gv_comments_pklist_-1_<?php echo ($pkinfo["id"]); ?>"></div>
+		<div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/app/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
+	</div>
   </div>
   <div class="main_right">
     <div class="hot_blue">
       <h1><a></a></h1>
-      <div class="review">
+      <?php if(is_array($badcomm)): foreach($badcomm as $key=>$vo): ?><div class="review" id="cmmtop_<?php echo ($vo["id"]); ?>">
         <dl>
-          <dt><em>2013-7-08 15:06:50</em><a href="#">战略网网友</a></dt>
-          <dd>
-            <p>“三足鼎”力才是合理的世界模式。美国佬想独大，中、俄是不甘心滴----谁想独大，余必与之抗衡！</p>
+          <dt><em><?php echo ($vo["postdate"]); ?></em><a href="#"><?php echo ($vo["username"]); ?></a></dt>
+          
+           <?php if($vo["quotecomm"] != ''): ?><dd>
+	           <div class="bg">引用：<?php echo ($vo["quotecomm"]["username"]); ?></a><br />
+					<span>
+					<p><?php echo ($vo["quotecomm"]["content"]); ?></p>
+					</span>
+			   </div>
+		   </dd><?php endif; ?>
+		   <dd><p><?php echo ($vo["content"]); ?></p></dd>
           </dd>
           <dd class="bot_bit">
             <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
+              <li><a class="support" href="javascript:regoodtop(<?php echo ($vo["id"]); ?>);">支持</a><span class="colorred"><b id="topgood<?php echo ($vo["id"]); ?>"><?php echo ($vo["good"]); ?></b>票</span></li>
+              <li><a class="support" href="javascript:rebadtop(<?php echo ($vo["id"]); ?>);">反对</a><span class="colorblue"><b id="topbad<?php echo ($vo["id"]); ?>"><?php echo ($vo["bad"]); ?></b>票</span></li>
+              <li><a class="blackonline" href="javascript:recommenttop(<?php echo ($vo["id"]); ?>);">回复此评论</a></li>
+              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk(<?php echo ($pkinfo["id"]); ?>,'<?php echo (strip_tags($vo["content"])); ?>','appno');">转发</a></li>
             </ul>
             <br class="clear">
           </dd>
         </dl>
-      </div>
-      <div class="review_more"><a class="blueonline" href="http://www.chinaiiss.com/pkt/opp/435">查看全部评论&gt;&gt;</a></div>
+      </div><?php endforeach; endif; ?>
+      <div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/opp/<?php echo ($pkinfo["id"]); ?>">查看全部评论&gt;&gt;</a></div>
     </div>
-    <div class="reviews_bk">
-      <div id="">
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 20:45:52</em><a class="grayfont">22楼</a><a target="_blank" class="blue">中医奇才孙思邈</a></dt>
-            <dd>
-              <div class="bg">引用：战略网网友<br>
-                <span>
-                <p>“三足鼎”力才是合理的世界模式。美国佬想独大，中、俄是不甘心滴----谁想独大，余必与之抗衡！</p>
-                </span></div>
-            </dd>
-            <dd>
-              <p>三足鼎立不成立，俄国如果和中国好，毁灭的预言会遍布俄国，俄国必然与中国翻脸与美国结盟。</p>
-            </dd>
-            <dd class="bot_bit">
-            <ul>
-              <li><a class="support" href="javascript:regoodtop(756783);">支持</a><span class="colorred"><b id="topgood756783">51</b>票</span></li>
-              <li><a class="support" href="#">反对</a><span class="colorblue"><b id="topbad756783">4</b>票</span></li>
-              <li><a class="blackonline" href="#">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="#">转发</a></li>
-            </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 20:44:10</em><a class="grayfont">21楼</a><a target="_blank" class="blue">中医奇才孙思邈</a></dt>
-            <dd>
-              <div class="bg">引用：战略网网友<br>
-                <span>
-                <p>狗日的俄罗斯，也不是好鸟我们一定要保持警惕如果美国衰落了如果中俄要有一个出来当老大到时一定翻脸。谁要讲俄国是好东西，谁就是猪。</p>
-                </span></div>
-            </dd>
-            <dd>
-              <p>中俄联合，战略也不平衡，美国也会做大一家独大，俄国与中国翻脸是必然，中国地大震动，到处都是死亡和废墟，中国经济半年内后退六十年。</p>
-            </dd>
-            <dd class="bot_bit">
-              <ul>
-                <li><a class="support" href="javascript:regood(757076);">支持</a><span class="colorred"><b id="good757076">1</b>&nbsp;票</span></li>
-                <li><a class="support" href="javascript:rebad(757076);">反对</a><span class="colorblue"><b id="bad757076">0</b>&nbsp;票</span></li>
-                <li><a class="blackonline" href="javascript:recommenttop(757076);" id="cmm_757076">回复此评论</a></li>
-                <li class="zf"><a id="cmmm_757076" class="blackonline share_a" style="cursor:pointer;" name="transmit_button" href="#">转发</a></li>
-              </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 20:41:09</em><a class="grayfont">20楼</a><a target="_blank" class="blue">中医奇才孙思邈</a></dt>
-            <dd>
-              <div class="bg">引用：战略网网友<br>
-                <span>
-                <p>狗日的俄罗斯，也不是好鸟我们一定要保持警惕如果美国衰落了如果中俄要有一个出来当老大到时一定翻脸。谁要讲俄国是好东西，谁就是猪。</p>
-                </span></div>
-            </dd>
-            <dd>
-              <p>聪明！美俄必然联合，俄国必然与中国翻脸，中国全国地大震动，周边国家猛攻中国，德意日等国从海陆千万精锐进攻中国，北京城被炸平一半，俄国千万大军杀气腾腾派往俄远东，俄国倾国核武库剑指东北三省，十五国精锐猛攻新疆，中国领空领海消失。</p>
-            </dd>
-            <dd class="bot_bit">
-              <ul>
-                <li><a class="support" href="javascript:regood(757072);">支持</a><span class="colorred"><b id="good757072">1</b>&nbsp;票</span></li>
-                <li><a class="support" href="javascript:rebad(757072);">反对</a><span class="colorblue"><b id="bad757072">0</b>&nbsp;票</span></li>
-                <li><a class="blackonline" href="javascript:recommenttop(757072);" id="cmm_757072">回复此评论</a></li>
-                <li class="zf"><a id="cmmm_757072" class="blackonline share_a" style="cursor:pointer;" name="transmit_button" href="#">转发</a></li>
-              </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 20:34:04</em><a class="grayfont">19楼</a><a target="_blank" class="blue">战略网网友</a></dt>
-            <dd>
-              <p>狗日的俄罗斯，也不是好鸟我们一定要保持警惕如果美国衰落了如果中俄要有一个出来当老大到时一定翻脸。谁要讲俄国是好东西，谁就是猪。</p>
-            </dd>
-            <dd class="bot_bit">
-              <ul>
-                <li><a class="support" href="javascript:regood(757066);">支持</a><span class="colorred"><b id="good757066">1</b>&nbsp;票</span></li>
-                <li><a class="support" href="javascript:rebad(757066);">反对</a><span class="colorblue"><b id="bad757066">0</b>&nbsp;票</span></li>
-                <li><a class="blackonline" href="javascript:recommenttop(757066);" id="cmm_757066">回复此评论</a></li>
-                <li class="zf"><a id="cmmm_757066" class="blackonline share_a" style="cursor:pointer;" name="transmit_button" href="#">转发</a></li>
-              </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 18:45:06</em><a class="grayfont">12楼</a><a target="_blank" class="blue">默贾宸</a></dt>
-            <dd>
-              <p>大
-                国之间的关系根本不可能是单一性的，因为各有众多庞大的利益集团，利益交织在一起，即彼此需要又彼此有矛盾，如果说是“抱团”是不客观的，是带有情绪化
-                的，这是片面地只从军事一方面来看待国际关系的结果。俄罗斯与美国也有利益需要之处，而且不亚于与中国的利益需要，只不过俄罗斯与美国有军事竞争关系，看
-                似与美国关系很差似的。</p>
-            </dd>
-            <dd class="bot_bit">
-              <ul>
-                <li><a class="support" href="javascript:regood(757003);">支持</a><span class="colorred"><b id="good757003">1</b>&nbsp;票</span></li>
-                <li><a class="support" href="javascript:rebad(757003);">反对</a><span class="colorblue"><b id="bad757003">0</b>&nbsp;票</span></li>
-                <li><a class="blackonline" href="javascript:recommenttop(757003);" id="cmm_757003">回复此评论</a></li>
-                <li class="zf"><a id="cmmm_757003" class="blackonline share_a" style="cursor:pointer;" name="transmit_button" href="#">转发</a></li>
-              </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 18:19:07</em><a class="grayfont">11楼</a><a target="_blank" class="blue">战略网网友</a></dt>
-            <dd>
-              <p>每个国家都有自己的打算；中国和美国好俄罗斯受不了；中俄好美国也受不了；俄美好中国更加顶不了；中国要协调好俄美关系。</p>
-            </dd>
-            <dd class="bot_bit">
-              <ul>
-                <li><a class="support" href="javascript:regood(756997);">支持</a><span class="colorred"><b id="good756997">2</b>&nbsp;票</span></li>
-                <li><a class="support" href="javascript:rebad(756997);">反对</a><span class="colorblue"><b id="bad756997">0</b>&nbsp;票</span></li>
-                <li><a class="blackonline" href="javascript:recommenttop(756997);" id="cmm_756997">回复此评论</a></li>
-                <li class="zf"><a id="cmmm_756997" class="blackonline share_a" style="cursor:pointer;" name="transmit_button" href="#">转发</a></li>
-              </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 18:12:07</em><a class="grayfont">10楼</a><a target="_blank" class="blue">战略网网友</a></dt>
-            <dd>
-              <p>毛熊的强悍不是你我和美国可以阻挡的，这就是战斗民族的体现！！</p>
-            </dd>
-            <dd class="bot_bit">
-              <ul>
-                <li><a class="support" href="javascript:regood(756993);">支持</a><span class="colorred"><b id="good756993">0</b>&nbsp;票</span></li>
-                <li><a class="support" href="javascript:rebad(756993);">反对</a><span class="colorblue"><b id="bad756993">0</b>&nbsp;票</span></li>
-                <li><a class="blackonline" href="javascript:recommenttop(756993);" id="cmm_756993">回复此评论</a></li>
-                <li class="zf"><a id="cmmm_756993" class="blackonline share_a" style="cursor:pointer;" name="transmit_button" href="#">转发</a></li>
-              </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 16:54:14</em><a class="grayfont">8楼</a><a target="_blank" class="blue">孰悟涅槃</a></dt>
-            <dd>
-              <p>俄罗斯在共同利益面前与中国合作，但对中国担忧和对美国是一样的。也在一定的程度上遏制着中国的发展与强大。</p>
-            </dd>
-            <dd class="bot_bit">
-              <ul>
-                <li><a class="support" href="javascript:regood(756953);">支持</a><span class="colorred"><b id="good756953">7</b>&nbsp;票</span></li>
-                <li><a class="support" href="javascript:rebad(756953);">反对</a><span class="colorblue"><b id="bad756953">0</b>&nbsp;票</span></li>
-                <li><a class="blackonline" href="javascript:recommenttop(756953);" id="cmm_756953">回复此评论</a></li>
-                <li class="zf"><a id="cmmm_756953" class="blackonline share_a" style="cursor:pointer;" name="transmit_button" href="#">转发</a></li>
-              </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 16:48:14</em><a class="grayfont">7楼</a><a target="_blank" class="blue">战略网网友</a></dt>
-            <dd>
-              <p>中俄两国之间的合作是一种潜在的契约关系，这种关系存在的理由中，美国这个超级大国占了很大原因。而且中俄之间也是冲突不断的。</p>
-            </dd>
-            <dd class="bot_bit">
-              <ul>
-                <li><a class="support" href="javascript:regood(756951);">支持</a><span class="colorred"><b id="good756951">4</b>&nbsp;票</span></li>
-                <li><a class="support" href="javascript:rebad(756951);">反对</a><span class="colorblue"><b id="bad756951">0</b>&nbsp;票</span></li>
-                <li><a class="blackonline" href="javascript:recommenttop(756951);" id="cmm_756951">回复此评论</a></li>
-                <li class="zf"><a id="cmmm_756951" class="blackonline share_a" style="cursor:pointer;" name="transmit_button" href="#">转发</a></li>
-              </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-        <div class="review">
-          <dl>
-            <dt><em>2013-07-08 15:06:50</em><a class="grayfont">5楼</a><a target="_blank" class="blue">战略网网友</a></dt>
-            <dd>
-              <p>“三足鼎”力才是合理的世界模式。美国佬想独大，中、俄是不甘心滴----谁想独大，余必与之抗衡！</p>
-            </dd>
-            <dd class="bot_bit">
-              <ul>
-                <li><a class="support" href="javascript:regood(756863);">支持</a><span class="colorred"><b id="good756863">27</b>&nbsp;票</span></li>
-                <li><a class="support" href="javascript:rebad(756863);">反对</a><span class="colorblue"><b id="bad756863">2</b>&nbsp;票</span></li>
-                <li><a class="blackonline" href="javascript:recommenttop(756863);" id="cmm_756863">回复此评论</a></li>
-                <li class="zf"><a id="cmmm_756863" class="blackonline share_a" style="cursor:pointer;" name="transmit_button" href="#">转发</a></li>
-              </ul>
-              <br class="clear">
-            </dd>
-          </dl>
-        </div>
-      </div>
-      <div class="review_more"><a class="blueonline" href="http://www.chinaiiss.com/pkt/opp/435">查看全部评论&gt;&gt;</a></div>
-    </div>
+    
+	<div class="reviews_bk">
+		<div id="gv_comments_pktlist_-1_<?php echo ($pkinfo["id"]); ?>"></div>
+		<div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/opp/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
+	</div>
   </div>
   <div class="clear"></div>
 </div>
