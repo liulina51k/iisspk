@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>辩论pk台_战略网</title>
+<link href="__PUBLIC__/Style/basic.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/Style/pk.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/function.comm.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Js/function.cookie.js"></script>
+</head>
+<body>
+<include file="./Application/Home/View/site.head.html" />
+<div id="main">
+  <div class="block">
+    <h1><span class="fright"><img src="__PUBLIC__/Images/pk_h1bg_r.jpg"></span><a class="gdpk"></a></h1>
+  </div>
+  <div class="main_left">
+ <foreach name="list" item="vo" key="k">
+ <if condition="$k % 2 eq 0">
+  <div class="pk_new">
+      <h1>话题:<a href="{$vo.pkurl}" title="{$vo.title}" target="_blank">{$vo.title}</a></h1>
+    <div class="pk_more">
+      <div class="pkm_view">
+        <div class="pkm_yes">
+          <p title="{$vo.agreetitle}">{$vo.agreeguide}</p>
+         </div>
+        <div class="pkm_no">
+          <p title="{$vo.opposetitle}">{$vo.opposeguide}</p>
+          </div>
+        <div class="clear"></div>
+        <div class="pk_jdt">
+            <div class="pk_jdt_num"><b id="agree{$vo.id}">{$vo.agreevote}</b> / <b id="oppose{$vo.id}">{$vo.opposevote}</b></div>
+            <div class="pk_jdt_a"><a class="zczhengfang" onclick="pkvote({$vo.id}, 'agree');" style="cursor:pointer;"></a><a class="zcfanfang" onclick="pkvote({$vo.id}, 'oppose');" style="cursor:pointer;"></a></div>
+            <div class="pk_jdt_nr"><span class="zhengfang" style="width:{$vo.point_good}%"></span><span class="fanfang" style="width:{$vo.point_bad}%"></span></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </if>
+  </foreach> 
+  </div>
+  <div class="main_right">
+  <foreach name="list" item="vo" key="k">
+  <if condition="$k % 2 eq 1">
+  <div class="pk_new">
+      <h1>话题:<a href="{$vo.pkurl}" title="{$vo.title}" target="_blank">{$vo.title}</a></h1>
+    <div class="pk_more">
+      <div class="pkm_view">
+        <div class="pkm_yes">
+          <p title="{$vo.agreetitle}">{$vo.agreeguide}</p>
+         </div>
+        <div class="pkm_no">
+          <p title="{$vo.opposetitle}">{$vo.opposeguide}</p>
+          </div>
+        <div class="clear"></div>
+        <div class="pk_jdt">
+            <div class="pk_jdt_num"><b id="agree{$vo.id}">{$vo.agreevote}</b> / <b id="oppose{$vo.id}">{$vo.opposevote}</b></div>
+            <div class="pk_jdt_a"><a class="zczhengfang" onclick="pkvote({$vo.id}, 'agree');" style="cursor:pointer;"></a><a class="zcfanfang" onclick="pkvote({$vo.id}, 'oppose');" style="cursor:pointer;"></a></div>
+            <div class="pk_jdt_nr"><span class="zhengfang" style="width:{$vo.point_good}%"></span><span class="fanfang" style="width:{$vo.point_bad}%"></span></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </if>
+  </foreach>
+  </div>
+  <div class="clear"></div>
+	<div class="xy">
+            {$show}
+       </div>
+</div>
+<div class="Blank"></div>
+<include file="./Application/Home/View/site.bottom.html" />
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fcd0a687f19db4e63c481a5b03c59f4e3' type='text/javascript'%3E%3C/script%3E"));
+
+
+$('.return_top').live('click',function(){
+	$("html, body").animate({ scrollTop: 0 }, 'fast');
+});	
+
+</script><script src="js/h.js" type="text/javascript"></script><script type="text/javascript">BAIDU_CLB_SLOT_ID = "253313";</script> 
+<script type="text/javascript" src="js/o.js"></script><script charset="utf-8" src="js/ecom"></script> 
+<script type="text/javascript">var vjAcc = '860010-00401';</script><script type="text/javascript" src="js/a.js"></script><img src="__PUBLIC__/Images/a.gif" style="visibility:hidden;position:absolute;left:0px;top:0px;z-index:-1" height="1" width="1">
+</body>
+</html>

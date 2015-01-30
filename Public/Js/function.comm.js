@@ -281,6 +281,7 @@ function delinput(obj, text){
 
 //PK投票
 function pkvote(id, type, text, url){
+	
 	var ev = getEvent();
 	if(ev){
 		var oEvent = ev.srcElement || ev.target;
@@ -297,11 +298,11 @@ function pkvote(id, type, text, url){
 	}else{
 		var cookie = '';
 	}
+
 	if(cookie==''){
-		var geturl = "http://www.iisspk.com/index.php/Home/Pk/pk_ajax_vote/parameter/"+id+"_"+type+"/r/"+rand()+"/json/1/jsoncallback/?";
+		var geturl = "http://enchinaiiss.com/do.php?inajax=1&do=pk&ac=vote&parameter="+id+"_"+type+"&r="+rand()+"&json=1&jsoncallback=?";
 		$.getJSON(geturl, function(json){
 				  var redata = checkReturn(json.data);
-				 // console.log(redata);
 				  if(redata==""){
 					  $('#'+type+id).text(parseInt($('#'+type+id).text())+1);
 					  var r = confirm("投票成功"+txt);

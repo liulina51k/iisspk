@@ -76,19 +76,15 @@ function makesiteurl($fix = ''){
 	$url = '';
     $num_args = func_num_args();
     
-	if($num_args<5){
+	if($num_args<4){
 	    return '';
 	}
 
 	for($i = 1; $i<$num_args; $i++){
 		 $url .= func_get_arg($i).'/';
 	}
-	$url = substr($url,0,-1);
-	$dirarr = explode('/',$url);
-	$page = array_pop($dirarr);
-	$url = implode('/',$dirarr);
 	$fix = $fix ? '.'.$fix : '';
-	return 'http://www.iisspk.com/index.php/'.$url.'/p/'.$page.$fix;
+	return 'http://www.iisspk.com/'.substr($url,0,-1).$fix;
 }
 /**
 * 取得客户端IP
