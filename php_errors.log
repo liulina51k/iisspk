@@ -227,3 +227,7 @@
 [30-Jan-2015 16:35:19 PRC] PHP Fatal error:  Call to a member function get() on a non-object in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 550
 [30-Jan-2015 16:35:20 PRC] PHP Fatal error:  Call to a member function get() on a non-object in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 550
 [30-Jan-2015 16:35:20 PRC] PHP Fatal error:  Call to a member function get() on a non-object in D:\chinaiiss\iisspk\Application\Components\Comment.class.php on line 550
+[02-Feb-2015 12:01:18 PRC] PHP Fatal error:  Class 'Home\Model\IIpLocation' not found in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 86
+[02-Feb-2015 14:23:46 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\ebc8275e464b056d3f1b0def9ad8c339.php on line 99
+[02-Feb-2015 16:33:23 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php on line 191
+[02-Feb-2015 16:40:48 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php on line 294

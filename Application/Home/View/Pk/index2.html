@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={$sitechar}" />
+<meta name="description" content="{$context}" />
+<meta name="keywords" content="{$title}" />
+<title>{$title}-PK台-{$sitename}</title>
+{$headimportcss}
+<link href="{$site}/style/pk.css" rel="stylesheet" type="text/css" />
+{$headimportjs}
+<script type="text/javascript" src="{$site}/include/js/function.cookie.js"></script>
+<script>
+{literal}
+function checkform(id){
+  var content = $("#"+id+" textarea[name='content']").val();
+  var subject = $("#"+id+" input[name='subject']").val();
+  if(subject == '标题:' ){
+     $("#"+id+" input[name='subject']").val('');
+  }
+  if(content == '内容:' ){
+     $("#"+id+" textarea[name='content']").val('');
+  }
+  return false;
+}
+
+function setform(id){
+$("#"+id+" input[name='subject']").val('标题:');
+$("#"+id+" textarea[name='content']").val('内容:');
+}
+//评论支持点击
+function regoodtop(id){
+	$.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: $("#categoryid").val()+'_'+id+'_good'}, function(data){
+		      $('#topgood'+id).text(parseInt( $('#topgood'+id).text())+1);
+		});
+
+}
+
+//评论反对点击
+function rebadtop(id){
+	$.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: $("#categoryid").val()+'_'+id+'_bad'}, function(data){
+		      $('#topbad'+id).text(parseInt( $('#topbad'+id).text())+1);
+		});
+
+}
+
+//回复此评论
+function recommenttop(id){
+	off = $("#cmmtop_"+id).offset();
+	$.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_reap', parameter: $("#categoryid").val()+'_'+id}, function(data){
+																															
+		    apalert('反驳评论', checkReturn(data), off.top, off.left+200, 360);
+		});
+
+}
+ 
+{/literal}
+</script>
+</head>
+<body>
+{include file="site.indexhead.html"}
+<input id="infoid" type="hidden" value="{$id}" />
+<input id="categoryid" type="hidden" value="-1" />
+<div id="pk_main"><div id="borter">
+	<div id="pk_news">
+		<img src="{$attpath}/{$imgurl}" width="740" height="80" alt="{$title}" />
+<div class="main_news"><a class="blackfont">{$context|truncate_cn:"185"}{if !empty($url)}[<a class="blue" href="{$url}" target="_blank">详细背景资料</a>]{/if}</a></div>
+	</div>
+	<div id="pk_more">
+	<span class="more_right"><b>>>></b></span><h3><a href="{$site}/pk/plist/1">往期辩论话题</a></h3>
+		<ul>
+        {section name=loop loop=$oldpklist start=0 max=8}
+	<li>·<a class="blue" href="{$oldpklist[loop].pkurl}" title="{$oldpklist[loop].title}">{$oldpklist[loop].title|truncate_cn:"15":".."}</a></li>
+    {/section}	
+
+		</ul>
+	</div>
+	<div class="clear" id="gv_pk_viewnum_{$id}"></div>
+<div id="pk_title">
+<a class="blueonline fright" href="{$site}/pk/help/1" target="_parent">PK规则说明>></a>
+{$title}
+</div>
+<div id="vote_maim">
+<div id="vote_l"><h4>正方:{$agreetitle}</h4>
+<div class="votes">[<span class="vote_number" id="agree{$id}">{$agreevote}</span> 票]</div><img src="{$site}/images/vote_y.jpg" style="cursor:pointer;" onclick="pkvote({$id}, 'agree');"/>
+<div id="vote_yes">{$agreeintro}</div></div>
+<div id="vote_r"><h4>反方:{$opposetitle}</h4>
+<div class="votes">[<span class="votes_number" id="oppose{$id}">{$opposevote}</span> 票]</div><img src="{$site}/images/vote_n.jpg" style="cursor:pointer;" onclick="pkvote({$id}, 'oppose');" />
+<div id="vote_no">{$opposeintro}</div></div>
+<div class="clear"></div>
+<!---start-->
+<div class="pk_vs_pic"><img src="{$site}/images/{if $result <= 0}pk_redno.gif{elseif $result >=1}pk_redyes.gif{else}pk_red.gif{/if}" width="65" height="80" class="fleft" />
+  <div class="vleft" style="padding-left:{$result*626}px;"><img src="{$site}/images/pk_tank.jpg" width="160" height="50"></div>
+<img src="{$site}/images/{if $result <= 0}pk_blueyes.gif{elseif $result >=1}pk_blueno.gif{else}pk_blue.gif{/if}" width="65" height="80" class="fright" /></div>
+<div class="clear"></div>
+</div>
+<!---end-->
+<div class="box_main box_x">
+<div id="comment_bg"><div id="comment_submityes" class="comment"><img src="{$site}/images/pk_yes.jpg" width="71" height="18" /><label><input name="subject" type="text" value="标题:" onfocus="delinput($(this), '标题:');"/></label><form onsubmit="return false;"><textarea name="content" class="form_text" onfocus="delinput($(this), '内容:');">内容:</textarea><div><input type="image" class="inputs"  onclick="checkform('comment_submityes');comments_submit('comment_submityes', '-1_{$id}');setform('comment_submityes')" src="{$site}/images/pk_input.jpg" /><br /></div></form>
+    </div></div>
+<div id="comment_bg"><div id="comment_submitno" class="comment"><img src="{$site}/images/pk_no.jpg" width="71" height="18" /><label><input name="subject" type="text" value="标题:" onfocus="delinput($(this), '标题:');" /><input name="commenttype" type="hidden" value="1" /></label><form onsubmit="return false;"><textarea name="content" class="form_text" onfocus="delinput($(this), '内容:');">内容:</textarea><div><input type="image" class="inputs"  onclick="checkform('comment_submitno');comments_submit('comment_submitno', '-1_{$id}');setform('comment_submitno')" src="{$site}/images/pk_input.jpg" /><br /></div></form></div></div><div class="clear"></div>
+</div>
+<div class="box_main box_xt">
+<div id="review_left">
+{section name=loop loop=$goodcomm}
+<div class="review" id="cmmtop_{$goodcomm[loop].id}">
+<dl><dt class="r"><a href="{$site}/pk/app/{$id}" class="blue morelist">查看正方全部评论>></a><img src="{$site}/images/best_y.jpg" /><Br /><em>{$goodcomm[loop].postdate|date_format:"%Y-%m-%d %H:%I:%S"}</em><a target="_blank" href="#">{$goodcomm[loop].username}</a></dt>
+             <dd>标题：{$goodcomm[loop].subject}</dd>
+             {if !empty($goodcomm[loop].quotecomm)}
+             <dd>
+               <div class="bg">引用：{$goodcomm[loop].quotecomm.username}</a><br /> 
+          <span>
+           <p>{$goodcomm[loop].quotecomm.content}</p>
+           </span>
+                    </div>
+             </dd>
+             {/if}
+             
+              <dd>
+                   <p>{$goodcomm[loop].content}</p>
+        </dd>
+             <dd>
+                  <ul><li><span class="colorred" id="topgood{$goodcomm[loop].id}">{$goodcomm[loop].good}</span>人<br><a href="javascript:regoodtop({$goodcomm[loop].id});">支持</a></li><li><span class="colorblue" id="topbad{$goodcomm[loop].id}">{$goodcomm[loop].bad}</span>人<br><a href="javascript:rebadtop({$goodcomm[loop].id});">反对</a></li></ul><Br /><a class="blackonline" href="javascript:recommenttop({$goodcomm[loop].id});">反驳此评论</a>
+				  <br class="clear" />       
+             </dd>
+</dl>
+</div>
+{/section}
+
+<div id="review_r"></div>
+<div id="gv_comments_list_-1_{$id}"></div>
+
+<div id="rev_m"><a href="{$site}/pk/app/{$id}" class="blueonline">查看正方全部评论>></a></div></div>
+<div id="review_right">
+
+{section name=loop loop=$badcomm}
+<div class="reviews" id="cmmtop_{$badcomm[loop].id}">
+<dl><dt class="n"><a href="{$site}/pk/opp/{$id}" class="blue morelist">查看反方全部评论>></a><img src="{$site}/images/best_n.jpg" /><Br /><em>{$badcomm[loop].postdate|date_format:"%Y-%m-%d %H:%I:%S"}</em><a class="blue" target="_blank" href="#">{$badcomm[loop].username}</a></dt>
+             <dd>标题：{$badcomm[loop].subject}</dd>
+             {if !empty($badcomm[loop].quotecomm)}
+             <dd>
+               <div class="bg">引用：{$badcomm[loop].quotecomm.username}</a><br /> 
+          <span>
+           <p>{$badcomm[loop].quotecomm.content}</p>
+           </span>
+                    </div>
+             </dd>
+             {/if}
+             
+              <dd>
+                   <p>{$badcomm[loop].content}</p>
+        </dd>
+             <dd>
+                  <ul><li><span class="colorred" id="topgood{$badcomm[loop].id}">{$badcomm[loop].good}</span>人<br><a href="javascript:regoodtop({$badcomm[loop].id});">支持</a></li><li><span class="colorblue" id="topbad{$badcomm[loop].id}">{$badcomm[loop].bad}</span>人<br><a href="javascript:rebadtop({$badcomm[loop].id});">反对</a></li></ul><Br /><a class="blackonline" href="javascript:recommenttop({$badcomm[loop].id});">反驳此评论</a>
+				  <br class="clear" />       
+             </dd>
+</dl>
+</div>
+{/section}
+
+
+
+<div id="review_n"></div>
+<div id="gv_comments_tlist_-1_{$id}"></div>
+<div id="rev_m"><a href="{$site}/pk/opp/{$id}" class="blueonline">查看反方全部评论>></a></div>
+</div>
+<div class="clear"></div>
+
+  </div></div></div></div>
+{include file="site.foot.html"}
+<script type="text/javascript" >BAIDU_CLB_SLOT_ID = "253313";</script>
+<script type="text/javascript" src="http://cbjs.baidu.com/js/o.js"></script>
+</body>
+</html>

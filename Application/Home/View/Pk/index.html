@@ -1,19 +1,22 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<title>辩论pk台_战略网</title>
-<link href="__PUBLIC__/Style/basic.css" rel="stylesheet" type="text/css">
-<link href="__PUBLIC__/Style/pk.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Js/function.comm.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Js/function.comments.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Js/function.pk.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Js/function.login.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Js/function.cookie.js"></script>
-<script>
+<meta http-equiv="Content-Type" content="text/html; charset={$sitechar}" />
+<meta name="description" content="{$context}" />
+<meta name="keywords" content="{$title}" />
+<title>{if !empty($seosubject)}{$seosubject}{else}{$title}_辩论pk台{/if}_{$sitename}</title>
+
+<link href="__PUBLIC__/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/style/pk_s1.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/style/plk_new.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/function.comm.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/function.pk.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/function.comments.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/function.login.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/function.cookie.js"></script>
+<script type="text/javascript">
+
 function checkform(id){
   var content = $("#"+id+" textarea[name='content']").val();
   var subject = $("#"+id+" input[name='subject']").val();
@@ -50,7 +53,7 @@ function rebadtop(id){
 function recommenttop(id){
 	off = $("#cmm_"+id).offset();
 	$.get(siteurl+"/do.php", {inajax:1,ado:'pk', ac:'pk_reap', parameter: $("#categoryid").val()+'_'+id}, function(data){
-		comment('发表评论', checkReturn(data), off.top+20, off.left-210,500,0);
+		comment('发表评论', checkReturn(data), off.top+20, off.left-305,500,0);
 	});
 
 }
@@ -74,7 +77,7 @@ function pklogin(){
 		return;
 	}
 
-	var url = "http://www.iisspk.com/index.php/Home/Pk/pk_ajax_login/parameter/"+username+"_"+password+"/json/1/jsoncallback/?";
+	var url = siteurl+"/do.php?inajax=1&do=user&ac=pk_login&parameter="+username+"_"+password+"&json=1&jsoncallback=?";
 	$.getJSON(url,function(json){
 		if ( json.logininfo) {
 			alert(json.logininfo);
@@ -95,23 +98,6 @@ function getCommentTotal(pkid) {
 		$('#comment_total').text(json.data);
 	});
 }
-var wid = null;
-$(function(){
-	//页面加载，把帐号和密码框里面的内容都清空
-	$("input[name='reguser']").click(function(){
-		window.location=siteurl+"/user/reg";
-	});
-	$(".text").attr('value','');
-	$(".text").focus(function(){
-		$(this).attr('value','');
-	});
-
-	//获取PKID
-	var pkid = $('#infoid').attr('value');
-	//获取评论总数
-	getCommentTotal(pkid);
-	wid = window.setInterval("showheight()",1000);
-});
 function showheight(){
 	var lefth = $(".main_left .review_bk").height();
 	var righth = $(".main_right .reviews_bk").height();
@@ -146,23 +132,73 @@ function showheight(){
 		}
 	}
 }
+function showmessage(type,message){
+	$(".plk_tishi1").hide();
+	$(".plk_tishi2").hide();
+	$(".plk_tishi3").hide();
+	var str = '<p>' + message + '</p>';
+	$(".plk_tishi_nrr_0"+type).html(str);
+	$(".plk_tishi"+type).show();
+	
+	if(type!='3'){
+		//添加读取cookie
+	    usercomment = $.cookie('usercomment');
+	    if('' != usercomment && null!= usercomment && undefined != usercomment){
+	        $("#boxbody textarea[name='content']").val(usercomment);
+	        $.cookie('usercomment','');
+	    }
+	}
+	return false;
+}
+var wid = null;
+$(function (){
+	//页面加载，把帐号和密码框里面的内容都清空
+	$("input[name='reguser']").click(function(){
+		window.location=siteurl+"/user/reg";
+	});
+	$(".text").attr('value','');
+	$(".text").focus(function(){
+		$(this).attr('value','');
+	});
+
+	//获取PKID
+	var pkid = $('#infoid').attr('value');
+	//获取评论总数
+	getCommentTotal(pkid);
+	wid = window.setInterval("showheight()",1000);
+	
+	$(".plk_text").live("click",function(){
+    	$(".plk_tishi1").hide();
+    	$(".plk_tishi2").hide();
+    	$(".plk_tishi3").hide();
+		$(".plk_text_nr").focus();
+    });
+});
+
 </script>
 </head>
 <body>
+<input id="infoid" type="hidden" value="{$pkinfo.id}" />
+<input id="categoryid" type="hidden" value="-1" />
 <include file="./Application/Home/View/site.head.html" />
-<div style="margin:8px 0px 8px 0px;"> 
-  <div style="display:none">-</div><a href="#"><img src="__PUBLIC__/Images/ad.jpg" width="960" height="60" /></a></div>
+<div style="margin:8px 0px 8px 0px;">
+<script type="text/javascript">/*PK台1通栏960*60，创建于2011-11-29*/ var cpro_id = 'u694541';</script>
+<script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
 <div id="main">
   <div class="main_l">
-    <div class="block">
-      <h1><span class="fright"><img src="__PUBLIC__/Images/pk_h1bg_r.jpg"></span><a class="bjzl"></a></h1>
+     <div class="block">
+      <h1><span class="fright"><img src="__PUBLIC__/images/pk/pk_h1bg_r.jpg"></span><a 
+class="bjzl"></a></h1>
       <p>　{$pkinfo.context|substr=0,1000}<if condition="$url neq ''">
         [<a class="blue" href="{$url}" target="_blank">详细背景资料</a>]</if></p>
     </div>
   </div>
   <div class="main_r">
     <div class="block">
-      <h1><span class="fright"><img src="__PUBLIC__/Images/pk_h1bg_r.jpg"></span><span class="fright"><a href="__CONTROLLER__/pk_list">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
+      <h1><span class="fright"><img src="__PUBLIC__/images/pk/pk_h1bg_r.jpg"></span><span 
+class="fright"><a href="__CONTROLLER__/pk_list">更多&gt;&gt;</a></span><a 
+class="wqht"></a></h1>
       <ul>
         <foreach name="pklist" item="vo" key="k">
         <if condition="($k egt 0 ) AND ($k lt 8)">
@@ -183,7 +219,8 @@ function showheight(){
       <div class="pk_yes">
         <h1>正方:{$pkinfo.agreeguide}</h1>
         <form>
-          <input onclick="pkvote({$pkinfo.id}, 'agree');return false;" src="__PUBLIC__/Images/pk_yes_botton.jpg" type="image">
+          <input onclick="pkvote({$pkinfo.id}, 'agree');return false;" 
+src="__PUBLIC__/images/pk/pk_yes_botton.jpg" type="image">
           <span>[<a class="red" id="agree{$pkinfo.id}">{$pkinfo.agreevote}</a> 票]</span>
         </form>
         <p>{$pkinfo.agreeintro}</p>
@@ -193,44 +230,56 @@ function showheight(){
       <div class="pk_no">
         <h1>反方:{$pkinfo.opposeguide}</h1>
         <form>
-          <input onclick="pkvote({$pkinfo.id}, 'oppose');" src="__PUBLIC__/Images/pk_no_botton.jpg" type="image">
+          <input onclick="pkvote({$pkinfo.id}, 'oppose');" 
+src="__PUBLIC__/images/pk/pk_no_botton.jpg" type="image">
           <span>[<a class="blue" id="oppose{$pkinfo.id}">{$pkinfo.opposevote}</a> 票]</span>
         </form>
         <p>{$pkinfo.opposeintro}</p>
       </div>
     </div>
     <div class="clear"></div>
-    <div class="pk_rule"><a href="http://www.chinaiiss.com/pkt/help/1" target="_blank">PK规则说明&gt;&gt;</a></div>
+    <div class="pk_rule"><a href="http://www.chinaiiss.com/pkt/help/1" target="_blank">PK规
+则说明&gt;&gt;</a></div>
   </div>
-  <div class="pk_vs_pic"> <img src="__PUBLIC__/Images/pk_red.gif" class="fleft" height="80" width="65">
-    <div class="vleft" style="padding-left:626px;"> <img src="__PUBLIC__/Images/pk_tank.jpg" height="50" width="160"> </div>
-    <img src="__PUBLIC__/Images/pk_blue.gif" class="fright" height="80" width="65"> </div>
+	<div class="pk_vs_pic">
+		<img src="__PUBLIC__/images/pk/pk_red.gif" width="65" height="80" class="fleft" />
+		<div class="vleft" style="padding-left:{$result*626}px;">
+		<img src="__PUBLIC__/images/pk/pk_tank.jpg" width="160" height="50">
+		</div>
+		<img src="__PUBLIC__/images/pk/pk_blue.gif" width="65" height="80" class="fright" />
+	</div>
   <div class="clear"></div>
 </div>
 <div id="main">
-  <div class="comment_bg">
-    <div class="com_login">
-      <p class="fright">(评论<a class="red" id="comment_total">0</a>条 <a class="red">{$pkinfo.clicks}</a>名网友参与)</p>
+<a name="pk_content" id="pk_content" ></a>
+	<div class="comment_bg">
+	<div class="com_login">
+      <p class="fright">(评论<a class="red" id="comment_total">0</a>条 <a class="red">
+{$pkinfo.clicks}</a>名网友参与)</p>
       <div id="com_login">
         <form onsubmit="return false;">
           用户名
           <input class="text" name="username" type="text">
           密 码
           <input value="" class="text" name="password" type="password">
-          <input name="loginuser" onclick="pklogin();" src="__PUBLIC__/Images/login_bot.jpg" type="image">
-          <input name="reguser" src="__PUBLIC__/Images/register_bot.jpg" type="image">
+          <input name="loginuser" onclick="pklogin();" src="__PUBLIC__/images/pk/login_bot.jpg" 
+type="image">
+          <input name="reguser" src="__PUBLIC__/images/pk/register_bot.jpg" type="image">
           <!--2012-1-11 pk增加外部接入样式--> 
-          <span>其他方式登录：<a class="SINA_login" href="###" onclick="out_login( 'sina')">微博登录</a><a class="QQ_login" href="###" onclick="out_login( 'qq' )">QQ登录</a></span> 
+          <span>其他方式登录：<a class="SINA_login" href="###" onclick="out_login( 'sina')">
+微博登录</a><a class="QQ_login" href="###" onclick="out_login( 'qq' )">QQ登录</a></span> 
           <!--end-->
         </form>
       </div>
     </div>
-    <div class="main_left">
+	<div class="main_left">
       <div class="comment" id="comment_submityes">
         <h1><a></a></h1>
         <form onsubmit="return false;">
           <textarea name="content" onfocus="delinput($(this), '内容:');">内容:</textarea>
-          <input src="__PUBLIC__/Images/pk_texttj.jpg" onclick="checkform('comment_submityes');comments_submit('comment_submityes', '-1_435');setTimeout('getCommentTotal(435)',5000);" type="image">
+          <input src="__PUBLIC__/images/pk/pk_texttj.jpg" onclick="checkform
+('comment_submityes');comments_submit('comment_submityes', '-1_{$pkinfo.id}');" 
+type="image">
         </form>
       </div>
     </div>
@@ -239,19 +288,19 @@ function showheight(){
         <h1><a class="zcff"></a></h1>
         <form onsubmit="return false;">
           <textarea name="content" onfocus="delinput($(this), '内容:');">内容:</textarea>
-          <input src="__PUBLIC__/Images/pk_texttj.jpg" onclick="checkform('comment_submitno');comments_submit('comment_submitno', '-1_435');setTimeout('getCommentTotal(435)',5000);" type="image">
+          <input src="__PUBLIC__/images/pk/pk_texttj.jpg" onclick="checkform
+('comment_submitno');comments_submit('comment_submitno', '-1_{$pkinfo.id}');" type="image">
         </form>
       </div>
     </div>
-    <div class="clear"></div>
-  </div>
+<div class="clear"></div>
+</div></div>
+<div style="margin:8px 0px 8px 0px;">
+<script type="text/javascript">/*PK台3通栏960*60，创建于2011-11-29*/ var cpro_id = 'u694612';</script><script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script>
 </div>
-<div style="padding:8px 0px 8px 0px;"> 
-  <div style="display:none">-</div>
-<a href="#"><img src="__PUBLIC__/Images/ad.jpg" width="960" height="60" /></a></div>
 <div id="main">
-  <div class="main_left">
-    <div class="hot_red">
+	<div class="main_left">
+		<div class="hot_red">
       <h1><a></a></h1>
       <foreach name="goodcomm" item="vo">
       <div class="review" id="cmmtop_{$vo.id}">
@@ -271,26 +320,33 @@ function showheight(){
           </dd>
           <dd class="bot_bit">
             <ul>
-              <li><a class="support" href="javascript:regoodtop({$vo.id});">支持</a><span class="colorred"><b id="topgood{$vo.id}">{$vo.good}</b>票</span></li>
-              <li><a class="support" href="javascript:rebadtop({$vo.id});">反对</a><span class="colorblue"><b id="topbad{$vo.id}">{$vo.bad}</b>票</span></li>
-              <li><a class="blackonline" href="javascript:recommenttop({$vo.id});">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk({$pkinfo.id},'{$vo.content|strip_tags}','appyes');">转发</a></li>
+              <li><a class="support" href="javascript:regoodtop({$vo.id});">支持</a><span 
+class="colorred"><b id="topgood{$vo.id}">{$vo.good}</b>票</span></li>
+              <li><a class="support" href="javascript:rebadtop({$vo.id});">反对</a><span 
+class="colorblue"><b id="topbad{$vo.id}">{$vo.bad}</b>票</span></li>
+              <li><a class="blackonline" href="javascript:recommenttop({$vo.id});">回复此评
+论</a></li>
+              <li class="zf"><a id="appyes" class="blackonline share_a" 
+style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
+({$pkinfo.id},'{$vo.content|strip_tags}','appyes');">转发</a></li>
             </ul>
             <br class="clear">
           </dd>
         </dl>
       </div>
       </foreach>
-      <div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/app/{$pkinfo.id}">查看全部评论&gt;&gt;</a></div>
+      <div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/app/
+{$pkinfo.id}">查看全部评论&gt;&gt;</a></div>
     </div>
-    {// 正方 普通评论 }
+	{// 正方 普通评论 }
 	<div class="review_bk"><a name="new_comment_view"></a>
 		<div id="gv_comments_pklist_-1_{$pkinfo.id}"></div>
-		<div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/app/{$pkinfo.id}">查看全部评论>></a></div>
+		<div class="review_more"><a class="blueonline" 
+href="http://www.iisspk.com/Pkt/app/{$pkinfo.id}">查看全部评论>></a></div>
 	</div>
-  </div>
-  <div class="main_right">
-    <div class="hot_blue">
+	</div>
+	<div class="main_right">
+		<div class="hot_blue">
       <h1><a></a></h1>
       <foreach name="badcomm" item="vo">
       <div class="review" id="cmmtop_{$vo.id}">
@@ -310,39 +366,46 @@ function showheight(){
           </dd>
           <dd class="bot_bit">
             <ul>
-              <li><a class="support" href="javascript:regoodtop({$vo.id});">支持</a><span class="colorred"><b id="topgood{$vo.id}">{$vo.good}</b>票</span></li>
-              <li><a class="support" href="javascript:rebadtop({$vo.id});">反对</a><span class="colorblue"><b id="topbad{$vo.id}">{$vo.bad}</b>票</span></li>
-              <li><a class="blackonline" href="javascript:recommenttop({$vo.id});">回复此评论</a></li>
-              <li class="zf"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk({$pkinfo.id},'{$vo.content|strip_tags}','appno');">转发</a></li>
+              <li><a class="support" href="javascript:regoodtop({$vo.id});">支持</a><span 
+class="colorred"><b id="topgood{$vo.id}">{$vo.good}</b>票</span></li>
+              <li><a class="support" href="javascript:rebadtop({$vo.id});">反对</a><span 
+class="colorblue"><b id="topbad{$vo.id}">{$vo.bad}</b>票</span></li>
+              <li><a class="blackonline" href="javascript:recommenttop({$vo.id});">回复此评
+论</a></li>
+              <li class="zf"><a id="appyes" class="blackonline share_a" 
+style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
+({$pkinfo.id},'{$vo.content|strip_tags}','appno');">转发</a></li>
             </ul>
             <br class="clear">
           </dd>
         </dl>
       </div>
       </foreach>
-      <div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/opp/{$pkinfo.id}">查看全部评论&gt;&gt;</a></div>
+      <div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/opp/
+{$pkinfo.id}">查看全部评论&gt;&gt;</a></div>
     </div>
     {// reviews_bk 反方普通评论的列表 }
 	<div class="reviews_bk">
 		<div id="gv_comments_pktlist_-1_{$pkinfo.id}"></div>
-		<div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/opp/{$pkinfo.id}">查看全部评论>></a></div>
+		<div class="review_more"><a class="blueonline" 
+href="http://www.iisspk.com/Pkt/opp/{$pkinfo.id}">查看全部评论>></a></div>
 	</div>
   </div>
-  <div class="clear"></div>
+	<div class="clear"></div>
 </div>
-<div style="margin:8px 0px 8px 0px;"> 
-  <script type="text/javascript">/*PK台3通栏960*60，创建于2011-11-29*/ var cpro_id = 'u694612';</script><script src="__PUBLIC__/Images/c.js" type="text/javascript"></script><script type="text/javascript" charset="utf-8" src="__PUBLIC__/Images/ecom_002"></script>
-  <div style="display:none">-</div>
-<a href="#"><img src="__PUBLIC__/Images/ad.jpg" width="960" height="60" /></a></div>
+<div style="margin:8px 0px 8px 0px;">
+<script type="text/javascript">/*PK台1通栏960*60，创建于2011-11-29*/ var cpro_id = 'u694541';</script><script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
 <div id="main">
   <div class="block">
-    <h1><span class="fright"><img src="__PUBLIC__/Images/pk_h1bg_r.jpg"></span><span class="fright"><a href="http://www.chinaiiss.com/pkt/plist/1" target="_blank">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
+    <h1><span class="fright"><img src="__PUBLIC__/images/pk/pk_h1bg_r.jpg"></span><span class="fright"><a href="{$site}/pkt/plist/1" target="_blank">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
   </div>
   <div class="main_left">
   <foreach name="pklist" item="vo" key="k">
   <if condition="($k lt 6) AND ($k % 2 eq 0)">
  <div class="pk_new">
-      <h1>话题:<a href="{$vo.pkurl}" title="{$vo.title}" target="_blank">{$vo.title}</a></h1>
+      <h1>话题:<a href="{$vo.pkurl}" title="{$vo.title}" target="_blank">{$vo.title}
+</a></h1>
     <div class="pk_more">
       <div class="pkm_view">
         <div class="pkm_yes">
@@ -353,9 +416,13 @@ function showheight(){
           </div>
         <div class="clear"></div>
         <div class="pk_jdt">
-            <div class="pk_jdt_num"><b id="agree{$vo.id}">{$vo.agreevote}</b> / <b id="oppose{$vo.id}">{$vo.opposevote}</b></div>
-            <div class="pk_jdt_a"><a class="zczhengfang" onclick="pkvote({$vo.id}, 'agree');" style="cursor:pointer;"></a><a class="zcfanfang" onclick="pkvote({$vo.id}, 'oppose');" style="cursor:pointer;"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang" style="width:{$vo.point_good}%"></span><span class="fanfang" style="width:{$vo.point_bad}%"></span></div>
+            <div class="pk_jdt_num"><b id="agree{$vo.id}">{$vo.agreevote}</b> / <b 
+id="oppose{$vo.id}">{$vo.opposevote}</b></div>
+            <div class="pk_jdt_a"><a class="zczhengfang" onclick="pkvote({$vo.id}, 
+'agree');" style="cursor:pointer;"></a><a class="zcfanfang" onclick="pkvote({$vo.id}, 
+'oppose');" style="cursor:pointer;"></a></div>
+            <div class="pk_jdt_nr"><span class="zhengfang" style="width:
+{$vo.point_good}%"></span><span class="fanfang" style="width:{$vo.point_bad}%"></span></div>
         </div>
       </div>
     </div>
@@ -363,11 +430,15 @@ function showheight(){
     </if>
     </foreach>
   </div>
+  
   <div class="main_right">
-  <foreach name="pklist" item="vo" key="k">
+  
+  <div class="pk_new">
+ 	<foreach name="pklist" item="vo" key="k">
   <if condition="($k lt 6) AND ($k % 2 eq 1)">
   <div class="pk_new">
-      <h1>话题:<a href="{$vo.pkurl}" title="{$vo.title}" target="_blank">{$vo.title}</a></h1>
+      <h1>话题:<a href="{$vo.pkurl}" title="{$vo.title}" target="_blank">{$vo.title}
+</a></h1>
     <div class="pk_more">
       <div class="pkm_view">
         <div class="pkm_yes">
@@ -378,29 +449,29 @@ function showheight(){
           </div>
         <div class="clear"></div>
         <div class="pk_jdt">
-            <div class="pk_jdt_num"><b id="agree{$vo.id}">{$vo.agreevote}</b> / <b id="oppose{$vo.id}">{$vo.opposevote}</b></div>
-            <div class="pk_jdt_a"><a class="zczhengfang" onclick="pkvote({$vo.id}, 'agree');" style="cursor:pointer;"></a><a class="zcfanfang" onclick="pkvote({$vo.id}, 'oppose');" style="cursor:pointer;"></a></div>
-            <div class="pk_jdt_nr"><span class="zhengfang" style="width:{$vo.point_good}%"></span><span class="fanfang" style="width:{$vo.point_bad}%"></span></div>
+            <div class="pk_jdt_num"><b id="agree{$vo.id}">{$vo.agreevote}</b> / <b 
+id="oppose{$vo.id}">{$vo.opposevote}</b></div>
+            <div class="pk_jdt_a"><a class="zczhengfang" onclick="pkvote({$vo.id}, 
+'agree');" style="cursor:pointer;"></a><a class="zcfanfang" onclick="pkvote({$vo.id}, 
+'oppose');" style="cursor:pointer;"></a></div>
+            <div class="pk_jdt_nr"><span class="zhengfang" style="width:
+{$vo.point_good}%"></span><span class="fanfang" style="width:{$vo.point_bad}%"></span></div>
         </div>
       </div>
     </div>
     </div>
   </if>
   </foreach>
+	</div>
   </div>
+   
   <div class="clear"></div>
   <div class="Blank"></div>
 </div>
+
 <div class="Blank"></div>
+<a class="white" id="gv_pk_viewnum_{$id}"></a>
 <include file="./Application/Home/View/site.bottom.html" />
-<script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fcd0a687f19db4e63c481a5b03c59f4e3' type='text/javascript'%3E%3C/script%3E"));
-
-
-$('.return_top').live('click',function(){
-	$("html, body").animate({ scrollTop: 0 }, 'fast');
-});	
-</script>
-</body>
+<script type="text/javascript" >BAIDU_CLB_SLOT_ID = "253313";</script>
+<script type="text/javascript" src="http://cbjs.baidu.com/js/o.js"></script></body>
 </html>

@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0 auto; padding:0}
+body{ font-family:"宋体"; font-size:12px; color:#363636}
+
+
+.con{ height:386px; width:438px; border:1px solid #e6eaed}
+.left{ width:180px; height:370px; float:left; margin-top:6px; display:inline; margin-left:6px}
+.focus_big{ height:130px; background:#0099CC}
+.top{ height:60px;  margin-top:6px}
+.top a{ line-height:21px; margin-right:10px; color:#646464; text-decoration:none}
+.top a:hover{ text-decoration:underline; color:#b00000}
+.top .top_one{ color:#0f4ba1}
+.pic{ margin-top:8px; position:relative; width:180px; height:80px}
+.pic a{ position:absolute; bottom:0; left:0; display:block; height:20px; width:170px; line-height:20px; padding-left:10px; text-decoration:none; color:#FFFFFF;text-align: center;background:url(../images/focus_h2.png);_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/focus_h2.png',sizingMethod="scale");}
+.pic a:hover{ text-decoration:underline}
+
+
+.right{ width:230px; height:366px; float:left; margin-top:6px; display:inline; margin-left:10px}
+.right h3{ font-size:14px}
+.right_top{ height:140px; border-bottom:1px dashed #E6EAED}
+.right_top h3{ text-align:center; color:#12048f}
+.right_top h3 a{ text-align:center; color:#bd0a01; text-decoration:none}
+.right_top h3 a:hover{ text-decoration:underline; color:#ff0000}
+.right_top ul{ line-height:22px; list-style:none; margin-top:5px}
+.right_top ul li{ background:url(../images/dian_03.png) no-repeat; background-position:5px; padding-left:13px}
+.right_top ul li a{ color:#000; text-decoration:none}
+.right_top ul li a:hover{text-decoration:underline; color:#ff0000}
+.right_center{ height:115px; border-bottom:1px dashed #E6EAED; margin-top:15px}
+.right_center h3{ text-align:center; color:#12048f}
+.right_center h3 a{ text-align:center; color:#bd0a01; text-decoration:none}
+.right_center h3 a:hover{ text-decoration:underline; color:#ff0000}
+.right_center ul{ line-height:22px; list-style:none; margin-top:5px}
+.right_center ul li{ background:url(../images/dian_03.png) no-repeat; background-position:5px; padding-left:13px}
+.right_center ul li a{ color:#000; text-decoration:none}
+.right_center ul li a:hover{text-decoration:underline; color:#ff0000}
+.right_but{ height:100px; margin-top:15px}
+.right_but h3{ text-align:center; color:#12048f}
+.right_but h3 a{ text-align:center; color:#bd0a01; text-decoration:none}
+.right_but h3 a:hover{ text-decoration:underline; color:#ff0000}
+.right_but ul{ line-height:22px; list-style:none; margin-top:5px}
+.right_but ul li{ background:url(../images/dian_03.png) no-repeat; background-position:5px; padding-left:13px}
+.right_but ul li a{ color:#000; text-decoration:none}
+.right_but ul li a:hover{text-decoration:underline; color:#ff0000}
+
+
+
+/*焦点图*/
+.Focus { background-color: #FFFFFF; float: left; width: 304px; }
+.focus_pic { position: relative; overflow: hidden; padding: 1px; height: 400px; width: 300px; border: 1px solid #D8D8D8; }
+.focus_pic img { height: 215px; width: 295px; }
+.focus_pic .focus_cont li{ padding:0; margin:0; display:block; height:130px; width:180px}
+.focus_pic .focus_cont li { position: relative; height: 400px; width: 300px; overflow: hidden; }
+.focus_pic .focus_cont h2 { color: #FFF; position: absolute; left: 0px; font-size:18px; font-weight:bold; height: 20px; background:url(../images/focus_h2.png); font-size: 16px; line-height:25px; width:180px; text-indent: 8px; bottom: 0px;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/focus_h2.png',sizingMethod="scale");
+}
+.focus_pic .ico_b { position:absolute; right:2px;  bottom:20px; }
+.focus_pic .ico_b li { float:left; width:18px; height:18px; line-height:17px; text-align:center; cursor:pointer; color: #FFF; margin-right:1px; background:#6d6c68; list-style:none
+}
+.focus_pic .ico_b li.high_b { height: 18px; width: 18px; background:#d6d6d4}
+
+/*焦点图开始*/
+
+.Focus { background-color: #FFFFFF; float: left; width: 180px; height:130px}
+.focus_pic { position: relative; overflow: hidden; padding:0; width: 180px; height:130px; border:none }
+.focus_pic img { height: 215px; width: 295px; border:none }
+.focus_pic .focus_cont li { position: relative; width: 180px; height:130px; overflow: hidden; }
+.focus_pic .focus_cont h2{ text-align:left; font-size:12px; font-weight:100; text-align:center}
+
+/*焦点图结束*/
+.top_lc_one{ margin-top:18px}

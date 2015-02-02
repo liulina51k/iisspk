@@ -9,11 +9,15 @@ class PkController extends Controller {
     }
     //pk台首页
     public function index(){
-       $pkarr = $this->_instance->get_pk();
+       $pid = I('id');
+       $pkarr = $this->_instance->get_pk($pid);
        $this->assign('pkinfo',$pkarr['info'][0]);
        $this->assign('pklist',$pkarr['list']);
        //$this->assign('goodcomm',$pkarr['goodcomm']);
        //$this->assign('badcomm',$pkarr['badcomm']);
-       $this->display();
+       if($pid > 223)
+           $this->display();
+       else 
+           $this->display("index2");
     }
 }

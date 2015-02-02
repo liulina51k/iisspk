@@ -13,8 +13,8 @@ $(function(){
 			if($("head").html().indexOf('thickbox')==-1 && sta==='no'){
 				$("head").append('<link href="'+siteurl+'/style/thickbox.css" rel="stylesheet" type="text/css" media="all" /><script type="text/javascript" src="'+siteurl+'/include/js/thickbox.js"></script>');
 				//解决跨域问题，设置同一基础域
-				document.domain = 'top0001.com';
-				setTimeout( "tb_show(\'首次登录,请您注册\',\'http://www.top0001.com/do.php?inajax=1&do=ologin&ac=alert_login&height=185&width=300&modal=true&TB_iframe=true\')", 1500 );
+				document.domain = 'enchinaiiss.com';
+				setTimeout( "tb_show(\'首次登录,请您注册\',\'http://enchinaiiss.com/do.php?inajax=1&do=ologin&ac=alert_login&height=185&width=300&modal=true&TB_iframe=true\')", 1500 );
 			}
 			callUserFun();
 
