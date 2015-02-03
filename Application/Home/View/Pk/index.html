@@ -4,8 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset={$sitechar}" />
 <meta name="description" content="{$context}" />
 <meta name="keywords" content="{$title}" />
-<title>{if !empty($seosubject)}{$seosubject}{else}{$title}_辩论pk台{/if}_{$sitename}</title>
-
+<title><if condition="$pkinfo.seosubject neq ''">{$pkinfo.seosubject}<else />{$pkinfo.title}_辩论pk台</if>_战略网</title>
 <link href="__PUBLIC__/style/basic.v1.4.css" rel="stylesheet" type="text/css">
 <link href="__PUBLIC__/style/pk_s1.css" rel="stylesheet" type="text/css">
 <link href="__PUBLIC__/style/plk_new.css" rel="stylesheet" type="text/css">
@@ -16,7 +15,6 @@
 <script type="text/javascript" src="__PUBLIC__/js/function.login.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/function.cookie.js"></script>
 <script type="text/javascript">
-
 function checkform(id){
   var content = $("#"+id+" textarea[name='content']").val();
   var subject = $("#"+id+" input[name='subject']").val();
@@ -36,26 +34,26 @@ function setform(id){
 }
 //评论支持点击
 function regoodtop(id){
-	$.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: $("#categoryid").val()+'_'+id+'_good'}, function(data){
+	
+   $.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: 
+   $("#categoryid").val()+'_'+id+'_good'}, function(data){
 		$('#topgood'+id).text(parseInt( $('#topgood'+id).text())+1);
 	});
-
 }
 //评论反对点击
 function rebadtop(id){
 	$.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: $("#categoryid").val()+'_'+id+'_bad'}, function(data){
 		$('#topbad'+id).text(parseInt( $('#topbad'+id).text())+1);
 	});
-
 }
 
 //回复此评论
 function recommenttop(id){
 	off = $("#cmm_"+id).offset();
-	$.get(siteurl+"/do.php", {inajax:1,ado:'pk', ac:'pk_reap', parameter: $("#categoryid").val()+'_'+id}, function(data){
-		comment('发表评论', checkReturn(data), off.top+20, off.left-305,500,0);
+    var url = siteurl+"/do.php?inajax=1&ado=pk&ac=pk_reap&parameter="+$("#categoryid").val()+'_'+id+"&json=1&jsoncallback=?";
+	$.getJSON(url,function(json){
+		comment('发表评论', checkReturn(json.data), off.top+20, off.left-305,500,0);
 	});
-
 }
 
 function clicks(id) {
@@ -76,7 +74,7 @@ function pklogin(){
 		$('input[name="password"]').focus();
 		return;
 	}
-
+   
 	var url = siteurl+"/do.php?inajax=1&do=user&ac=pk_login&parameter="+username+"_"+password+"&json=1&jsoncallback=?";
 	$.getJSON(url,function(json){
 		if ( json.logininfo) {
@@ -190,14 +188,14 @@ $(function (){
      <div class="block">
       <h1><span class="fright"><img src="__PUBLIC__/images/pk/pk_h1bg_r.jpg"></span><a 
 class="bjzl"></a></h1>
-      <p>　{$pkinfo.context|substr=0,1000}<if condition="$url neq ''">
-        [<a class="blue" href="{$url}" target="_blank">详细背景资料</a>]</if></p>
+      <p>　{$pkinfo.context|mb_substr=0,500,'utf8'}<if condition="$pkinfo.url neq ''">
+        [<a class="blue" href="{$pkinfo.url}" target="_blank">详细背景资料</a>]</if></p>
     </div>
   </div>
   <div class="main_r">
     <div class="block">
       <h1><span class="fright"><img src="__PUBLIC__/images/pk/pk_h1bg_r.jpg"></span><span 
-class="fright"><a href="__CONTROLLER__/pk_list">更多&gt;&gt;</a></span><a 
+class="fright"><a href="{$site}/Pkt/plist/">更多&gt;&gt;</a></span><a 
 class="wqht"></a></h1>
       <ul>
         <foreach name="pklist" item="vo" key="k">
@@ -238,7 +236,7 @@ src="__PUBLIC__/images/pk/pk_no_botton.jpg" type="image">
       </div>
     </div>
     <div class="clear"></div>
-    <div class="pk_rule"><a href="http://www.chinaiiss.com/pkt/help/1" target="_blank">PK规
+    <div class="pk_rule"><a href="{$site}/Pkt/help/1" target="_blank">PK规
 则说明&gt;&gt;</a></div>
   </div>
 	<div class="pk_vs_pic">
@@ -257,6 +255,7 @@ src="__PUBLIC__/images/pk/pk_no_botton.jpg" type="image">
       <p class="fright">(评论<a class="red" id="comment_total">0</a>条 <a class="red">
 {$pkinfo.clicks}</a>名网友参与)</p>
       <div id="com_login">
+        <if condition="$Think.cookie.auth eq ''">
         <form onsubmit="return false;">
           用户名
           <input class="text" name="username" type="text">
@@ -270,6 +269,9 @@ type="image">
 微博登录</a><a class="QQ_login" href="###" onclick="out_login( 'qq' )">QQ登录</a></span> 
           <!--end-->
         </form>
+        <else />
+          <p class="log_in">{$now_time}：<a class="redcolor">{$username_login}</a><a class="blueonline" href="javascript:loginout('com_login');">退出</a><a class="bbs" target="_blank" href="{$bbsUrl}">进入论坛</a><a class="member" href="{$userUrl}/home/" target="_blank">进入会员中心</a></p>
+        </if>
       </div>
     </div>
 	<div class="main_left">
@@ -305,7 +307,7 @@ type="image">
       <foreach name="goodcomm" item="vo">
       <div class="review" id="cmmtop_{$vo.id}">
         <dl>
-          <dt><em>{$vo.postdate}</em><a href="#">{$vo.username}</a></dt>
+          <dt><em>{$vo.postdate|date="Y-m-d H:i:s",###}</em><a href="#">{$vo.username}</a></dt>
           
            <if condition="$vo.quotecomm neq ''">
            <dd>
@@ -335,14 +337,14 @@ style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
         </dl>
       </div>
       </foreach>
-      <div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/app/
+      <div class="review_more"><a class="blueonline" href="{$site}/Pkt/app/
 {$pkinfo.id}">查看全部评论&gt;&gt;</a></div>
     </div>
 	{// 正方 普通评论 }
 	<div class="review_bk"><a name="new_comment_view"></a>
 		<div id="gv_comments_pklist_-1_{$pkinfo.id}"></div>
 		<div class="review_more"><a class="blueonline" 
-href="http://www.iisspk.com/Pkt/app/{$pkinfo.id}">查看全部评论>></a></div>
+href="{$site}/Pkt/app/{$pkinfo.id}">查看全部评论>></a></div>
 	</div>
 	</div>
 	<div class="main_right">
@@ -351,7 +353,7 @@ href="http://www.iisspk.com/Pkt/app/{$pkinfo.id}">查看全部评论>></a></div>
       <foreach name="badcomm" item="vo">
       <div class="review" id="cmmtop_{$vo.id}">
         <dl>
-          <dt><em>{$vo.postdate}</em><a href="#">{$vo.username}</a></dt>
+          <dt><em>{$vo.postdate|date="Y-m-d H:i:s",###}</em><a href="#">{$vo.username}</a></dt>
           
            <if condition="$vo.quotecomm neq ''">
            <dd>
@@ -381,14 +383,14 @@ style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
         </dl>
       </div>
       </foreach>
-      <div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/opp/
+      <div class="review_more"><a class="blueonline" href="{$site}/Pkt/opp/
 {$pkinfo.id}">查看全部评论&gt;&gt;</a></div>
     </div>
     {// reviews_bk 反方普通评论的列表 }
 	<div class="reviews_bk">
 		<div id="gv_comments_pktlist_-1_{$pkinfo.id}"></div>
 		<div class="review_more"><a class="blueonline" 
-href="http://www.iisspk.com/Pkt/opp/{$pkinfo.id}">查看全部评论>></a></div>
+href="{$site}/Pkt/opp/{$pkinfo.id}">查看全部评论>></a></div>
 	</div>
   </div>
 	<div class="clear"></div>

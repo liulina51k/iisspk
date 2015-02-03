@@ -4,8 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo ($sitechar); ?>" />
 <meta name="description" content="<?php echo ($context); ?>" />
 <meta name="keywords" content="<?php echo ($title); ?>" />
-<title>{if !empty($seosubject)}<?php echo ($seosubject); ?>{else}<?php echo ($title); ?>_辩论pk台{/if}_<?php echo ($sitename); ?></title>
-
+<title><?php if($pkinfo["seosubject"] != ''): echo ($pkinfo["seosubject"]); else: echo ($pkinfo["title"]); ?>_辩论pk台<?php endif; ?>_战略网</title>
 <link href="/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
 <link href="/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
 <link href="/Public/style/plk_new.css" rel="stylesheet" type="text/css">
@@ -16,7 +15,6 @@
 <script type="text/javascript" src="/Public/js/function.login.js"></script>
 <script type="text/javascript" src="/Public/js/function.cookie.js"></script>
 <script type="text/javascript">
-
 function checkform(id){
   var content = $("#"+id+" textarea[name='content']").val();
   var subject = $("#"+id+" input[name='subject']").val();
@@ -36,26 +34,26 @@ function setform(id){
 }
 //评论支持点击
 function regoodtop(id){
-	$.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: $("#categoryid").val()+'_'+id+'_good'}, function(data){
+	
+   $.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: 
+   $("#categoryid").val()+'_'+id+'_good'}, function(data){
 		$('#topgood'+id).text(parseInt( $('#topgood'+id).text())+1);
 	});
-
 }
 //评论反对点击
 function rebadtop(id){
 	$.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: $("#categoryid").val()+'_'+id+'_bad'}, function(data){
 		$('#topbad'+id).text(parseInt( $('#topbad'+id).text())+1);
 	});
-
 }
 
 //回复此评论
 function recommenttop(id){
 	off = $("#cmm_"+id).offset();
-	$.get(siteurl+"/do.php", {inajax:1,ado:'pk', ac:'pk_reap', parameter: $("#categoryid").val()+'_'+id}, function(data){
-		comment('发表评论', checkReturn(data), off.top+20, off.left-305,500,0);
+    var url = siteurl+"/do.php?inajax=1&ado=pk&ac=pk_reap&parameter="+$("#categoryid").val()+'_'+id+"&json=1&jsoncallback=?";
+	$.getJSON(url,function(json){
+		comment('发表评论', checkReturn(json.data), off.top+20, off.left-305,500,0);
 	});
-
 }
 
 function clicks(id) {
@@ -76,7 +74,7 @@ function pklogin(){
 		$('input[name="password"]').focus();
 		return;
 	}
-
+   
 	var url = siteurl+"/do.php?inajax=1&do=user&ac=pk_login&parameter="+username+"_"+password+"&json=1&jsoncallback=?";
 	$.getJSON(url,function(json){
 		if ( json.logininfo) {
@@ -193,13 +191,13 @@ $(function (){
      <div class="block">
       <h1><span class="fright"><img src="/Public/images/pk/pk_h1bg_r.jpg"></span><a 
 class="bjzl"></a></h1>
-      <p>　<?php echo (substr($pkinfo["context"],0,1000)); if($url != ''): ?>[<a class="blue" href="<?php echo ($url); ?>" target="_blank">详细背景资料</a>]<?php endif; ?></p>
+      <p>　<?php echo (mb_substr($pkinfo["context"],0,500,'utf8')); if($pkinfo["url"] != ''): ?>[<a class="blue" href="<?php echo ($pkinfo["url"]); ?>" target="_blank">详细背景资料</a>]<?php endif; ?></p>
     </div>
   </div>
   <div class="main_r">
     <div class="block">
       <h1><span class="fright"><img src="/Public/images/pk/pk_h1bg_r.jpg"></span><span 
-class="fright"><a href="/index.php/Home/Pk/pk_list">更多&gt;&gt;</a></span><a 
+class="fright"><a href="<?php echo ($site); ?>/Pkt/plist/">更多&gt;&gt;</a></span><a 
 class="wqht"></a></h1>
       <ul>
         <?php if(is_array($pklist)): foreach($pklist as $k=>$vo): if(($k >= 0 ) AND ($k < 8)): ?><li><a href="<?php echo ($vo["pkurl"]); ?>" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a></li><?php endif; endforeach; endif; ?>
@@ -236,7 +234,7 @@ src="/Public/images/pk/pk_no_botton.jpg" type="image">
       </div>
     </div>
     <div class="clear"></div>
-    <div class="pk_rule"><a href="http://www.chinaiiss.com/pkt/help/1" target="_blank">PK规
+    <div class="pk_rule"><a href="<?php echo ($site); ?>/Pkt/help/1" target="_blank">PK规
 则说明&gt;&gt;</a></div>
   </div>
 	<div class="pk_vs_pic">
@@ -255,7 +253,7 @@ src="/Public/images/pk/pk_no_botton.jpg" type="image">
       <p class="fright">(评论<a class="red" id="comment_total">0</a>条 <a class="red">
 <?php echo ($pkinfo["clicks"]); ?></a>名网友参与)</p>
       <div id="com_login">
-        <form onsubmit="return false;">
+        <?php if($_COOKIE['auth']== ''): ?><form onsubmit="return false;">
           用户名
           <input class="text" name="username" type="text">
           密 码
@@ -268,6 +266,8 @@ type="image">
 微博登录</a><a class="QQ_login" href="###" onclick="out_login( 'qq' )">QQ登录</a></span> 
           <!--end-->
         </form>
+        <?php else: ?>
+          <p class="log_in"><?php echo ($now_time); ?>：<a class="redcolor"><?php echo ($username_login); ?></a><a class="blueonline" href="javascript:loginout('com_login');">退出</a><a class="bbs" target="_blank" href="<?php echo ($bbsUrl); ?>">进入论坛</a><a class="member" href="<?php echo ($userUrl); ?>/home/" target="_blank">进入会员中心</a></p><?php endif; ?>
       </div>
     </div>
 	<div class="main_left">
@@ -302,7 +302,7 @@ type="image">
       <h1><a></a></h1>
       <?php if(is_array($goodcomm)): foreach($goodcomm as $key=>$vo): ?><div class="review" id="cmmtop_<?php echo ($vo["id"]); ?>">
         <dl>
-          <dt><em><?php echo ($vo["postdate"]); ?></em><a href="#"><?php echo ($vo["username"]); ?></a></dt>
+          <dt><em><?php echo (date("Y-m-d H:i:s",$vo["postdate"])); ?></em><a href="#"><?php echo ($vo["username"]); ?></a></dt>
           
            <?php if($vo["quotecomm"] != ''): ?><dd>
 	           <div class="bg">引用：<?php echo ($vo["quotecomm"]["username"]); ?></a><br />
@@ -329,14 +329,14 @@ style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
           </dd>
         </dl>
       </div><?php endforeach; endif; ?>
-      <div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/app/
+      <div class="review_more"><a class="blueonline" href="<?php echo ($site); ?>/Pkt/app/
 <?php echo ($pkinfo["id"]); ?>">查看全部评论&gt;&gt;</a></div>
     </div>
 	
 	<div class="review_bk"><a name="new_comment_view"></a>
 		<div id="gv_comments_pklist_-1_<?php echo ($pkinfo["id"]); ?>"></div>
 		<div class="review_more"><a class="blueonline" 
-href="http://www.iisspk.com/Pkt/app/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
+href="<?php echo ($site); ?>/Pkt/app/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
 	</div>
 	</div>
 	<div class="main_right">
@@ -344,7 +344,7 @@ href="http://www.iisspk.com/Pkt/app/<?php echo ($pkinfo["id"]); ?>">查看全部
       <h1><a></a></h1>
       <?php if(is_array($badcomm)): foreach($badcomm as $key=>$vo): ?><div class="review" id="cmmtop_<?php echo ($vo["id"]); ?>">
         <dl>
-          <dt><em><?php echo ($vo["postdate"]); ?></em><a href="#"><?php echo ($vo["username"]); ?></a></dt>
+          <dt><em><?php echo (date("Y-m-d H:i:s",$vo["postdate"])); ?></em><a href="#"><?php echo ($vo["username"]); ?></a></dt>
           
            <?php if($vo["quotecomm"] != ''): ?><dd>
 	           <div class="bg">引用：<?php echo ($vo["quotecomm"]["username"]); ?></a><br />
@@ -371,14 +371,14 @@ style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
           </dd>
         </dl>
       </div><?php endforeach; endif; ?>
-      <div class="review_more"><a class="blueonline" href="http://www.iisspk.com/Pkt/opp/
+      <div class="review_more"><a class="blueonline" href="<?php echo ($site); ?>/Pkt/opp/
 <?php echo ($pkinfo["id"]); ?>">查看全部评论&gt;&gt;</a></div>
     </div>
     
 	<div class="reviews_bk">
 		<div id="gv_comments_pktlist_-1_<?php echo ($pkinfo["id"]); ?>"></div>
 		<div class="review_more"><a class="blueonline" 
-href="http://www.iisspk.com/Pkt/opp/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
+href="<?php echo ($site); ?>/Pkt/opp/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
 	</div>
   </div>
 	<div class="clear"></div>

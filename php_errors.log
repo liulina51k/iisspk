@@ -231,3 +231,12 @@
 [02-Feb-2015 14:23:46 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\ebc8275e464b056d3f1b0def9ad8c339.php on line 99
 [02-Feb-2015 16:33:23 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php on line 191
 [02-Feb-2015 16:40:48 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php on line 294
+[03-Feb-2015 10:19:56 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php on line 66
+[03-Feb-2015 16:45:14 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php on line 68
+[03-Feb-2015 16:53:59 PRC] PHP Parse error:  syntax error, unexpected '.' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php on line 68
+[03-Feb-2015 16:54:00 PRC] PHP Parse error:  syntax error, unexpected '.' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php on line 68
+[03-Feb-2015 16:57:48 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php on line 105
+[03-Feb-2015 16:57:49 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php on line 105
+[03-Feb-2015 18:02:09 PRC] PHP Parse error:  syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 119
+[03-Feb-2015 18:02:37 PRC] PHP Fatal error:  Call to a member function pkResult() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 26
+[03-Feb-2015 18:25:00 PRC] PHP Parse error:  syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 119

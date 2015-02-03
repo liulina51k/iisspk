@@ -8,7 +8,7 @@ class PkModel extends Model{
 	*/
 	public function get_pk($pid){
 	    $pkarr['info'] = $this->where("id=$pid")->select();
-	    $pkarr['list'] = $this->where("id!=$pid")->order("pubdate")->limit(14)->select();
+	    $pkarr['list'] = $this->where("id!=$pid")->order("pubdate desc")->limit(14)->select();
 	    foreach($pkarr['list'] as $k=>$v){
 	    	$pkarr['list'][$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
         	$pkarr['list'][$k]['point_bad']  = floor(($v['opposevote']/($v['agreevote']+$v['opposevote']))*100);
@@ -17,9 +17,14 @@ class PkModel extends Model{
 	    
 	    import("Components.Comment");
 	    $ocomment = new \Comment();//生成评论类对象
-	    
-		//$pkarr['goodcomm'] = $ocomment->getPKReComment(1,$pkid, 0);//取得最佳观点
-		//$pkarr['badcomm'] = $ocomment->getPKReComment(1,$pkid, 1);//取得反方最佳观点
+
+		$pkarr['goodcomm'] = $ocomment->getPKReComment(1,$pid, 0);//取得最佳观点
+		$pkarr['badcomm'] = $ocomment->getPKReComment(1,$pid, 1);//取得反方最佳观点
+		
+		//取得图示效果值
+		//计算结果
+		$pkarr['result'] = $this->pkResult($pid, $pkarr['info']['agreevote'], $pkarr['info']['opposevote']);
+		$pkarr['result'] = $pkarr['result']<0 ? 0 : $pkarr['result']>1 ? 1 : $pkarr['result'];
 		
 	    return $pkarr;
 	}
@@ -104,5 +109,22 @@ class PkModel extends Model{
 		}
 
 		return $quotehtml;
+	}
+	public function pkResult($id, $agreevote = -1, $opposevote = -1)
+	{
+	   import("Components.Comment");
+	   $ocomment = new \Comment();//生成评论类对象
+
+       if($agreevote<0 || $opposevote<0){
+			$agreevote = $this->where("id=$id")->getField('agreevote');
+			$opposevote = $this->where("id=$id")->getField('opposevote');
+	   }
+
+	   //PK的正文评论数
+	   $agrcount = $ocomment->getCommCount($id, -1, 0);
+	   //取得PK的反方评论数
+	   $oppcount = $ocomment->getCommCount($id, -1, 1);
+
+	   return 0.5 + (($agreevote+$agrcount*35)-($opposevote+$oppcount*35)) / 5600;
 	}
 }

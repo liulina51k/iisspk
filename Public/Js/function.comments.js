@@ -101,6 +101,7 @@ function comments_submit(id, param, type, length){
 		$(oEvent).attr({"disabled":"disabled"});
 	}
     $.ajaxSettings.async = true;
+   
     doAjaxProJSON(id, 'comment', 'comment_submit', param, rand());
         return true;
 	

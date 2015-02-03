@@ -547,7 +547,7 @@ class Comment
 			'infoid'=>$infoid,
 			't'=>$type,
 			'day'=>$day
-		);printr($this->oRequest->get('getPKReComment', $param));
+		);
 		return $this->oRequest->get('getPKReComment', $param);
 	}
 	/**

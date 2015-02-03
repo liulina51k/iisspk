@@ -28,4 +28,10 @@ class PktController extends Controller {
     public function opp(){
     	
     }
+    //pk规则说明
+    public function help(){
+    	$refer = I("server.HTTP_REFERER");//获得请求来源
+    	$this->assign('refer',$refer);
+    	$this->display();
+    }
 }
