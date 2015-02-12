@@ -18,10 +18,10 @@ define('APP_DEBUG',True);
 
 // 定义应用目录
 define('APP_PATH','./Application/');
-define('BASESITE','www.iisspk.com');
+
 //导入公共的函数文件
-require './Application/Components/common.fun.php';
-require './Application/Components/common.inc.php';
+require './Application/Components/Common.inc.php';
+require './Application/Components/Common.fun.php';
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

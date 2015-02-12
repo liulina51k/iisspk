@@ -202,7 +202,7 @@ a.support,.colorred,.colorblue,.review li a.blackonline{ background:url(../image
 .comment_bk .login_com label{font-size: 12px;color: #666;line-height: 24px;height: 24px;}
 .comment_bk .login_com .txt_com{ height: 18px; width: 84px; background-image: url(../../images/pk/dhk_line.jpg); background-repeat: repeat-x; background-position: left top; border: 1px solid #3A9CC9; }
 .comment_bk .login_com .register{color: #193e58;text-decoration: underline;line-height: 24px;height: 24px;margin-right:5px;padding:0px;}
-.comment_bk .login_com .login_btn{ margin-left:5px; margin-right:5px; height: 20px; width: 50px; line-height:20px; border:0px; cursor:pointer; background-image: url(../../images/pk/login_botrep.jpg); background-repeat: no-repeat; }
+.comment_bk .login_com .login_btn{ margin-left:5px; margin-right:5px; height: 20px; width: 50px; line-height:20px; border:0px; cursor:pointer; background-image: url(../images/pk/login_botrep.jpg); background-repeat: no-repeat; }
 .comment_bk .comment_tit{float: left;padding-left:10px;line-height:28px;font-size: 14px;}
 
 /*pk台评论列表页*/

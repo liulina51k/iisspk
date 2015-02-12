@@ -240,3 +240,17 @@
 [03-Feb-2015 18:02:09 PRC] PHP Parse error:  syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 119
 [03-Feb-2015 18:02:37 PRC] PHP Fatal error:  Call to a member function pkResult() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 26
 [03-Feb-2015 18:25:00 PRC] PHP Parse error:  syntax error, unexpected '(', expecting T_STRING or T_VARIABLE or '{' or '$' in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 119
+[04-Feb-2015 10:17:45 PRC] PHP Parse error:  syntax error, unexpected T_STRING in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php on line 90
+[04-Feb-2015 10:17:48 PRC] PHP Parse error:  syntax error, unexpected T_STRING in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php on line 90
+[04-Feb-2015 10:45:13 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 105
+[12-Feb-2015 11:23:35 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 116
+[12-Feb-2015 11:23:43 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 116
+[12-Feb-2015 11:23:53 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 116
+[12-Feb-2015 11:40:34 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 116
+[12-Feb-2015 11:58:10 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 116
+[12-Feb-2015 11:58:19 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 116
+[12-Feb-2015 13:35:15 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 121
+[12-Feb-2015 13:36:51 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 121
+[12-Feb-2015 13:36:52 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 121
+[12-Feb-2015 13:36:52 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 121
+[12-Feb-2015 13:36:56 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 121

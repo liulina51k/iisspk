@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={$Think.config.DB_CHARSET}" />
+<meta name="description" content="{$pknowinfo.context}" />
+<meta name="keywords" content="{$pknowinfo.title}" />
+<title>{$pknowinfo.title}-PK台-战略网</title>
+<link href="{$site}/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link href="{$site}/Public/style/pk.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$site}/Public/js/jquery.js"></script>
+<script type="text/javascript" src="{$site}/Public/js/function.comm.js"></script>
+</head>
+<body>
+<input id="infoid" type="hidden" value="{$pknowinfo.id}" />
+<input id="categoryid" type="hidden" value="-1" />
+<include file="./Application/Home/View/site.head.html" />
+<div id="main">
+<div id="pk_titles">
+{$pknowinfo.title}<br /><a class="grayfont">所有评论仅代表网友意见，战略网保持中立</a> <a href="{$site}/pk/index/{$pknowinfo.id}" class="blue">查看PK</a>
+</div><div class="clear"></div>
+</div>
+<div id="pk_main"><div id="borter">
+<div id="main_rev">
+<div id="rev_ybg"><div class="pktoppage" id='mutipagetop'></div><img class="fist" src="{$site}/Public/images/pk/rev_y.jpg" /><a href="{$site}/pk/opp/{$pknowinfo.id}/1"><img src="{$site}/Public/images/pk/rev_n.jpg" border="0" /></a><a href="{$site}/pk/plist/1"><img src="{$site}/Public/images/pk/rev_pk.jpg" border="0" /></a><br>
+</div>
+<div id="gv_comments_pklist_-1_{$pknowinfo.id}"></div>
+<div id="mutipage"></div>
+</div>
+<div class="clear"></div>
+</div></div>
+<include file="./Application/Home/View/site.bottom.html" />
+</body>
+</html>

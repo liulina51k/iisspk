@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset={$Think.config.DB_CHARSET}" />
-<meta name="description" content="正方评论,{$pknowinfo.title},战略网" />
-<meta name="keywords" content="正方评论,战略网,战略网" />
-<title>正方评论-战略网-辩论pk台-战略网</title>
+<meta name="description" content="反方评论,{$pknowinfo.title},战略网" />
+<meta name="keywords" content="反方评论,战略网,战略网" />
+<title>反方评论-战略网-辩论pk台-战略网</title>
 <link href="{$site}/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
 <link href="{$site}/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
 <link href="{$site}/Public/style/plk_new.css" rel="stylesheet" type="text/css">
@@ -88,12 +88,12 @@ $(function (){
     <div class="tabs">
         <span class="topsBtnDiv">
             <ul>
-            <li><a href="{$site}/pkt/app/{$pknowinfo.id}/1" class="current"><span>正方评论</span></a></li>
-            <li><a href="{$site}/pkt/opp/{$pknowinfo.id}/1"><span>反方评论</span></a></li>
+            <li><a href="{$site}/pkt/app/{$pknowinfo.id}/1"><span>正方评论</span></a></li>
+            <li><a href="{$site}/pkt/opp/{$pknowinfo.id}/1" class="current"><span>反方评论</span></a></li>
             </ul>
         </span>
         <div class="tabsdiv">
-			<foreach name="goodcomm" item="vo">
+			<foreach name="badcomm" item="vo">
 			<div class="review">
 				<dl class="margin15">
 					<dt class="no_bg"><em>{$vo.floor}楼</em>{$vo.postip}<a>{$vo.username}</a>{$vo.postdate|date="Y-m-d H:i:s",###}</dt>

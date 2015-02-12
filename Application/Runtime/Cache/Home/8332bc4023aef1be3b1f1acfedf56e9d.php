@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo (C("DB_CHARSET")); ?>" />
-<meta name="description" content="正方评论,<?php echo ($pknowinfo["title"]); ?>,战略网" />
-<meta name="keywords" content="正方评论,战略网,战略网" />
-<title>正方评论-战略网-辩论pk台-战略网</title>
+<meta name="description" content="反方评论,<?php echo ($pknowinfo["title"]); ?>,战略网" />
+<meta name="keywords" content="反方评论,战略网,战略网" />
+<title>反方评论-战略网-辩论pk台-战略网</title>
 <link href="<?php echo ($site); ?>/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
 <link href="<?php echo ($site); ?>/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
 <link href="<?php echo ($site); ?>/Public/style/plk_new.css" rel="stylesheet" type="text/css">
@@ -91,12 +91,12 @@ $(function (){
     <div class="tabs">
         <span class="topsBtnDiv">
             <ul>
-            <li><a href="<?php echo ($site); ?>/pkt/app/<?php echo ($pknowinfo["id"]); ?>/1" class="current"><span>正方评论</span></a></li>
-            <li><a href="<?php echo ($site); ?>/pkt/opp/<?php echo ($pknowinfo["id"]); ?>/1"><span>反方评论</span></a></li>
+            <li><a href="<?php echo ($site); ?>/pkt/app/<?php echo ($pknowinfo["id"]); ?>/1"><span>正方评论</span></a></li>
+            <li><a href="<?php echo ($site); ?>/pkt/opp/<?php echo ($pknowinfo["id"]); ?>/1" class="current"><span>反方评论</span></a></li>
             </ul>
         </span>
         <div class="tabsdiv">
-			<?php if(is_array($goodcomm)): foreach($goodcomm as $key=>$vo): ?><div class="review">
+			<?php if(is_array($badcomm)): foreach($badcomm as $key=>$vo): ?><div class="review">
 				<dl class="margin15">
 					<dt class="no_bg"><em><?php echo ($vo["floor"]); ?>楼</em><?php echo ($vo["postip"]); ?><a><?php echo ($vo["username"]); ?></a><?php echo (date("Y-m-d H:i:s",$vo["postdate"])); ?></dt>
 					<dd class="font14">

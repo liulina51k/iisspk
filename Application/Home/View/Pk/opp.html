@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={$sitechar}" />
+<meta name="description" content="反方评论,{$pknowinfo.title},战略网" />
+<meta name="keywords" content="反方评论,{$pknowinfo.title},战略网" />
+<title>反方评论-{$pknowinfo.title}-辩论pk台-战略网</title>
+<link href="{$site}/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link href="{$site}/Public/style/pk.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{$site}/Public/js/jquery.js"></script>
+<script type="text/javascript" src="{$site}/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="{$site}/Public/js/function.login.js"></script>
+<script type="text/javascript" src="{$site}/Public/js/function.pk.js?04021"></script>
+<script type="text/javascript" src="{$site}/Public/js/function.cookie.js"></script>
+</head>
+<body>
+<input id="infoid" type="hidden" value="{$pknowinfo.id}" />
+<input id="categoryid" type="hidden" value="-1" />
+<include file="./Application/Home/View/site.head.html" />
+<div id="main">
+	<div id="pk_titles">
+<a href="{$site}/pk/index/{$pknowinfo.id}" title="{$pknowinfo.title}" class="tm">{$pknowinfo.title}</a><br /><a class="grayfont">所有评论仅代表网友意见，战略网保持中立</a> <a href="{$site}/pk/index/{$pknowinfo.id}" class="blue">查看PK</a>
+</div><div class="clear"></div>
+</div>
+<div id="main">
+	<div class="review_bk">
+		<div id="main_rev">
+			<div id="rev_ybg"><span id='mutipagetop'></span><img class="fist" src="{$site}/Public/images/pk/rev_y.jpg" /><a href="{$site}/pk/opp/{$pknowinfo.id}/1"><img src="{$site}/Public/images/pk/rev_n.jpg" border="0" /></a><a href="{$site}/pk/plist/1"><img src="{$site}/Public/images/pk/rev_pk.jpg" border="0" /></a><br>
+			</div>
+			<div id="gv_comments_pklist_-1_{$pknowinfo.id}"></div>
+			<div class="bor_top">
+			<div id="mutipage">{$show}</div>
+			</div>
+
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="Blank"></div>
+</div>
+<div class="Blank"></div>
+<include file="./Application/Home/View/site.bottom.html" />
+</body>
+</html>

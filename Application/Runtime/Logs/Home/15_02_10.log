@@ -1,0 +1,1917 @@
+[ 2015-02-10T13:37:41+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0781s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-02-10T13:37:41+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:37:41+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:37:41+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:37:42+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-02-10T13:37:42+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T13:44:24+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T13:44:24+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:24+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:25+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:36+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T13:44:36+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:36+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:36+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:37+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:39+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T13:44:40+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:40+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:43+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0156s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T13:44:44+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:44+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:44+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:44:44+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:46:47+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0156s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T13:46:47+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:46:47+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:46:47+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:46:48+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:46:51+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T13:46:51+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:46:51+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:46:54+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T13:46:54+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:46:54+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:47:09+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T13:47:10+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:47:10+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:47:10+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:47:10+08:00 ] 127.0.0.1 /pk/index/js/cnzz_core.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:47:47+08:00 ] 127.0.0.1 /pk/index/js/stat.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'js' in 'where clause'
+
+[ 2015-02-10T13:50:39+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T14:17:46+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T14:17:50+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0156s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 6 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: imgurl D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 67 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 99 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T14:21:14+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+
+[ 2015-02-10T14:23:30+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+
+[ 2015-02-10T14:28:57+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+
+[ 2015-02-10T14:29:12+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 6 行.
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T14:41:36+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0156s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 6 行.
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-02-10T15:18:19+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 6 行.
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:18:19+08:00 ] 127.0.0.1 /pk/201208/06/113910_211.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:18:20+08:00 ] 127.0.0.1 /pk/201208/06/113910_211.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:22:33+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: sitechar D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 4 行.
+NOTIC: [8] Undefined variable: context D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 5 行.
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 6 行.
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:22:33+08:00 ] 127.0.0.1 /pk/201208/06/113910_211.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:22:34+08:00 ] 127.0.0.1 /pk/201208/06/113910_211.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:28:46+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.015625s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.015625s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:28:50+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:28:51+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:28:51+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-02-10T15:28:51+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:28:51+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0156s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:28:52+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.015625s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:28:53+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:28:53+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:28:54+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 183 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-02-10T15:34:47+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 15 行.
+
+[ 2015-02-10T15:34:49+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 14 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 15 行.
+
+[ 2015-02-10T15:35:19+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+
+[ 2015-02-10T15:35:35+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+
+[ 2015-02-10T15:35:37+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0156s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+
+[ 2015-02-10T15:36:29+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0156s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+
+[ 2015-02-10T15:36:30+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0156s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+
+[ 2015-02-10T15:36:41+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+
+[ 2015-02-10T15:36:43+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+
+[ 2015-02-10T15:36:43+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+
+[ 2015-02-10T15:36:44+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 15 行.
+NOTIC: [8] Undefined variable: attpath D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+NOTIC: [8] Undefined variable: site D:\chinaiiss\iisspk\Application\Home\Controller\PkController.class.php 第 16 行.
+
+[ 2015-02-10T15:36:57+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+
+[ 2015-02-10T15:37:34+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T15:42:40+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T16:14:44+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T16:14:59+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 65 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 95 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T16:16:46+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0156s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 65 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 95 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 97 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 123 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T16:18:32+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 66 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 96 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 98 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T16:18:59+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 66 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 96 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 98 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T16:19:23+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 66 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 96 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 98 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T16:20:52+08:00 ] 127.0.0.1 /pk/index/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=1 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=1 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 66 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 96 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 98 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\885c3659dbf39e0b3fe093da5cc201da.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T17:56:10+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T17:56:47+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-02-10T17:57:25+08:00 ] 127.0.0.1 /pk/index/338
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_pk` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id=338 )  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_pk` WHERE ( id!=338 ) ORDER BY pubdate desc LIMIT 14   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] Undefined index: agreevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] Undefined index: opposevote D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php 第 29 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: seosubject D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 7 行.
+NOTIC: [8] Undefined index: auth D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 252 行.
+NOTIC: [8] Undefined index: quotecomm D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 303 行.
+NOTIC: [8] Undefined variable: id D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\dc569ee42fd86bb3539053e7841ea2e2.php 第 451 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

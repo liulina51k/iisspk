@@ -115,6 +115,7 @@ function callUserFun(){
 			var funstr = funarr[1]+"_"+funarr[2]+"('"+id+"','"+param+"');";
 			//var scripturl = siteurl+"/include/js/function."+funarr[1]+".js";
 			var scripturl = staticurl + "/js/function."+funarr[1]+".js";
+			
 			$.ajax({type:"GET", cache:true, url:scripturl, dataType:"script", success: function(script){
 					var funtrue = funstr;
 					//alert(funtrue);

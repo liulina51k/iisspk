@@ -1,19 +1,19 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html Public "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=<?php echo ($sitechar); ?>" />
-<meta name="description" content="<?php echo ($context); ?>" />
-<meta name="keywords" content="<?php echo ($title); ?>" />
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo (C("DB_CHARSET")); ?>" />
+<meta name="description" content="<?php echo ($pkinfo["context"]); ?>" />
+<meta name="keywords" content="<?php echo ($pkinfo["title"]); ?>" />
 <title><?php if($pkinfo["seosubject"] != ''): echo ($pkinfo["seosubject"]); else: echo ($pkinfo["title"]); ?>_辩论pk台<?php endif; ?>_战略网</title>
-<link href="/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
-<link href="/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
-<link href="/Public/style/plk_new.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/Public/js/jquery.js"></script>
-<script type="text/javascript" src="/Public/js/function.comm.js"></script>
-<script type="text/javascript" src="/Public/js/function.pk.js"></script>
-<script type="text/javascript" src="/Public/js/function.comments.js"></script>
-<script type="text/javascript" src="/Public/js/function.login.js"></script>
-<script type="text/javascript" src="/Public/js/function.cookie.js"></script>
+<link href="<?php echo ($site); ?>/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link href="<?php echo ($site); ?>/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
+<link href="<?php echo ($site); ?>/Public/style/plk_new.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.pk.js"></script>
+<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comments.js"></script>
+<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.login.js"></script>
+<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.cookie.js"></script>
 <script type="text/javascript">
 function checkform(id){
   var content = $("#"+id+" textarea[name='content']").val();
@@ -50,17 +50,17 @@ function rebadtop(id){
 //回复此评论
 function recommenttop(id){
 	off = $("#cmm_"+id).offset();
-    var url = siteurl+"/do.php?inajax=1&ado=pk&ac=pk_reap&parameter="+$("#categoryid").val()+'_'+id+"&json=1&jsoncallback=?";
-	$.getJSON(url,function(json){
-		comment('发表评论', checkReturn(json.data), off.top+20, off.left-305,500,0);
+	$.get(siteurl+"/do.php", {inajax:1,ado:'pk', ac:'pk_reap', parameter: $("#categoryid").val()+'_'+id}, function(data){
+		comment('发表评论', checkReturn(data), off.top+20, off.left-305,500,0);
 	});
+
 }
 
 function clicks(id) {
-	ids=$("li [id="+id+"]").parents('.comment_box').attr('id');
-	$("."+ids).attr('value',$("."+ids).attr('value')+$("li [id="+id+"]").attr("id"));
+    ids=$("li [id='"+id+"']").parents('.comment_box').attr('id');
+	$("."+ids).attr('value',$("."+ids).attr('value')+$("li [id='"+id+"']").attr("id"));
 }
-//PK会员登录
+//pk会员登录
 function pklogin(){
 	//清除帐号密码的空格
 	var username = encodeURI( $('input[name="username"]').val().replace(/\s/g,"") );
@@ -159,7 +159,7 @@ $(function (){
 		$(this).attr('value','');
 	});
 
-	//获取PKID
+	//获取pkID
 	var pkid = $('#infoid').attr('value');
 	//获取评论总数
 	getCommentTotal(pkid);
@@ -178,26 +178,22 @@ $(function (){
 <body>
 <input id="infoid" type="hidden" value="<?php echo ($pkinfo["id"]); ?>" />
 <input id="categoryid" type="hidden" value="-1" />
-<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="/Public/Images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="/Public/Images/top_pk_logo.jpg"> </a>
+<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo ($site); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo ($site); ?>/Public/images/top_pk_logo.jpg"> </a>
   <p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
-  <div class="top_banner"><img src="/Public/Images/111421_645.jpg" alt="中俄是否已建立新的反美轴心？"></div>
-</div>
-<div style="margin:8px 0px 8px 0px;">
-<script type="text/javascript">/*PK台1通栏960*60，创建于2011-11-29*/ var cpro_id = 'u694541';</script>
-<script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script>
+  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo ($attpath); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
 </div>
 <div id="main">
   <div class="main_l">
      <div class="block">
-      <h1><span class="fright"><img src="/Public/images/pk/pk_h1bg_r.jpg"></span><a 
+      <h1><span class="fright"><img src="<?php echo ($site); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><a 
 class="bjzl"></a></h1>
       <p>　<?php echo (mb_substr($pkinfo["context"],0,500,'utf8')); if($pkinfo["url"] != ''): ?>[<a class="blue" href="<?php echo ($pkinfo["url"]); ?>" target="_blank">详细背景资料</a>]<?php endif; ?></p>
     </div>
   </div>
   <div class="main_r">
     <div class="block">
-      <h1><span class="fright"><img src="/Public/images/pk/pk_h1bg_r.jpg"></span><span 
-class="fright"><a href="<?php echo ($site); ?>/Pkt/plist/">更多&gt;&gt;</a></span><a 
+      <h1><span class="fright"><img src="<?php echo ($site); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><span 
+class="fright"><a href="<?php echo ($iisssite); ?>/Pkt/plist/">更多&gt;&gt;</a></span><a 
 class="wqht"></a></h1>
       <ul>
         <?php if(is_array($pklist)): foreach($pklist as $k=>$vo): if(($k >= 0 ) AND ($k < 8)): ?><li><a href="<?php echo ($vo["pkurl"]); ?>" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a></li><?php endif; endforeach; endif; ?>
@@ -216,7 +212,7 @@ class="wqht"></a></h1>
         <h1>正方:<?php echo ($pkinfo["agreeguide"]); ?></h1>
         <form>
           <input onclick="pkvote(<?php echo ($pkinfo["id"]); ?>, 'agree');return false;" 
-src="/Public/images/pk/pk_yes_botton.jpg" type="image">
+src="<?php echo ($site); ?>/Public/images/pk/pk_yes_botton.jpg" type="image">
           <span>[<a class="red" id="agree<?php echo ($pkinfo["id"]); ?>"><?php echo ($pkinfo["agreevote"]); ?></a> 票]</span>
         </form>
         <p><?php echo ($pkinfo["agreeintro"]); ?></p>
@@ -227,22 +223,22 @@ src="/Public/images/pk/pk_yes_botton.jpg" type="image">
         <h1>反方:<?php echo ($pkinfo["opposeguide"]); ?></h1>
         <form>
           <input onclick="pkvote(<?php echo ($pkinfo["id"]); ?>, 'oppose');" 
-src="/Public/images/pk/pk_no_botton.jpg" type="image">
+src="<?php echo ($site); ?>/Public/images/pk/pk_no_botton.jpg" type="image">
           <span>[<a class="blue" id="oppose<?php echo ($pkinfo["id"]); ?>"><?php echo ($pkinfo["opposevote"]); ?></a> 票]</span>
         </form>
         <p><?php echo ($pkinfo["opposeintro"]); ?></p>
       </div>
     </div>
     <div class="clear"></div>
-    <div class="pk_rule"><a href="<?php echo ($site); ?>/Pkt/help/1" target="_blank">PK规
+    <div class="pk_rule"><a href="<?php echo ($iisssite); ?>/Pkt/help/1" target="_blank">pk规
 则说明&gt;&gt;</a></div>
   </div>
 	<div class="pk_vs_pic">
-		<img src="/Public/images/pk/pk_red.gif" width="65" height="80" class="fleft" />
+		<img src="<?php echo ($site); ?>/Public/images/pk/pk_red.gif" width="65" height="80" class="fleft" />
 		<div class="vleft" style="padding-left:<?php echo ($result*626); ?>px;">
-		<img src="/Public/images/pk/pk_tank.jpg" width="160" height="50">
+		<img src="<?php echo ($site); ?>/Public/images/pk/pk_tank.jpg" width="160" height="50">
 		</div>
-		<img src="/Public/images/pk/pk_blue.gif" width="65" height="80" class="fright" />
+		<img src="<?php echo ($site); ?>/Public/images/pk/pk_blue.gif" width="65" height="80" class="fright" />
 	</div>
   <div class="clear"></div>
 </div>
@@ -258,16 +254,16 @@ src="/Public/images/pk/pk_no_botton.jpg" type="image">
           <input class="text" name="username" type="text">
           密 码
           <input value="" class="text" name="password" type="password">
-          <input name="loginuser" onclick="pklogin();" src="/Public/images/pk/login_bot.jpg" 
+          <input name="loginuser" onclick="pklogin();" src="<?php echo ($site); ?>/Public/images/pk/login_bot.jpg" 
 type="image">
-          <input name="reguser" src="/Public/images/pk/register_bot.jpg" type="image">
+          <input name="reguser" src="<?php echo ($site); ?>/Public/images/pk/register_bot.jpg" type="image">
           <!--2012-1-11 pk增加外部接入样式--> 
           <span>其他方式登录：<a class="SINA_login" href="###" onclick="out_login( 'sina')">
 微博登录</a><a class="QQ_login" href="###" onclick="out_login( 'qq' )">QQ登录</a></span> 
           <!--end-->
         </form>
         <?php else: ?>
-          <p class="log_in"><?php echo ($now_time); ?>：<a class="redcolor"><?php echo ($username_login); ?></a><a class="blueonline" href="javascript:loginout('com_login');">退出</a><a class="bbs" target="_blank" href="<?php echo ($bbsUrl); ?>">进入论坛</a><a class="member" href="<?php echo ($userUrl); ?>/home/" target="_blank">进入会员中心</a></p><?php endif; ?>
+          <p class="log_in"><?php echo ($data["nowtime"]); ?>好：<a class="redcolor"><?php echo ($data["username"]); ?></a><a class="blueonline" href="javascript:loginout('com_login');">退出</a><a class="bbs" target="_blank" href="<?php echo ($data["bbsurl"]); ?>">进入论坛</a><a class="member" href="<?php echo ($data["userurl"]); ?>/home/" target="_blank">进入会员中心</a></p><?php endif; ?>
       </div>
     </div>
 	<div class="main_left">
@@ -275,7 +271,7 @@ type="image">
         <h1><a></a></h1>
         <form onsubmit="return false;">
           <textarea name="content" onfocus="delinput($(this), '内容:');">内容:</textarea>
-          <input src="/Public/images/pk/pk_texttj.jpg" onclick="checkform
+          <input src="<?php echo ($site); ?>/Public/images/pk/pk_texttj.jpg" onclick="checkform
 ('comment_submityes');comments_submit('comment_submityes', '-1_<?php echo ($pkinfo["id"]); ?>');" 
 type="image">
         </form>
@@ -286,7 +282,7 @@ type="image">
         <h1><a class="zcff"></a></h1>
         <form onsubmit="return false;">
           <textarea name="content" onfocus="delinput($(this), '内容:');">内容:</textarea>
-          <input src="/Public/images/pk/pk_texttj.jpg" onclick="checkform
+          <input src="<?php echo ($site); ?>/Public/images/pk/pk_texttj.jpg" onclick="checkform
 ('comment_submitno');comments_submit('comment_submitno', '-1_<?php echo ($pkinfo["id"]); ?>');" type="image">
         </form>
       </div>
@@ -294,7 +290,7 @@ type="image">
 <div class="clear"></div>
 </div></div>
 <div style="margin:8px 0px 8px 0px;">
-<script type="text/javascript">/*PK台3通栏960*60，创建于2011-11-29*/ var cpro_id = 'u694612';</script><script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script>
+<script type="text/javascript">/*pk台3通栏960*60，创建于2011-11-29*/ var cpro_id = 'u694612';</script><script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script>
 </div>
 <div id="main">
 	<div class="main_left">
@@ -329,14 +325,14 @@ style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
           </dd>
         </dl>
       </div><?php endforeach; endif; ?>
-      <div class="review_more"><a class="blueonline" href="<?php echo ($site); ?>/Pkt/app/
+      <div class="review_more"><a class="blueonline" href="<?php echo ($iisssite); ?>/Pkt/app/
 <?php echo ($pkinfo["id"]); ?>">查看全部评论&gt;&gt;</a></div>
     </div>
 	
 	<div class="review_bk"><a name="new_comment_view"></a>
 		<div id="gv_comments_pklist_-1_<?php echo ($pkinfo["id"]); ?>"></div>
 		<div class="review_more"><a class="blueonline" 
-href="<?php echo ($site); ?>/Pkt/app/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
+href="<?php echo ($iisssite); ?>/Pkt/app/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
 	</div>
 	</div>
 	<div class="main_right">
@@ -371,24 +367,24 @@ style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
           </dd>
         </dl>
       </div><?php endforeach; endif; ?>
-      <div class="review_more"><a class="blueonline" href="<?php echo ($site); ?>/Pkt/opp/
+      <div class="review_more"><a class="blueonline" href="<?php echo ($iisssite); ?>/Pkt/opp/
 <?php echo ($pkinfo["id"]); ?>">查看全部评论&gt;&gt;</a></div>
     </div>
     
 	<div class="reviews_bk">
 		<div id="gv_comments_pktlist_-1_<?php echo ($pkinfo["id"]); ?>"></div>
 		<div class="review_more"><a class="blueonline" 
-href="<?php echo ($site); ?>/Pkt/opp/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
+href="<?php echo ($iisssite); ?>/Pkt/opp/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
 	</div>
   </div>
 	<div class="clear"></div>
 </div>
 <div style="margin:8px 0px 8px 0px;">
-<script type="text/javascript">/*PK台1通栏960*60，创建于2011-11-29*/ var cpro_id = 'u694541';</script><script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script>
+<script type="text/javascript">/*pk台1通栏960*60，创建于2011-11-29*/ var cpro_id = 'u694541';</script><script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script>
 </div>
 <div id="main">
   <div class="block">
-    <h1><span class="fright"><img src="/Public/images/pk/pk_h1bg_r.jpg"></span><span class="fright"><a href="<?php echo ($site); ?>/pkt/plist/1" target="_blank">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
+    <h1><span class="fright"><img src="<?php echo ($site); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><span class="fright"><a href="<?php echo ($iisssite); ?>/Pkt/plist/1" target="_blank">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
   </div>
   <div class="main_left">
   <?php if(is_array($pklist)): foreach($pklist as $k=>$vo): if(($k < 6) AND ($k % 2 == 0)): ?><div class="pk_new">
@@ -458,8 +454,10 @@ id="oppose<?php echo ($vo["id"]); ?>"><?php echo ($vo["opposevote"]); ?></b></di
     <div class="footer_x"></div>
     <span> <a href="http://www.chinaiiss.com/foot/about">关于我们</a>| <a href="http://www.chinaiiss.com/foot/contact">联系我们</a>| <a href="http://www.chinaiiss.com/foot/hire/">加入我们</a>| <a href="http://www.chinaiiss.com/foot/guestbook">留言中心</a>| <a href="http://www.chinaiiss.com/foot/privacy">隐私保护</a>| <a href="http://www.chinaiiss.com/foot/ads">广告服务</a>| <a href="http://www.chinaiiss.com/foot/ad">友情链接</a>| <a href="http://www.chinaiiss.com/foot/sitemap">网站地图</a> </span> <br>
     在线投稿邮箱：tougao@chinaiiss.com    值班电话：工作日 010-62360932(9:00-18:00)<br>
-    Copyright ©2002-<script>document.write(new Date().getFullYear());</script>2013 www.chinaiiss.com All Rights Reserved. 京ICP证110164号 京ICP备11008173号<script src="js/stat.php" language="JavaScript"></script><script src="js/cnzz_core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=215831" target="_blank" title="站长统计"><img src="/Public/Images/pic.gif" border="0" hspace="0" vspace="0"></a></div>
+    Copyright ©2002-<script>document.write(new Date().getFullYear());</script>2013 www.chinaiiss.com All Rights Reserved. 京ICP证110164号 京ICP备11008173号<script src="http://s85.cnzz.com/stat.php?id=215831&web_id=215831&show=pic" language="JavaScript"></script></div>
 </div>
-<script type="text/javascript" >BAIDU_CLB_SLOT_ID = "253313";</script>
-<script type="text/javascript" src="http://cbjs.baidu.com/js/o.js"></script></body>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fcd0a687f19db4e63c481a5b03c59f4e3' type='text/javascript'%3E%3C/script%3E"));
+</script>
 </html>
