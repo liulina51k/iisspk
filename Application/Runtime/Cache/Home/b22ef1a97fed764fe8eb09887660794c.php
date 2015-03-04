@@ -5,20 +5,20 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <title>辩论pk台_战略网</title>
-<link href="<?php echo ($site); ?>/Public/style/basic.css" rel="stylesheet" type="text/css">
-<link href="<?php echo ($site); ?>/Public/style/pk.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/jquery.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comm.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.cookie.js"></script>
+<link href="<?php echo (SITE); ?>/Public/style/basic.css" rel="stylesheet" type="text/css">
+<link href="<?php echo (SITE); ?>/Public/style/pk.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.cookie.js"></script>
 </head>
 <body>
-<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo ($site); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo ($site); ?>/Public/images/top_pk_logo.jpg"> </a>
+<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo (SITE); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo (SITE); ?>/Public/images/top_pk_logo.jpg"> </a>
   <p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
-  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo ($attpath); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
+  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo (ATTPATH); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
 </div>
 <div id="main">
   <div class="block">
-    <h1><span class="fright"><img src="<?php echo ($site); ?>/Public/images/pk_h1bg_r.jpg"></span><a class="gdpk"></a></h1>
+    <h1><span class="fright"><img src="<?php echo (SITE); ?>/Public/images/pk_h1bg_r.jpg"></span><a class="gdpk"></a></h1>
   </div>
   <div class="main_left">
  <?php if(is_array($list)): foreach($list as $k=>$vo): if($k % 2 == 0): ?><div class="pk_new">
@@ -88,8 +88,6 @@ $('.return_top').live('click',function(){
 	$("html, body").animate({ scrollTop: 0 }, 'fast');
 });	
 
-</script><script src="js/h.js" type="text/javascript"></script><script type="text/javascript">BAIDU_CLB_SLOT_ID = "253313";</script> 
-<script type="text/javascript" src="js/o.js"></script><script charset="utf-8" src="js/ecom"></script> 
-<script type="text/javascript">var vjAcc = '860010-00401';</script><script type="text/javascript" src="js/a.js"></script><img src="<?php echo ($site); ?>/Public/images/a.gif" style="visibility:hidden;position:absolute;left:0px;top:0px;z-index:-1" height="1" width="1">
+</script>
 </body>
 </html>

@@ -18,10 +18,96 @@ function comments_usercount2(id, param){
      if(param == '') return false;
      doAjaxGetJSON(id,'comment','comment_usercount',param);
 }
+//提交评论
+function comments_submit(id, param, type, length){
+	
+	var ev = getEvent();
+	slength = (typeof(length)=="undefined") ? 200 : length;
+	
+	if($("#"+id+" textarea[name='content']").val()==''){
+		alert('请添写留言内容');return false;
+	}
+	var categoryid=param.split('_');
+	if(categoryid[0] == '-1'){
+		
+	}else{
+		if($("#"+id+" input[name='username']").length){
+			$("#"+id+" input[name='username']").focus();
+			return false;
+		}
+	}
+	
+	//pk
+	
+	var ispk='';
+	/*
+	var categoryid=param.split('_');
+	if(categoryid[0] == '-1'){
+		//判断是否已登录
+		if(id=='comment_submityes' || id=='comment_submitno'){
+			var username=$('.log_in .redcolor').html();
+			if(username == null){
+				alert('请登陆后评论!');
+				$("#com_login input[name='username']").focus();
+				return false;
+			}
+		}
+		ispk=1;
+	}
+	
+	//2012-10-23添加 start
+	if(!ispk){
+		if($("#boxbody input[name='username']").length){
+			$("#boxbody input[name='username']").focus();
+			return false;
+		}
+	}
+	*/
+	//2012-10-23添加 ent
+	var content = $("#"+id+" textarea[name='content']").val();
+	content = content.replace(/<[^>].*?>/g,"");
+	// var content = preg_replace(['&', '<', '>', '"', '_'], ['&amp;', '&lt;', '&gt;', '&quot;', ' '], content);
+	param += '_'+content;
+	
+	if($("#"+id+" textarea[name='content']").val().length>slength){
+		alert('内容请少于'+slength+'字。');return false;
+	}
+	
+	var anonymous = 0;
+	if($("#"+id+" input[name='anonymous']").attr("checked")){
+         anonymous = $("#"+id+" input[name='anonymous']").val();
+    }
+	param += '_'+anonymous;
+    //类型，支持者还是反对都
+	var commenttype = $("#"+id+" input[name='commenttype']").val() || 0;
+	param += '_'+commenttype;
+	//引用ID
+	var quoteid = $("#"+id+" input[name='quoteid']").val() || 0;
+	param += '_'+quoteid;
 
+	//获得标题
+	var subject = $("#"+id+" input[name='subject']").val() || '';
+	param += '_'+subject;
+    //2012-1-29
+    type=(typeof(type)==undefined)?'':type;
+    param += '_'+type;
+	//判断pk
+	if(ispk){
+		param += '_'+id;
+	}
+
+	param = encodeURI(param);
+	if(ev){
+		var oEvent = ev.srcElement || ev.target;
+		$(oEvent).attr({"disabled":"disabled"});
+	}
+    $.ajaxSettings.async = true;
+    doAjaxProJSON(id, 'comment', 'comment_submit', param, rand());
+        return true;
+	
+}
 
 //提取评论列表
-
 function comments_list(id, param){
 	doAjaxProJSON(id, 'comment', 'comment_list', param);
 }
@@ -301,7 +387,10 @@ function comments_submit_plk(id, type, length) {
 	var categoryid = $("#" + id + " input[name='categoryid']").val();
 	var infoid = $("#" + id + " input[name='specialid']").val();
 	var param = categoryid+'_'+infoid;
-	param += '_'+ preg_replace([ '&', '<', '>', '"', '_' ], [ '&amp;', '&lt;','&gt;', '&quot;', ' ' ], $("#" + id + " textarea[name='content']").val());
+	var content = $("#"+id+" textarea[name='content']").val();
+	content = content.replace(/<[^>].*?>/g,"");
+	param += '_'+content;
+	
 	if ($("#" + id + " textarea[name='content']").val().length > slength) {
 		showmessage(2,'内容请少于' + slength + '字。');return false;
 	}
@@ -366,7 +455,10 @@ function pkcomments_submit(id, type, length) {
 	var categoryid = $("#" + id + " input[name='categoryid']").val();
 	var infoid = $("#" + id + " input[name='specialid']").val();
 	var param = categoryid+'_'+infoid;
-	param += '_'+ preg_replace([ '&', '<', '>', '"', '_' ], [ '&amp;', '&lt;','&gt;', '&quot;', ' ' ], $("#" + id + " textarea[name='content']").val());
+	var content = $("#"+id+" textarea[name='content']").val();
+	content = content.replace(/<[^>].*?>/g,"");
+	param += '_'+content;
+	
 	if ($("#" + id + " textarea[name='content']").val().length > slength) {
 		showmessage(2,'内容请少于' + slength + '字。');return false;
 	}

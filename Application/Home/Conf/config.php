@@ -17,7 +17,8 @@ return array(
        'pkt/app/:id/:p' => 'Pkt/app',
        'pkt/opp/:id/:p' => 'Pkt/opp',
        'pk/index/:id' => 'Pk/index',
-       'pk/app/:id/:p' => 'Pk/app',
-       'pk/opp/:id/:p' => 'Pk/opp',
+       'pk/plist/:p' => 'Pk/plist',
+       'pk/app/:id' => 'Pk/app',
+       'pk/opp/:id' => 'Pk/opp',
     ),
 );

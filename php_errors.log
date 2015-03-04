@@ -254,3 +254,8 @@
 [12-Feb-2015 13:36:52 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 121
 [12-Feb-2015 13:36:52 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 121
 [12-Feb-2015 13:36:56 PRC] PHP Fatal error:  Call to a member function getComment() on a non-object in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 121
+[02-Mar-2015 13:48:09 PRC] PHP Fatal error:  Access level to Home\Model\PkModel::__construct() must be public (as in class Think\Model) in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 5
+[02-Mar-2015 13:48:15 PRC] PHP Fatal error:  Access level to Home\Model\PkModel::__construct() must be public (as in class Think\Model) in D:\chinaiiss\iisspk\Application\Home\Model\PkModel.class.php on line 5
+[03-Mar-2015 16:03:13 Asia/Shanghai] PHP Fatal error:  Call to undefined function printr() in D:\chinaiiss\iisspk\Application\Components\Common.inc.php on line 13
+[03-Mar-2015 16:03:15 Asia/Shanghai] PHP Fatal error:  Call to undefined function printr() in D:\chinaiiss\iisspk\Application\Components\Common.inc.php on line 13
+[03-Mar-2015 16:03:51 Asia/Shanghai] PHP Fatal error:  Call to undefined function printr() in D:\chinaiiss\iisspk\Application\Components\Common.inc.php on line 11

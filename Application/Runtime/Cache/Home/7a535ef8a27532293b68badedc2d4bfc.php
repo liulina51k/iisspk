@@ -5,11 +5,11 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <title>辩论pk台_战略网</title>
-<link href="/Public/Style/basic.css" rel="stylesheet" type="text/css">
-<link href="/Public/Style/pk.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/Public/Js/jquery.js"></script>
-<script type="text/javascript" src="/Public/Js/function.comm.js"></script>
-<script type="text/javascript" src="/Public/Js/function.cookie.js"></script>
+<link href="<?php echo ($site); ?>/Public/style/basic.css" rel="stylesheet" type="text/css">
+<link href="<?php echo ($site); ?>/Public/style/pk.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.cookie.js"></script>
 </head>
 <body>
 <div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo ($site); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo ($site); ?>/Public/images/top_pk_logo.jpg"> </a>
@@ -18,7 +18,7 @@
 </div>
 <div id="main">
   <div class="block">
-    <h1><span class="fright"><img src="/Public/Images/pk_h1bg_r.jpg"></span><a class="gdpk"></a></h1>
+    <h1><span class="fright"><img src="<?php echo ($site); ?>/Public/images/pk_h1bg_r.jpg"></span><a class="gdpk"></a></h1>
   </div>
   <div class="main_left">
  <?php if(is_array($list)): foreach($list as $k=>$vo): if($k % 2 == 0): ?><div class="pk_new">

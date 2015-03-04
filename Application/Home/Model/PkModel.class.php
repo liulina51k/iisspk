@@ -12,7 +12,7 @@ class PkModel extends Model{
 	    foreach($pkarr['list'] as $k=>$v){
 	    	$pkarr['list'][$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
         	$pkarr['list'][$k]['point_bad']  = floor(($v['opposevote']/($v['agreevote']+$v['opposevote']))*100);
-	    	$pkarr['list'][$k]['pkurl'] = 'http://www.iisspk.com/Pk/index/'.$v['id'];
+	    	$pkarr['list'][$k]['pkurl'] = IISSSITE.'/pk/index/'.$v['id'];
 	    }
 	    
 	    import("Components.Comment");
@@ -45,12 +45,32 @@ class PkModel extends Model{
     public function pk_list(){
         $count = $this->count();// 查询满足要求的总记录数
         $page = new \Think\Page($count,12); //生成tp自带的分页类对象
-        $list = $this->order('pubdate')->limit($page->firstRow.','.$page->listRows)->select();//取得列表
+        $list = $this->order('pubdate desc')->limit($page->firstRow.','.$page->listRows)->select();//取得列表
         
         foreach($list as $k => $v){
         	$list[$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
         	$list[$k]['point_bad'] = floor(($v['opposevote']/($v['agreevote']+$v['opposevote']))*100);
-        	$list[$k]['pkurl'] = 'http://www.top0001.com/pk/index/'.$v['id'];
+        	$list[$k]['pkurl'] = IISSSITE.'/pk/index/'.$v['id'];
+        }
+        
+        $p = I('p',1);//获得p参数的值
+        $curpage = $p;
+        $show = pkPage($count,12,$curpage,makesiteurl('','pk','plist','{pagenum}'),1);//取得分页url样式
+        $data = array('show'=>$show,'list'=>$list);
+        return $data;
+    }
+     /*
+     * 取得pkt话题列表
+     */
+    public function pkt_list(){
+        $count = $this->count();// 查询满足要求的总记录数
+        $page = new \Think\Page($count,12); //生成tp自带的分页类对象
+        $list = $this->order('pubdate desc')->limit($page->firstRow.','.$page->listRows)->select();//取得列表
+        
+        foreach($list as $k => $v){
+        	$list[$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
+        	$list[$k]['point_bad'] = floor(($v['opposevote']/($v['agreevote']+$v['opposevote']))*100);
+        	$list[$k]['pkurl'] = IISSSITE.'/pk/index/'.$v['id'];
         }
         
         $p = I('p',1);//获得p参数的值
@@ -65,12 +85,12 @@ class PkModel extends Model{
     public function comment_goodlist(){
         $id = I('id');
         $pknowinfo = $this->where("id=$id")->select();
-        $pkoldlist = $this->where("id!=$id")->limit(8)->select();
+        $pkoldlist = $this->where("id!=$id")->order('pubdate desc')->limit(8)->select();
         
         foreach($pkoldlist as $k => $v){
         	$pkoldlist[$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
         	$pkoldlist[$k]['point_bad']  = floor(($v['opposevote']/($v['agreevote']+$v['opposevote']))*100);
-        	$pkoldlist[$k]['pkurl']      = 'http://www.top0001.com/pk/index/'.$v['id'];
+        	$pkoldlist[$k]['pkurl']      = IISSSITE.'/pk/index/'.$v['id'];
         }
        
         $p = I('p',1);//获得p参数的值
@@ -81,6 +101,7 @@ class PkModel extends Model{
         import("Components.Comment");
 	    $ocomment = new \Comment();//生成评论类对象
         //正方评论列表
+        
 		$goodcomm = $ocomment->getPKCommentList(-1, $id, $ppp, $curpage, 0);
 		foreach($goodcomm['artlist'] as $k=>$v){
 			$goodcomm['artlist'][$k]['postip'] = self::getAddress($v['postip']);
@@ -90,7 +111,7 @@ class PkModel extends Model{
 		}
 		
         $goodcount = $ocomment->getCommCount($id,-1,0);//取得评论总数
-		$show = showPage($goodcount,$ppp,$curpage,"http://chinaiisspk.com/pkt/app/$id/{pagenum}",'pkt');
+		$show = showPage($goodcount,$ppp,$curpage,IISSSITE."/pkt/app/$id/{pagenum}",'pkt');
         $data = array('pknowinfo'=>$pknowinfo,'pkoldlist'=>$pkoldlist,'goodcomm'=>$goodcomm,'show'=>$show);
         return $data;
     }
@@ -100,12 +121,12 @@ class PkModel extends Model{
     public function comment_badlist(){
         $id = I('id');
         $pknowinfo = $this->where("id=$id")->select();
-        $pkoldlist = $this->where("id!=$id")->limit(8)->select();
+        $pkoldlist = $this->where("id!=$id")->order('pubdate desc')->limit(8)->select();
         
         foreach($pkoldlist as $k => $v){
         	$pkoldlist[$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
         	$pkoldlist[$k]['point_bad']  = floor(($v['opposevote']/($v['agreevote']+$v['opposevote']))*100);
-        	$pkoldlist[$k]['pkurl']      = 'http://www.top0001.com/pk/index/'.$v['id'];
+        	$pkoldlist[$k]['pkurl']      = IISSSITE.'/pk/index/'.$v['id'];
         }
        
         $p = I('p',1);//获得p参数的值
@@ -125,16 +146,16 @@ class PkModel extends Model{
 		}
 		
         $badcount = $ocomment->getCommCount($id,-1,1);//取得评论总数
-		$show = showPage($badcount,$ppp,$curpage,"http://chinaiisspk.com/pkt/opp/$id/{pagenum}",'pkt');
+		$show = showPage($badcount,$ppp,$curpage,SITE."/pkt/opp/$id/{pagenum}",'pkt');
         $data = array('pknowinfo'=>$pknowinfo,'pkoldlist'=>$pkoldlist,'badcomm'=>$badcomm,'show'=>$show);
         return $data;
     }
-    public function getAddress($ip){
+   public function getAddress($ip){
 		import("Components.IpLocation");
 	    $iplocation = new \IpLocation();//生成ip类对象
 	    
 		$separator = $iplocation->separate(1000);//分成1000块
-	
+	 
 		$location = $iplocation->getlocation($ip, $separator);//没有分块的查询
 	
 		$location['country'] = siconv($location['country'].$location['area'],'utf-8','gb2312');

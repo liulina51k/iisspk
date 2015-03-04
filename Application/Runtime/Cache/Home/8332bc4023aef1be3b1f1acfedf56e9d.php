@@ -11,8 +11,6 @@
 <script type="text/javascript" src="<?php echo ($site); ?>/Public/js/jquery.js"></script>
 <script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comm.js"></script>
 <script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.pk.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comments.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.login.js"></script>
 <script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.cookie.js"></script>
 <script>
 
@@ -84,7 +82,7 @@ $(function (){
   <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo ($attpath); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
 </div>
 <div id="main_list">
-  <a href="<?php echo ($site); ?>/pk/index/<?php echo ($pknowinfo["id"]); ?>" title="<?php echo ($pknowinfo["title"]); ?>" class="tm"><h1><?php echo ($pknowinfo["title"]); ?></h1></a><h2>所有评论仅代表网友意见，战略网保持中立</h2>
+  <a href="<?php echo ($iisssite); ?>/pk/index/<?php echo ($pknowinfo["id"]); ?>" title="<?php echo ($pknowinfo["title"]); ?>" class="tm"><h1><?php echo ($pknowinfo["title"]); ?></h1></a><h2>所有评论仅代表网友意见，战略网保持中立</h2>
   <div class="top_bg_list"></div>
   <div class="main_l_list">
   <!--左侧选项卡-->

@@ -5,15 +5,13 @@
 <meta name="description" content="<?php echo ($pkinfo["context"]); ?>" />
 <meta name="keywords" content="<?php echo ($pkinfo["title"]); ?>" />
 <title><?php if($pkinfo["seosubject"] != ''): echo ($pkinfo["seosubject"]); else: echo ($pkinfo["title"]); ?>_辩论pk台<?php endif; ?>_战略网</title>
-<link href="<?php echo ($site); ?>/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
-<link href="<?php echo ($site); ?>/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
-<link href="<?php echo ($site); ?>/Public/style/plk_new.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/jquery.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comm.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.pk.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comments.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.login.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.cookie.js"></script>
+<link href="<?php echo (SITE); ?>/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link href="<?php echo (SITE); ?>/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
+<link href="<?php echo (SITE); ?>/Public/style/plk_new.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.cookie.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.login.js"></script>
 <script type="text/javascript">
 function checkform(id){
   var content = $("#"+id+" textarea[name='content']").val();
@@ -48,10 +46,19 @@ function rebadtop(id){
 }
 
 //回复此评论
-function recommenttop(id){
-	off = $("#cmm_"+id).offset();
+function recommenttop(id, type){
+	if(typeof(type)=='undefined'){
+		off = $("#cmm_"+id).offset();
+		stop = off.top+20;
+		left = off.left-305;
+	}else{
+		off = $("#comtop_"+id).offset();
+		stop = off.top+80;
+		left = off.left;
+	}
+	
 	$.get(siteurl+"/do.php", {inajax:1,ado:'pk', ac:'pk_reap', parameter: $("#categoryid").val()+'_'+id}, function(data){
-		comment('发表评论', checkReturn(data), off.top+20, off.left-305,500,0);
+		comment('发表评论', checkReturn(data), stop, left,500,0);
 	});
 
 }
@@ -178,22 +185,22 @@ $(function (){
 <body>
 <input id="infoid" type="hidden" value="<?php echo ($pkinfo["id"]); ?>" />
 <input id="categoryid" type="hidden" value="-1" />
-<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo ($site); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo ($site); ?>/Public/images/top_pk_logo.jpg"> </a>
+<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo (SITE); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo (SITE); ?>/Public/images/top_pk_logo.jpg"> </a>
   <p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
-  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo ($attpath); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
+  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo (ATTPATH); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
 </div>
 <div id="main">
   <div class="main_l">
      <div class="block">
-      <h1><span class="fright"><img src="<?php echo ($site); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><a 
+      <h1><span class="fright"><img src="<?php echo (SITE); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><a 
 class="bjzl"></a></h1>
       <p>　<?php echo (mb_substr($pkinfo["context"],0,500,'utf8')); if($pkinfo["url"] != ''): ?>[<a class="blue" href="<?php echo ($pkinfo["url"]); ?>" target="_blank">详细背景资料</a>]<?php endif; ?></p>
     </div>
   </div>
   <div class="main_r">
     <div class="block">
-      <h1><span class="fright"><img src="<?php echo ($site); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><span 
-class="fright"><a href="<?php echo ($iisssite); ?>/Pkt/plist/">更多&gt;&gt;</a></span><a 
+      <h1><span class="fright"><img src="<?php echo (SITE); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><span 
+class="fright"><a href="<?php echo (IISSSITE); ?>/pkt/plist/">更多&gt;&gt;</a></span><a 
 class="wqht"></a></h1>
       <ul>
         <?php if(is_array($pklist)): foreach($pklist as $k=>$vo): if(($k >= 0 ) AND ($k < 8)): ?><li><a href="<?php echo ($vo["pkurl"]); ?>" title="<?php echo ($vo["title"]); ?>"><?php echo ($vo["title"]); ?></a></li><?php endif; endforeach; endif; ?>
@@ -212,7 +219,7 @@ class="wqht"></a></h1>
         <h1>正方:<?php echo ($pkinfo["agreeguide"]); ?></h1>
         <form>
           <input onclick="pkvote(<?php echo ($pkinfo["id"]); ?>, 'agree');return false;" 
-src="<?php echo ($site); ?>/Public/images/pk/pk_yes_botton.jpg" type="image">
+src="<?php echo (SITE); ?>/Public/images/pk/pk_yes_botton.jpg" type="image">
           <span>[<a class="red" id="agree<?php echo ($pkinfo["id"]); ?>"><?php echo ($pkinfo["agreevote"]); ?></a> 票]</span>
         </form>
         <p><?php echo ($pkinfo["agreeintro"]); ?></p>
@@ -222,23 +229,23 @@ src="<?php echo ($site); ?>/Public/images/pk/pk_yes_botton.jpg" type="image">
       <div class="pk_no">
         <h1>反方:<?php echo ($pkinfo["opposeguide"]); ?></h1>
         <form>
-          <input onclick="pkvote(<?php echo ($pkinfo["id"]); ?>, 'oppose');" 
-src="<?php echo ($site); ?>/Public/images/pk/pk_no_botton.jpg" type="image">
+          <input onclick="pkvote(<?php echo ($pkinfo["id"]); ?>, 'oppose');return false;" 
+src="<?php echo (SITE); ?>/Public/images/pk/pk_no_botton.jpg" type="image">
           <span>[<a class="blue" id="oppose<?php echo ($pkinfo["id"]); ?>"><?php echo ($pkinfo["opposevote"]); ?></a> 票]</span>
         </form>
         <p><?php echo ($pkinfo["opposeintro"]); ?></p>
       </div>
     </div>
     <div class="clear"></div>
-    <div class="pk_rule"><a href="<?php echo ($iisssite); ?>/Pkt/help/1" target="_blank">pk规
+    <div class="pk_rule"><a href="<?php echo (IISSSITE); ?>/pkt/help/1" target="_blank">pk规
 则说明&gt;&gt;</a></div>
   </div>
 	<div class="pk_vs_pic">
-		<img src="<?php echo ($site); ?>/Public/images/pk/pk_red.gif" width="65" height="80" class="fleft" />
+		<img src="<?php echo (SITE); ?>/Public/images/pk/pk_red.gif" width="65" height="80" class="fleft" />
 		<div class="vleft" style="padding-left:<?php echo ($result*626); ?>px;">
-		<img src="<?php echo ($site); ?>/Public/images/pk/pk_tank.jpg" width="160" height="50">
+		<img src="<?php echo (SITE); ?>/Public/images/pk/pk_tank.jpg" width="160" height="50">
 		</div>
-		<img src="<?php echo ($site); ?>/Public/images/pk/pk_blue.gif" width="65" height="80" class="fright" />
+		<img src="<?php echo (SITE); ?>/Public/images/pk/pk_blue.gif" width="65" height="80" class="fright" />
 	</div>
   <div class="clear"></div>
 </div>
@@ -254,9 +261,9 @@ src="<?php echo ($site); ?>/Public/images/pk/pk_no_botton.jpg" type="image">
           <input class="text" name="username" type="text">
           密 码
           <input value="" class="text" name="password" type="password">
-          <input name="loginuser" onclick="pklogin();" src="<?php echo ($site); ?>/Public/images/pk/login_bot.jpg" 
+          <input name="loginuser" onclick="pklogin();" src="<?php echo (SITE); ?>/Public/images/pk/login_bot.jpg" 
 type="image">
-          <input name="reguser" src="<?php echo ($site); ?>/Public/images/pk/register_bot.jpg" type="image">
+          <input name="reguser" src="<?php echo (SITE); ?>/Public/images/pk/register_bot.jpg" type="image">
           <!--2012-1-11 pk增加外部接入样式--> 
           <span>其他方式登录：<a class="SINA_login" href="###" onclick="out_login( 'sina')">
 微博登录</a><a class="QQ_login" href="###" onclick="out_login( 'qq' )">QQ登录</a></span> 
@@ -271,19 +278,19 @@ type="image">
         <h1><a></a></h1>
         <form onsubmit="return false;">
           <textarea name="content" onfocus="delinput($(this), '内容:');">内容:</textarea>
-          <input src="<?php echo ($site); ?>/Public/images/pk/pk_texttj.jpg" onclick="checkform
-('comment_submityes');comments_submit('comment_submityes', '-1_<?php echo ($pkinfo["id"]); ?>');" 
+          <input src="<?php echo (SITE); ?>/Public/images/pk/pk_texttj.jpg" onclick="checkform
+('comment_submityes');comments_submit('comment_submityes','-1_<?php echo ($pkinfo["id"]); ?>');" 
 type="image">
         </form>
       </div>
     </div>
     <div class="main_right">
-      <div class="comment" id="comment_submitno">
+      <div class="comment" id="comment_submitno"><input name="commenttype" type="hidden" value="1" />
         <h1><a class="zcff"></a></h1>
         <form onsubmit="return false;">
           <textarea name="content" onfocus="delinput($(this), '内容:');">内容:</textarea>
-          <input src="<?php echo ($site); ?>/Public/images/pk/pk_texttj.jpg" onclick="checkform
-('comment_submitno');comments_submit('comment_submitno', '-1_<?php echo ($pkinfo["id"]); ?>');" type="image">
+          <input src="<?php echo (SITE); ?>/Public/images/pk/pk_texttj.jpg" onclick="checkform
+('comment_submitno');comments_submit('comment_submitno','-1_<?php echo ($pkinfo["id"]); ?>');" type="image">
         </form>
       </div>
     </div>
@@ -325,14 +332,14 @@ style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
           </dd>
         </dl>
       </div><?php endforeach; endif; ?>
-      <div class="review_more"><a class="blueonline" href="<?php echo ($iisssite); ?>/Pkt/app/
-<?php echo ($pkinfo["id"]); ?>">查看全部评论&gt;&gt;</a></div>
+      <div class="review_more"><a class="blueonline" href="<?php echo (IISSSITE); ?>/pkt/app/
+<?php echo ($pkinfo["id"]); ?>/1">查看全部评论&gt;&gt;</a></div>
     </div>
 	
 	<div class="review_bk"><a name="new_comment_view"></a>
 		<div id="gv_comments_pklist_-1_<?php echo ($pkinfo["id"]); ?>"></div>
 		<div class="review_more"><a class="blueonline" 
-href="<?php echo ($iisssite); ?>/Pkt/app/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
+href="<?php echo (IISSSITE); ?>/pkt/app/<?php echo ($pkinfo["id"]); ?>/1">查看全部评论>></a></div>
 	</div>
 	</div>
 	<div class="main_right">
@@ -367,14 +374,14 @@ style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
           </dd>
         </dl>
       </div><?php endforeach; endif; ?>
-      <div class="review_more"><a class="blueonline" href="<?php echo ($iisssite); ?>/Pkt/opp/
-<?php echo ($pkinfo["id"]); ?>">查看全部评论&gt;&gt;</a></div>
+      <div class="review_more"><a class="blueonline" href="<?php echo (IISSSITE); ?>/pkt/opp/
+<?php echo ($pkinfo["id"]); ?>/1">查看全部评论&gt;&gt;</a></div>
     </div>
     
 	<div class="reviews_bk">
 		<div id="gv_comments_pktlist_-1_<?php echo ($pkinfo["id"]); ?>"></div>
 		<div class="review_more"><a class="blueonline" 
-href="<?php echo ($iisssite); ?>/Pkt/opp/<?php echo ($pkinfo["id"]); ?>">查看全部评论>></a></div>
+href="<?php echo (IISSSITE); ?>/pkt/opp/<?php echo ($pkinfo["id"]); ?>/1">查看全部评论>></a></div>
 	</div>
   </div>
 	<div class="clear"></div>
@@ -384,7 +391,7 @@ href="<?php echo ($iisssite); ?>/Pkt/opp/<?php echo ($pkinfo["id"]); ?>">查看�
 </div>
 <div id="main">
   <div class="block">
-    <h1><span class="fright"><img src="<?php echo ($site); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><span class="fright"><a href="<?php echo ($iisssite); ?>/Pkt/plist/1" target="_blank">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
+    <h1><span class="fright"><img src="<?php echo (SITE); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><span class="fright"><a href="<?php echo (IISSSITE); ?>/Pkt/plist/1" target="_blank">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
   </div>
   <div class="main_left">
   <?php if(is_array($pklist)): foreach($pklist as $k=>$vo): if(($k < 6) AND ($k % 2 == 0)): ?><div class="pk_new">

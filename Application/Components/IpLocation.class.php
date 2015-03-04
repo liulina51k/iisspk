@@ -244,7 +244,7 @@ class IpLocation {
      * @param string $filename
      * @return IpLocation
      */
-    function IIpLocation($filename = "/include/ipdb.dat") {
+    function IpLocation($filename = "/Application/Components/ipdb.dat") {
         $this->fp = 0;
 		$filename = I_ROOT.$filename;
 		
@@ -261,7 +261,7 @@ class IpLocation {
      * 析构函数，用于在页面执行结束后自动关闭打开的文件。
      *
      */
-    function _IIpLocation() {
+    function _IpLocation() {
         if ($this->fp) {
             fclose($this->fp);
         }

@@ -5,15 +5,13 @@
 <meta name="description" content="{$pkinfo.context}" />
 <meta name="keywords" content="{$pkinfo.title}" />
 <title><if condition="$pkinfo.seosubject neq ''">{$pkinfo.seosubject}<else />{$pkinfo.title}_辩论pk台</if>_战略网</title>
-<link href="{$site}/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
-<link href="{$site}/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
-<link href="{$site}/Public/style/plk_new.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="{$site}/Public/js/jquery.js"></script>
-<script type="text/javascript" src="{$site}/Public/js/function.comm.js"></script>
-<script type="text/javascript" src="{$site}/Public/js/function.pk.js"></script>
-<script type="text/javascript" src="{$site}/Public/js/function.comments.js"></script>
-<script type="text/javascript" src="{$site}/Public/js/function.login.js"></script>
-<script type="text/javascript" src="{$site}/Public/js/function.cookie.js"></script>
+<link href="{$Think.const.SITE}/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link href="{$Think.const.SITE}/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
+<link href="{$Think.const.SITE}/Public/style/plk_new.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/jquery.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.cookie.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.login.js"></script>
 <script type="text/javascript">
 function checkform(id){
   var content = $("#"+id+" textarea[name='content']").val();
@@ -48,10 +46,19 @@ function rebadtop(id){
 }
 
 //回复此评论
-function recommenttop(id){
-	off = $("#cmm_"+id).offset();
+function recommenttop(id, type){
+	if(typeof(type)=='undefined'){
+		off = $("#cmm_"+id).offset();
+		stop = off.top+20;
+		left = off.left-305;
+	}else{
+		off = $("#comtop_"+id).offset();
+		stop = off.top+80;
+		left = off.left;
+	}
+	
 	$.get(siteurl+"/do.php", {inajax:1,ado:'pk', ac:'pk_reap', parameter: $("#categoryid").val()+'_'+id}, function(data){
-		comment('发表评论', checkReturn(data), off.top+20, off.left-305,500,0);
+		comment('发表评论', checkReturn(data), stop, left,500,0);
 	});
 
 }
@@ -182,7 +189,7 @@ $(function (){
 <div id="main">
   <div class="main_l">
      <div class="block">
-      <h1><span class="fright"><img src="{$site}/Public/images/pk/pk_h1bg_r.jpg"></span><a 
+      <h1><span class="fright"><img src="{$Think.const.SITE}/Public/images/pk/pk_h1bg_r.jpg"></span><a 
 class="bjzl"></a></h1>
       <p>　{$pkinfo.context|mb_substr=0,500,'utf8'}<if condition="$pkinfo.url neq ''">
         [<a class="blue" href="{$pkinfo.url}" target="_blank">详细背景资料</a>]</if></p>
@@ -190,8 +197,8 @@ class="bjzl"></a></h1>
   </div>
   <div class="main_r">
     <div class="block">
-      <h1><span class="fright"><img src="{$site}/Public/images/pk/pk_h1bg_r.jpg"></span><span 
-class="fright"><a href="{$iisssite}/Pkt/plist/">更多&gt;&gt;</a></span><a 
+      <h1><span class="fright"><img src="{$Think.const.SITE}/Public/images/pk/pk_h1bg_r.jpg"></span><span 
+class="fright"><a href="{$Think.const.IISSSITE}/pkt/plist/">更多&gt;&gt;</a></span><a 
 class="wqht"></a></h1>
       <ul>
         <foreach name="pklist" item="vo" key="k">
@@ -214,7 +221,7 @@ class="wqht"></a></h1>
         <h1>正方:{$pkinfo.agreeguide}</h1>
         <form>
           <input onclick="pkvote({$pkinfo.id}, 'agree');return false;" 
-src="{$site}/Public/images/pk/pk_yes_botton.jpg" type="image">
+src="{$Think.const.SITE}/Public/images/pk/pk_yes_botton.jpg" type="image">
           <span>[<a class="red" id="agree{$pkinfo.id}">{$pkinfo.agreevote}</a> 票]</span>
         </form>
         <p>{$pkinfo.agreeintro}</p>
@@ -224,23 +231,23 @@ src="{$site}/Public/images/pk/pk_yes_botton.jpg" type="image">
       <div class="pk_no">
         <h1>反方:{$pkinfo.opposeguide}</h1>
         <form>
-          <input onclick="pkvote({$pkinfo.id}, 'oppose');" 
-src="{$site}/Public/images/pk/pk_no_botton.jpg" type="image">
+          <input onclick="pkvote({$pkinfo.id}, 'oppose');return false;" 
+src="{$Think.const.SITE}/Public/images/pk/pk_no_botton.jpg" type="image">
           <span>[<a class="blue" id="oppose{$pkinfo.id}">{$pkinfo.opposevote}</a> 票]</span>
         </form>
         <p>{$pkinfo.opposeintro}</p>
       </div>
     </div>
     <div class="clear"></div>
-    <div class="pk_rule"><a href="{$iisssite}/Pkt/help/1" target="_blank">pk规
+    <div class="pk_rule"><a href="{$Think.const.IISSSITE}/pkt/help/1" target="_blank">pk规
 则说明&gt;&gt;</a></div>
   </div>
 	<div class="pk_vs_pic">
-		<img src="{$site}/Public/images/pk/pk_red.gif" width="65" height="80" class="fleft" />
+		<img src="{$Think.const.SITE}/Public/images/pk/pk_red.gif" width="65" height="80" class="fleft" />
 		<div class="vleft" style="padding-left:{$result*626}px;">
-		<img src="{$site}/Public/images/pk/pk_tank.jpg" width="160" height="50">
+		<img src="{$Think.const.SITE}/Public/images/pk/pk_tank.jpg" width="160" height="50">
 		</div>
-		<img src="{$site}/Public/images/pk/pk_blue.gif" width="65" height="80" class="fright" />
+		<img src="{$Think.const.SITE}/Public/images/pk/pk_blue.gif" width="65" height="80" class="fright" />
 	</div>
   <div class="clear"></div>
 </div>
@@ -257,9 +264,9 @@ src="{$site}/Public/images/pk/pk_no_botton.jpg" type="image">
           <input class="text" name="username" type="text">
           密 码
           <input value="" class="text" name="password" type="password">
-          <input name="loginuser" onclick="pklogin();" src="{$site}/Public/images/pk/login_bot.jpg" 
+          <input name="loginuser" onclick="pklogin();" src="{$Think.const.SITE}/Public/images/pk/login_bot.jpg" 
 type="image">
-          <input name="reguser" src="{$site}/Public/images/pk/register_bot.jpg" type="image">
+          <input name="reguser" src="{$Think.const.SITE}/Public/images/pk/register_bot.jpg" type="image">
           <!--2012-1-11 pk增加外部接入样式--> 
           <span>其他方式登录：<a class="SINA_login" href="###" onclick="out_login( 'sina')">
 微博登录</a><a class="QQ_login" href="###" onclick="out_login( 'qq' )">QQ登录</a></span> 
@@ -275,19 +282,19 @@ type="image">
         <h1><a></a></h1>
         <form onsubmit="return false;">
           <textarea name="content" onfocus="delinput($(this), '内容:');">内容:</textarea>
-          <input src="{$site}/Public/images/pk/pk_texttj.jpg" onclick="checkform
-('comment_submityes');comments_submit('comment_submityes', '-1_{$pkinfo.id}');" 
+          <input src="{$Think.const.SITE}/Public/images/pk/pk_texttj.jpg" onclick="checkform
+('comment_submityes');comments_submit('comment_submityes','-1_{$pkinfo.id}');" 
 type="image">
         </form>
       </div>
     </div>
     <div class="main_right">
-      <div class="comment" id="comment_submitno">
+      <div class="comment" id="comment_submitno"><input name="commenttype" type="hidden" value="1" />
         <h1><a class="zcff"></a></h1>
         <form onsubmit="return false;">
           <textarea name="content" onfocus="delinput($(this), '内容:');">内容:</textarea>
-          <input src="{$site}/Public/images/pk/pk_texttj.jpg" onclick="checkform
-('comment_submitno');comments_submit('comment_submitno', '-1_{$pkinfo.id}');" type="image">
+          <input src="{$Think.const.SITE}/Public/images/pk/pk_texttj.jpg" onclick="checkform
+('comment_submitno');comments_submit('comment_submitno','-1_{$pkinfo.id}');" type="image">
         </form>
       </div>
     </div>
@@ -333,14 +340,14 @@ style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
         </dl>
       </div>
       </foreach>
-      <div class="review_more"><a class="blueonline" href="{$iisssite}/Pkt/app/
-{$pkinfo.id}">查看全部评论&gt;&gt;</a></div>
+      <div class="review_more"><a class="blueonline" href="{$Think.const.IISSSITE}/pkt/app/
+{$pkinfo.id}/1">查看全部评论&gt;&gt;</a></div>
     </div>
 	{// 正方 普通评论 }
 	<div class="review_bk"><a name="new_comment_view"></a>
 		<div id="gv_comments_pklist_-1_{$pkinfo.id}"></div>
 		<div class="review_more"><a class="blueonline" 
-href="{$iisssite}/Pkt/app/{$pkinfo.id}">查看全部评论>></a></div>
+href="{$Think.const.IISSSITE}/pkt/app/{$pkinfo.id}/1">查看全部评论>></a></div>
 	</div>
 	</div>
 	<div class="main_right">
@@ -379,14 +386,14 @@ style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk
         </dl>
       </div>
       </foreach>
-      <div class="review_more"><a class="blueonline" href="{$iisssite}/Pkt/opp/
-{$pkinfo.id}">查看全部评论&gt;&gt;</a></div>
+      <div class="review_more"><a class="blueonline" href="{$Think.const.IISSSITE}/pkt/opp/
+{$pkinfo.id}/1">查看全部评论&gt;&gt;</a></div>
     </div>
     {// reviews_bk 反方普通评论的列表 }
 	<div class="reviews_bk">
 		<div id="gv_comments_pktlist_-1_{$pkinfo.id}"></div>
 		<div class="review_more"><a class="blueonline" 
-href="{$iisssite}/Pkt/opp/{$pkinfo.id}">查看全部评论>></a></div>
+href="{$Think.const.IISSSITE}/pkt/opp/{$pkinfo.id}/1">查看全部评论>></a></div>
 	</div>
   </div>
 	<div class="clear"></div>
@@ -396,7 +403,7 @@ href="{$iisssite}/Pkt/opp/{$pkinfo.id}">查看全部评论>></a></div>
 </div>
 <div id="main">
   <div class="block">
-    <h1><span class="fright"><img src="{$site}/Public/images/pk/pk_h1bg_r.jpg"></span><span class="fright"><a href="{$iisssite}/Pkt/plist/1" target="_blank">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
+    <h1><span class="fright"><img src="{$Think.const.SITE}/Public/images/pk/pk_h1bg_r.jpg"></span><span class="fright"><a href="{$Think.const.IISSSITE}/Pkt/plist/1" target="_blank">更多&gt;&gt;</a></span><a class="wqht"></a></h1>
   </div>
   <div class="main_left">
   <foreach name="pklist" item="vo" key="k">

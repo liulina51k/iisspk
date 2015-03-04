@@ -9,11 +9,12 @@ $_IGOLBAL = $_ISMDATA = array();
 //程序根目录
 $siteroot = explode(DS, dirname(__FILE__));
 array_pop($siteroot);
+array_pop($siteroot);
 define('I_ROOT', implode(DS, $siteroot));
 
-$site = 'http://chinaiisspk.com';
-$iisssite = 'http://chinaiisspk.com';
-$attpath = 'http://images.enchinaiiss.com/attachment';
+define('SITE','http://chinaiisspk.com');
+define('IISSSITE','http://chinaiisspk.com');
+define('ATTPATH','http://images.enchinaiiss.com/attachment');
 
 $mtime = explode(' ', microtime());
 $_IGLOBAL['timestamp'] = $mtime[1];

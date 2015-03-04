@@ -5,15 +5,15 @@
 <meta name="description" content="反方评论,{$pknowinfo.title},战略网" />
 <meta name="keywords" content="反方评论,战略网,战略网" />
 <title>反方评论-战略网-辩论pk台-战略网</title>
-<link href="{$site}/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
-<link href="{$site}/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
-<link href="{$site}/Public/style/plk_new.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="{$site}/Public/js/jquery.js"></script>
-<script type="text/javascript" src="{$site}/Public/js/function.comm.js"></script>
-<script type="text/javascript" src="{$site}/Public/js/function.pk.js"></script>
-<script type="text/javascript" src="{$site}/Public/js/function.comments.js"></script>
-<script type="text/javascript" src="{$site}/Public/js/function.login.js"></script>
-<script type="text/javascript" src="{$site}/Public/js/function.cookie.js"></script>
+<link href="{$Think.const.SITE}/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link href="{$Think.const.SITE}/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
+<link href="{$Think.const.SITE}/Public/style/plk_new.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/jquery.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.pk.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.cookie.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.comments.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.login.js"></script>
 <script>
 
 
@@ -81,15 +81,15 @@ $(function (){
 <input id="categoryid" type="hidden" value="-1" />
 <include file="./Application/Home/View/site.head.html" />
 <div id="main_list">
-  <a href="{$site}/pk/index/{$pknowinfo.id}" title="{$pknowinfo.title}" class="tm"><h1>{$pknowinfo.title}</h1></a><h2>所有评论仅代表网友意见，战略网保持中立</h2>
+  <a href="{$Think.const.IISSSITE}/pk/index/{$pknowinfo.id}" title="{$pknowinfo.title}" class="tm"><h1>{$pknowinfo.title}</h1></a><h2>所有评论仅代表网友意见，战略网保持中立</h2>
   <div class="top_bg_list"></div>
   <div class="main_l_list">
   <!--左侧选项卡-->
     <div class="tabs">
         <span class="topsBtnDiv">
             <ul>
-            <li><a href="{$site}/pkt/app/{$pknowinfo.id}/1"><span>正方评论</span></a></li>
-            <li><a href="{$site}/pkt/opp/{$pknowinfo.id}/1" class="current"><span>反方评论</span></a></li>
+            <li><a href="{$Think.const.IISSSITE}/pkt/app/{$pknowinfo.id}/1"><span>正方评论</span></a></li>
+            <li><a href="{$Think.const.IISSSITE}/pkt/opp/{$pknowinfo.id}/1" class="current"><span>反方评论</span></a></li>
             </ul>
         </span>
         <div class="tabsdiv">
@@ -119,7 +119,7 @@ $(function (){
   </div>
   <div class="main_r_list">
     <div class="block_list">
-      <span class="fright"><img src="{$site}/Public/images/pk/pk_h1bg_r.jpg"></span><a class="wqht"></a>
+      <span class="fright"><img src="{$Think.const.SITE}/Public/images/pk/pk_h1bg_r.jpg"></span><a class="wqht"></a>
       </div>
       <div class="pk_new_list">
       <ul>

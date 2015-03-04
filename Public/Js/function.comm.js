@@ -117,13 +117,13 @@ function callUserFun(){
 			var scripturl = staticurl + "/js/function."+funarr[1]+".js";
 			
 			$.ajax({type:"GET", cache:true, url:scripturl, dataType:"script", success: function(script){
+				
 					var funtrue = funstr;
 					//alert(funtrue);
 					eval(funtrue);
 				}
 			});
 		}
-
 	});
 }
 //通用get方式，调用函数

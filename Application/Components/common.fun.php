@@ -114,19 +114,6 @@ function formhash() {
 	return $_IGLOBAL['formhash'];
 }
 
-//判断提交是否正确
-function submitcheck($var) {
-    
-	if(!empty($_POST[$var]) && $_SERVER['REQUEST_METHOD'] == 'POST') {
-		if((empty($_SERVER['HTTP_REFERER']) || preg_replace("/https?:\/\/([^\:\/]+).*/i", "\\1", $_SERVER['HTTP_REFERER']) == preg_replace("/([^\:]+).*/", "\\1", $_SERVER['HTTP_HOST'])) && $_POST['formhash'] == formhash()) {
-			return true;
-		} else {
-			showmessage('你的行为疑是非法操作，被终止！', $_SERVER['HTTP_REFERER'], 5);
-		}
-	} else {
-		return false;
-	}
-}
 
 //编码转换
 function siconv($str, $out_charset, $in_charset='') {
@@ -156,7 +143,7 @@ function makesiteurl($fix = ''){
 		 $url .= func_get_arg($i).'/';
 	}
 	$fix = $fix ? '.'.$fix : '';
-	return 'http://chinaiisspk.com/'.substr($url,0,-1).$fix;
+	return IISSSITE.'/'.substr($url,0,-1).$fix;
 }
 /**
 * 取得客户端IP
@@ -180,6 +167,87 @@ function getClientIP($format=0) {
 
 	return $_IGLOBAL['clientip'];
 
+}
+/*pk分页*/
+function pkPage($num, $perpage, $curpage, $url, $type=0)
+{
+
+ $mutipage = '';
+
+ if($num > $perpage){
+
+    //一个列表显示几个数字
+	$pn = 10;
+	$offset = $pn/2;
+	$pages = @ceil($num / $perpage);
+    $total = 0;
+	if($pn > $pages){
+	    $start=1;
+		$total=$pages;
+	}else{
+		$start = $curpage - $offset;
+		$total = $start + $pn -1;
+
+		if($start < 1){
+			$total = $curpage +1 - $start;
+			$start = 1;
+			if($total - $start < $pn){
+			   $total = $pn;
+			}
+		}elseif($total > $pages){
+			$start = $pages - $pn + 1;
+			$total = $pages;
+		}
+
+	}
+	if($type){
+		$fblock = '';
+		$pblock = '&lt;&lt;上一页';
+		$nblock = '下一页&gt;&gt;';
+		$lblock = '';
+	}else{
+		$fblock = '[首页]';
+		$pblock = '[上一页]';
+		$nblock = '[下一页]';
+		$lblock = '[末页]';
+	}
+	if($curpage>1){
+		$mutipage .= '<a href="'.str_replace('{pagenum}', '1', $url).'">'.$fblock.'</a>';
+		$mutipage .= '<a href="'.str_replace('{pagenum}', ($curpage-1), $url).'">'.$pblock.'</a>';
+	}
+	if($type){
+		$mutipage .=  '<span id="pagenum">'.pageNumComm($start, $total, $curpage, $url, 'nowpage').'</span>';
+	}else{
+		$mutipage .=  pageNumComm($start, $total, $curpage, $url);
+	}
+
+	if($curpage < $pages){
+	   
+	   $mutipage .= '<a href="'.str_replace('{pagenum}', ($curpage+1), $url).'">'.$nblock.'</a>';
+	   $mutipage .= '<a href="'.str_replace('{pagenum}', $pages, $url).'">'.$lblock.'</a>';
+	}
+
+ }else{
+	$multipage = 1;
+ }
+
+return $mutipage;
+
+}
+/**
+* 评论数字列
+*/
+function pageNumComm($start, $total, $cur, $url, $curstyle='', $linkstyle = '', $linktag='')
+{
+ $numlist = '';
+ for($i=$start; $i<=$total; $i++){
+     $cururl =  str_replace('{pagenum}', ''.$i, $url);
+     $numlist .= '<a href="';
+     $numlist .= ($cur == $i && !empty($curstyle)) ? '#" class="'.$curstyle.'"' : $cururl.'"'.(!empty($linkstyle) ? ' class="'.$linkstyle.'"' : '');
+	 $numlist .= '>'.$i.'</a>';
+ }
+
+ return $numlist;
 }
 /*
  * 网站统一分页

@@ -6,7 +6,7 @@
 <meta name="keywords" content="<?php echo ($pknowinfo["title"]); ?>" />
 <title><?php echo ($pknowinfo["title"]); ?>-PK台-战略网</title>
 <link href="<?php echo ($site); ?>/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
-<link href="<?php echo ($site); ?>/Public/style/pk.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo ($site); ?>/Public/style/pk2.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?php echo ($site); ?>/Public/js/jquery.js"></script>
 <script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comm.js"></script>
 </head>
@@ -19,12 +19,12 @@
 </div>
 <div id="main">
 <div id="pk_titles">
-<?php echo ($pknowinfo["title"]); ?><br /><a class="grayfont">所有评论仅代表网友意见，战略网保持中立</a> <a href="<?php echo ($site); ?>/pk/index/<?php echo ($pknowinfo["id"]); ?>" class="blue">查看PK</a>
+<?php echo ($pknowinfo["title"]); ?><br /><a class="grayfont">所有评论仅代表网友意见，战略网保持中立</a> <a href="<?php echo ($iisssite); ?>/pk/index/<?php echo ($pknowinfo["id"]); ?>" class="blue">查看PK</a>
 </div><div class="clear"></div>
 </div>
 <div id="pk_main"><div id="borter">
 <div id="main_rev">
-<div id="rev_ybg"><div class="pktoppage" id='mutipagetop'></div><img class="fist" src="<?php echo ($site); ?>/Public/images/pk/rev_y.jpg" /><a href="<?php echo ($site); ?>/pk/opp/<?php echo ($pknowinfo["id"]); ?>/1"><img src="<?php echo ($site); ?>/Public/images/pk/rev_n.jpg" border="0" /></a><a href="<?php echo ($site); ?>/pk/plist/1"><img src="<?php echo ($site); ?>/Public/images/pk/rev_pk.jpg" border="0" /></a><br>
+<div id="rev_ybg"><div class="pktoppage" id='mutipagetop'></div><img class="fist" src="<?php echo ($site); ?>/Public/images/pk/rev_y.jpg" /><a href="<?php echo ($iisssite); ?>/pk/opp/<?php echo ($pknowinfo["id"]); ?>/1"><img src="<?php echo ($site); ?>/Public/images/pk/rev_n.jpg" border="0" /></a><a href="<?php echo ($iisssite); ?>/pk/plist/1"><img src="<?php echo ($site); ?>/Public/images/pk/rev_pk.jpg" border="0" /></a><br>
 </div>
 <div id="gv_comments_pklist_-1_<?php echo ($pknowinfo["id"]); ?>"></div>
 <div id="mutipage"></div>
