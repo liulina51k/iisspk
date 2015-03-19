@@ -259,3 +259,75 @@
 [03-Mar-2015 16:03:13 Asia/Shanghai] PHP Fatal error:  Call to undefined function printr() in D:\chinaiiss\iisspk\Application\Components\Common.inc.php on line 13
 [03-Mar-2015 16:03:15 Asia/Shanghai] PHP Fatal error:  Call to undefined function printr() in D:\chinaiiss\iisspk\Application\Components\Common.inc.php on line 13
 [03-Mar-2015 16:03:51 Asia/Shanghai] PHP Fatal error:  Call to undefined function printr() in D:\chinaiiss\iisspk\Application\Components\Common.inc.php on line 11
+[17-Mar-2015 11:38:05 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\5f08b39e4d76ebd154c0203ed3982da6.php on line 134
+[17-Mar-2015 15:02:04 PRC] PHP Parse error:  syntax error, unexpected ')' in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 14
+[17-Mar-2015 15:02:25 PRC] PHP Parse error:  syntax error, unexpected ')' in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 14
+[17-Mar-2015 15:09:15 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\5f08b39e4d76ebd154c0203ed3982da6.php on line 137
+[17-Mar-2015 15:09:57 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\5f08b39e4d76ebd154c0203ed3982da6.php on line 137
+[17-Mar-2015 15:11:00 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\5f08b39e4d76ebd154c0203ed3982da6.php on line 137
+[17-Mar-2015 15:25:06 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\5f08b39e4d76ebd154c0203ed3982da6.php on line 137
+[17-Mar-2015 15:32:31 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\5f08b39e4d76ebd154c0203ed3982da6.php on line 137
+[17-Mar-2015 17:51:21 PRC] PHP Parse error:  syntax error, unexpected T_STRING in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\5f08b39e4d76ebd154c0203ed3982da6.php on line 136
+[18-Mar-2015 11:29:26 PRC] PHP Fatal error:  Call to undefined function Home\Model\strtosm() in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 45
+[18-Mar-2015 16:17:44 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php on line 317
+[18-Mar-2015 16:29:16 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php on line 317
+[18-Mar-2015 16:30:02 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php on line 316
+[18-Mar-2015 16:30:04 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php on line 316
+[18-Mar-2015 17:20:51 PRC] PHP Parse error:  syntax error, unexpected ':' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\fda6005b16dd52be01812e89912eac28.php on line 332
+[19-Mar-2015 13:51:22 PRC] PHP Fatal error:  Class 'Home\Model\IViewrecord' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 55
+[19-Mar-2015 13:52:59 PRC] PHP Fatal error:  Call to private IViewrecord::__construct() from context 'Home\Model\ConferenceModel' in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 13:53:22 PRC] PHP Fatal error:  Call to private Viewrecord::__construct() from context 'Home\Model\ConferenceModel' in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 13:54:04 PRC] PHP Fatal error:  Call to private Viewrecord::__construct() from context 'Home\Model\ConferenceModel' in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 13:54:05 PRC] PHP Fatal error:  Call to private Viewrecord::__construct() from context 'Home\Model\ConferenceModel' in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 13:54:05 PRC] PHP Fatal error:  Call to private Viewrecord::__construct() from context 'Home\Model\ConferenceModel' in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 13:54:55 PRC] PHP Fatal error:  Class 'Home\Model\Viewrecord' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 56
+[19-Mar-2015 13:54:57 PRC] PHP Fatal error:  Class 'Home\Model\Viewrecord' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 56
+[19-Mar-2015 13:54:58 PRC] PHP Fatal error:  Class 'Home\Model\Viewrecord' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 56
+[19-Mar-2015 14:06:56 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:07:19 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:07:21 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:07:46 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:07:48 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:07:48 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:07:48 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:08:20 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:08:22 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:09:14 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:09:15 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:10:13 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:10:14 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:12:26 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:12:28 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:12:29 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:12:30 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:14:48 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 27
+[19-Mar-2015 14:15:16 PRC] PHP Fatal error:  Call to a member function getTableName() on a non-object in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 31
+[19-Mar-2015 14:17:05 PRC] PHP Fatal error:  Class 'Viewrecord' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:17:07 PRC] PHP Fatal error:  Class 'Viewrecord' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:17:09 PRC] PHP Fatal error:  Class 'Viewrecord' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:17:09 PRC] PHP Fatal error:  Class 'Viewrecord' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:18:52 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 26
+[19-Mar-2015 14:18:53 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 26
+[19-Mar-2015 14:18:54 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Components\Viewrecord.class.php on line 26
+[19-Mar-2015 14:19:17 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 56
+[19-Mar-2015 14:19:18 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 56
+[19-Mar-2015 14:19:30 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:19:32 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:19:32 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:19:33 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:19:47 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:19:49 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:19:49 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:19:49 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:19:50 PRC] PHP Fatal error:  Class 'Table' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 54
+[19-Mar-2015 14:58:13 PRC] PHP Fatal error:  Class 'Home\Model\IConfig' not found in D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php on line 72
+[19-Mar-2015 15:33:13 PRC] PHP Fatal error:  Call to undefined method Hours::db() in D:\chinaiiss\iisspk\Application\Components\Hours.class.php on line 26
+[19-Mar-2015 15:33:36 PRC] PHP Fatal error:  Class 'Model' not found in D:\chinaiiss\iisspk\Application\Components\Hours.class.php on line 10
+[19-Mar-2015 17:30:37 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting T_STRING in D:\chinaiiss\iisspk\Application\Components\Common.fun.php on line 133
+[19-Mar-2015 17:31:23 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING, expecting T_STRING in D:\chinaiiss\iisspk\Application\Components\Common.fun.php on line 133
+[19-Mar-2015 17:32:49 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in D:\chinaiiss\iisspk\Application\Components\Common.fun.php on line 133
+[19-Mar-2015 17:32:50 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in D:\chinaiiss\iisspk\Application\Components\Common.fun.php on line 133
+[19-Mar-2015 17:33:24 Asia/Shanghai] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in D:\chinaiiss\iisspk\Application\Components\Common.fun.php on line 133
+[19-Mar-2015 17:39:07 PRC] PHP Fatal error:  Call to undefined function sstripslashes() in D:\chinaiiss\iisspk\Application\Components\Sysdata.class.php on line 28
+[19-Mar-2015 17:39:49 PRC] PHP Fatal error:  Call to undefined function mb_unserialize() in D:\chinaiiss\iisspk\Application\Components\Sysdata.class.php on line 28
+[19-Mar-2015 17:40:45 PRC] PHP Fatal error:  Class 'IFactory' not found in D:\chinaiiss\iisspk\Application\Components\Cache.class.php on line 63

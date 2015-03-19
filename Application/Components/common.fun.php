@@ -114,7 +114,35 @@ function formhash() {
 	return $_IGLOBAL['formhash'];
 }
 
-
+//判断提交是否正确
+function submitcheck($var) {
+    
+	if(!empty($_POST[$var]) && $_SERVER['REQUEST_METHOD'] == 'POST') {
+		if((empty($_SERVER['HTTP_REFERER']) || preg_replace("/https?:\/\/([^\:\/]+).*/i", "\\1", $_SERVER['HTTP_REFERER']) == preg_replace("/([^\:]+).*/", "\\1", $_SERVER['HTTP_HOST'])) && $_POST['formhash'] == formhash()) {
+			return true;
+		} else {
+			U('你的行为疑是非法操作，被终止！', $_SERVER['HTTP_REFERER'], 5);
+		}
+	} else {
+		return false;
+	}
+}
+//去掉slassh
+function sstripslashes($string) {
+	if(is_array($string)) {
+		foreach($string as $key => $val) {
+			$string[$key] = sstripslashes($val);
+		}
+	} else {
+		$string = stripslashes($string);
+	}
+	return $string;
+}
+//反序列化之前把标记的字节数修改
+function mb_unserialize($serial_str) { 
+	$out = preg_replace('!s:(\d+):"(.*?)";!se', "'s:'.strlen('$2').':\"$2\";'", $serial_str ); 
+	return sstripslashes(unserialize($out)); 
+}
 //编码转换
 function siconv($str, $out_charset, $in_charset='') {
 

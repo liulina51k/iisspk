@@ -12,6 +12,8 @@
 <script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.comm.js"></script>
 <script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.pk.js"></script>
 <script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.cookie.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.comments.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.login.js"></script>
 <script>
 
 //评论支持点击

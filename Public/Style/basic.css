@@ -8,7 +8,7 @@
 
 ul,li{margin:0;padding:0;}
 body {
-	text-align: center;
+	
 	margin:0;
 	padding:0;
 	background-color: #FFFFFF;
@@ -253,75 +253,12 @@ a.blackfont{
 .head_m li{
 	line-height:19px;
 }
-#nav{
-	height:29px;
-	background:url(../images/nav_ground.jpg) repeat-x;
-}
-#nav li{
-	float:left;
-	width:66px;
-	text-align:center;
-	background:url(../images/nav.jpg) no-repeat;
-}
-#nav li a{
-	color:#FFFFFF;
-	text-align:center;
-	line-height:29px;
-	display:block;
-}
-#nav li a:hover{
-	background:url(../images/nav_bg.jpg) no-repeat;
-}
-#btnSubmit {
-	vertical-align: middle;
-}
-/*rss导航*/
-#nav img{
-	margin:7px 10px 0px 0px;
-}
-
-/*底部导航*/
-.textad{
-	overflow:hidden;
-	height:10px;
-	text-align:left;
-}
-.textad a{
-	color:white;
-}
-.textad li{
-	float:left;
-	display:block;
-	list-style:none;
-	white-space:nowrap;
-}
 .footer_line{
 	height:3px;
 	margin-bottom: 0px;
 	margin-top:3px !important;
 	margin-top:-15px;
 	border-bottom: 3px solid #FF0000;
-}
-#bottom_ad{
-	overflow:hidden;
-	height:22px;
-}
-#bottom_ad a{
-	color:white;
-}
-#bottom_ad li{
-	float:left;
-}
-.alicode{
-	float:left;
-	margin-bottom:2px;
-	margin-right:2px;
-}
-.adimg{
-	height:90px;
-	float:left;
-	margin-left: 0px;
-	display:inline;
 }
 /*底部样式*/
 #footer{
@@ -457,14 +394,7 @@ a.blackfont{
 	margin: 46px 0px 10px 0px;
 	padding-bottom: 10px;
 }
-/*
-#mutipage a{
-	font-size:16px;
-	color:#000000;
-	font-weight: bold;
-	text-decoration: none;
-}
-#mutipage a:hover{color:#FF0000;}*/
+
 .pageside{
 	text-align: center;
 	margin:0px 0px 31px 0px;
@@ -595,39 +525,7 @@ a.title_r16:hover{
 	text-decoration:underline;
 	color:#990000;
 }
-/*1-16号修改部分开始 以下3条*/
-#link_bk{
-	text-align:left;
-	padding-left: 13px;
-}
-#link_bk img {
-	padding-right: 8px;
-	height: 31px;
-	width: 88px;
-}
-#link_font_bk{
-	width:auto;
-	color:#004499;
-	line-height:20px;
-	text-align:left;
-	padding:0px 6px 0px 13px;
-}
-#link_font_bk li{
-	float:left;
-	display:block;
-	list-style:none;
-	white-space:nowrap;
-}
-/*7月7号修改部分结束*/
-/*7月7号添加部分开始*/
-#link_font_bk ul.mores{
-	margin:0 0 5px 5px;
-}
-#link_font_bk ul.mores li{
-	float:left;
-	display:block;
-	width:120px;
-}
+
 .link_more{
 	border:1px solid #d9d9d9;
 }
@@ -663,58 +561,9 @@ a.textonline:hover{
 	color: #FF0000;
 	font-size:14px;
 }
-/*导航样式*/
-#indexnew_nav{border:1px solid #e7e7e7;}
-#indexnew_nav .top_nav{height:32px; background:url(../images/top_navbg.jpg) repeat-x; border:1px solid #0e67b0; border-bottom:none;}
-#indexnew_nav .top_nav span{padding-right:18px;}
-#indexnew_nav .top_nav span img{ float:left; margin:8px 8px 0 0;}
-#indexnew_nav .top_nav li{width:139px;background: url(../images/top_nav_libg.jpg) no-repeat right; float:left; text-align:center;}
-#indexnew_nav .top_nav li a{font:14px "宋体"; font-weight:bold; color:#fff; line-height:30px;}
-#indexnew_nav .top_nav li a:hover{color:#ccc;}
-#indexnew_nav .bot_nav{height:46px; background:url(../images/bot_navbg.jpg) repeat-x bottom; border:1px solid #0e67b0; border-top:none;}
-#indexnew_nav .bot_nav div,.bot_nav div.hot{width:137px; text-align:center; float:left; border-right:1px solid #d6e1ef; border-left:1px solid #fff; padding:1px 0px;}
-#indexnew_nav .bot_nav div ul{padding-left:8px; background:url(../images/bot_nav_ulbg.jpg) no-repeat center; background:url(../images/bot_nav_ulbg.jpg) no-repeat center; height:22px;}
-/*2012年4月12日修改样式*/
-#indexnew_nav .bot_nav div.hot{border:none; padding-top:4px; width:142px}
-#indexnew_nav .bot_nav div li{float:left; background:none;}
-#indexnew_nav .bot_nav div li a{padding:0px 6px; line-height:22px;}
-#indexnew_nav .bot_nav div.hot ul{ background:none; float: left;}
-#indexnew_nav .bot_nav div.hot li a{ font-weight:bold; color:#003399; font-family: "宋体"; font-size: 14px; line-height: 20px; height: 20px; }
-#indexnew_nav .bot_nav div.hot .nav_top{ width:73px;}
-#indexnew_nav .bot_nav div.hot li{ float: none;}
-#indexnew_nav .bot_nav div.hot li a:hover{color:#ff0000;}
-/*2012年4月12日修改样式结束*/
-#new_nav{border:1px solid #e7e7e7;}
-.top_nav{height:32px; background:url(../images/top_navbg.jpg) repeat-x; border:1px solid #0e67b0; border-bottom:none;}
-/*2012年4月12日修改宽度样式*/
-.top_nav li,.top_nav li.nback{ width:83px; background: url(../images/top_nav_libg.jpg) no-repeat right; float:left; text-align:center; }
-/*2012年4月12日修改宽度样式结束*/
-.top_nav li.wback{width:76px; }
-.top_nav li.nback{background-image:none;}
-.top_nav li a{font:14px "宋体"; font-weight:bold; color:#fff; line-height:30px;}
-.top_nav li a:hover{color:#ccc;}
-.b_list_nav{height:32px; background:url(../images/b_list_navbg.jpg) repeat-x bottom; border:1px solid #0e67b0; border-top:none;}
-.b_list_nav h6{height:32px;width:95px; text-align:center; float:left; background: url(../images/b_list_h6bg.jpg) right no-repeat;}
-.b_list_nav h6 a{font:14px "宋体"; font-weight:bold;color:#990000; line-height:32px;}
-.b_list_nav span{padding-left:5px; color:#1e6daf;}
-.b_list_nav span a{ font:14px "宋体"; font-weight:bold; color:#1e6daf; line-height:32px; padding-top: 0px; padding-right: 1px; padding-bottom: 0px; padding-left: 1px; }
 
 .text{width:78px; margin:0px;}
 .red{color: #FF0000;}
-*+html  .topdiv,+html .topdiv{position:relative;z-index:1; Filter:Alpha(Opacity=0);cursor:pointer;margin-top:-60px;background:darkgray;}
-.topdiv{position:relative;z-index:1; Filter:Alpha(Opacity=0);width:468px;height:60px;cursor:pointer;margin-top:-60px;background:darkgray \9;}
-/*出现错误提示页*/
-.bug_block{width:516px;height:400px;padding:150px 0px 0px;margin:0 auto;}
-.bug_outside{width:510px;height:220px;padding:1px;background:#CCCCCC;border:2px solid #f5f5f5;}
-.bug_outside a{font:14px "宋体";}
-.bug_inside{width:504px;height:134px;border:3px solid #FFFFFF;border-bottom:none;background:#dfedfa;padding:50px 0px 0px 0px;}
-.bug_inside img{margin:0px 20px 0px 40px;float:left;}
-.bug_inside p{font:14px "宋体";color:#666666;float:left;line-height:28px;margin-top:8px;}
-.bug_inside p span{color:#FF0000;line-height:28px;}
-.bug_insides{border:3px solid #FFFFFF;border-top:none;background:#cde4fa;padding-top:9px;text-align:right;height:21px;}
-.bug_insides a{padding-right:20px;}
-#link_font_bk{ width:auto; color:#004499; line-height:20px; text-align:left; clear: both; padding: 5px 6px 0px 13px;}
-#link_font_bk .ten { padding-bottom: 5px; }
 /*5月16日添加登陆失败样式*/
 .login .gray,.login .error{line-height:22px;}
 .login .gray{text-decoration: underline;}

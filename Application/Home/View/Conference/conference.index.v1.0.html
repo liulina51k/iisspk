@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={$Think.config.DB_CHARSET}">
+<meta name="description" content="{$context}">
+<meta name="keywords" content="{$info.subject}" />
+<title><if condition="$info.seosubject neq ''">{$info.seosubject}<else/>{$info.subject}_全球议事厅_</if>战略网</title>
+<link href="{$Think.const.SITE}/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link type="text/css" href="{$Think.const.SITE}/Public/style/chamber.v1.2.css" rel="stylesheet">
+<link type="text/css" href="{$Think.const.SITE}/Public/style/thickbox.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/jquery.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.conference.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.comments.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.vote.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.login.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/thickbox.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/jquery-ui-1.8.20.custom.min.js"></script>
+ 
+<script type="text/javascript">
+var conference_title = "{$info.subject}";conference_id = "{$info.id}";conference_no = '{$info.no}';conference_topno = '{$info.topno}';
+conference_topno = conference_topno>0 ? '（特刊）' : '';
+var conference_subject = '全球议事厅第'+conference_no+'期'+conference_topno;
+function recommenttop(id, bottom, quote){
+	bottom = bottom || 0;
+	if(!bottom){
+		off = $("#cmmhot_"+id).offset();
+		position = 3;
+	} else {
+		off = $("#cmm_"+id).offset();
+		position = 4;
+	}
+	$.get(siteurl+"/do.php?inajax=1&ado=login&ac=login_reap&parameter="+$("#categoryid").val()+'_'+id+'_'+position+'_'+quote,function(data){
+		    comment('发表评论', checkReturn(data), off.top, off.left+200,500,200);
+			$("#box").draggable({opacity:0.5});
+		});
+}
+
+function copyLink(){
+	var idstr = 'click|conference_copy_'+conference_id+'$'+conference_subject+"搬救兵@@"+siteurl+'/conference/index/'+conference_id+"@@"+conference_title+'_搬救兵';
+//	doRecord(idstr);
+	if(document.all){
+		var clipBoardContent=document.getElementById('txturl').value;
+		window.clipboardData.setData("Text",clipBoardContent);
+		$("body").append('<div class="help_block"><span class="fright"><input type="image" onclick="$(\'.help_block\').hide();" src="'+siteurl+'/images/conference/help_spanbg.jpg" /></span><p><input type="image" onclick="$(\'.help_block\').hide();" src="'+siteurl+'/images/conference/help_pbg.jpg" /></p></div>');
+		$(".help_block").css({
+			position:'absolute',
+		   'z-index':99999,
+		   left: ($(window).width() - $('.help_block').outerWidth())/2, //位置关键
+		   top: $(document).scrollTop()-($('.help_block').outerHeight())/2
+		});
+
+	}else{
+		alert('对不起你的浏览器不支持此复制功能！\n请使用CTRL+C或鼠标右键复制地址栏');
+	}
+}
+function clicks(id) {
+	ids=$("li [id=\""+id+"\"]").parents('.comment_box').attr('id');
+	$("."+ids).attr('value',$("."+ids).attr('value')+$("li [id=\""+id+"\"]").attr("id"));
+}
+$(function () {
+	$("li [id^='/']").click(function () {
+		ids=$(this).parents('.comment_bk').attr('id');
+		$("."+ids).attr('value',$("."+ids).attr('value')+$(this).attr("id"));
+	});
+});
+function show_allcomment(param){
+	doAjaxProJSON(param, 'conference', 'get_comment', param);
+}
+</script>
+
+</head>
+<body>
+<input id="categoryid" type="hidden" value="-7" />
+<input id="txturl" type="hidden" value="{$Think.const.SITE}/conference/index/{$info.id}" />
+<include file="./Application/Home/View/site.head.html" />
+<div class="banner_bg">
+<div class="banner">
+	<div class="banner_left">
+	<h1>{$info.subject}</h1>
+	<p>{$info.shortsubject}</p>
+	</div>
+	<div class="banner_right">
+		<p><span>逢周一、五出品</span>  第 <a style="color:#FFFF00;">{$info.no}</a> 期 <if condition="$info.topno neq ''">（特刊）</if></p>
+		<img src="{$Think.const.ATTPATH}/{$info.banner}" />
+	</div>
+	</div>
+</div>
+  <div id="main">
+    <div class="main_t">
+    <div class="main_l">
+	<div class="text_main">
+    <img src="{$Think.const.SITE}/Public/images/conference/top_2_bg.jpg" />
+      <div class="text_p">
+	<p class="p_text">{$info.viewtext|nl2br}</p>
+        <div class="xy"></div>
+        <div id="comment_top" class="comment_bk">
+		<h1>
+        	<a class="comment_tit" style="cursor: pointer;" name="acomment">快速回复</a>
+        	<div class="login_com" id="islogin_top">
+           	  	<form onsubmit="return false;" id="conference_login_top">
+				<if condition="$other.loginuser eq ''">
+					<label>用户名:&nbsp;</label><input type="text" class="txt_com" name="username"><label>&nbsp;密码:&nbsp;</label><input type="password" class="txt_com" name="password"><input type="submit" class="login_btn" value="" onclick="login_on('conference_login_bottom','conference');"><a class="register" target="_blank" href="{$Think.const.SITE}/user/reg.html">注册</a>
+				<else/>
+				<label>欢迎您，</label><a href="{$siteuser}/home/" class="register">{$other.loginusername}</a><a href="javascript:login_quit('conference_login_bottom','conference');" class="register">退出</a>
+				</if>
+			</form>
+            </div>
+		</h1>
+		<div class="comment_main">
+		   <form onsubmit="return false;">
+			   <textarea rows="1" class="comment_top line_one" id="toplable" name="content"></textarea>
+                          <div class="clear"></div>
+			   <p>网友评论仅供其表达个人看法，并不表明战略网同意其观点或证实其描述。</p>
+			   <div class="comment_sub">
+					<input value="1" name="anonymous" class="niming" type="checkbox"><label>&nbsp;匿名&nbsp;</label>
+					<input onclick="conference_submit('comment_top', '-7_{$info.id}_1');" src="{$Think.const.SITE}/Public/images/conference/shout_tj.jpg" class="tj_button" type="image">
+			   </div>
+			   <div class="clear"></div>
+		   </form>
+		</div>
+	</div>
+       <div class="Blank"></div>
+    </div>
+    </div>
+</div>
+    <div class="main_r">
+      <div class="r_t">
+     <img src="{$Think.const.SITE}/Public/images/conference/right_h2_r.jpg" />
+      <div class="pic_t">
+        <div class="pic_pic">
+		 <div class="big_pic">
+			<foreach name="related" item="vo" key="key">
+			<if condition="$key eq 0">
+			<a href="{$vo.id}" target="_blank"><img src="{$Think.const.ATTPATH}/{$vo.pic}" width="300" height="218"/></a>
+		        <a href="{$vo.id}" title="{$vo.subject}" class="zs"><span></span>{$vo.subject}</a>
+			</if>
+			</foreach>
+		</div>
+        <ul class="pic_big_text">
+				<foreach name="related" item="vo" key="key">
+				<if condition="$key gt 0">
+                <li><a href="{$vo.id}" title="{$vo.subject}" target="_blank">{$vo.subject|mb_substr=0,22,'utf8'}</a></li>
+		        </if>
+			    </foreach>
+        </ul>
+        </div>
+      </div>
+      <div class="right_r2">
+       <h2><a class="cursor">投票调查</a></h2>
+                <div class="vote_main">
+			<foreach name="other.arrvote" item="vo">
+			<script>var idstr = 'click|conference_vote_{$info.id}'+'$'+conference_subject+'调查@@{$Think.const.SITE}/vote/{$vo.voteid}.html@@{$info.subject}_调查';</script>
+			<h5>{$vo.title}</h5>
+			<form id="form{$vo.voteid}" name="form{$vo.voteid}" onsubmit="return false;">
+			<foreach name="vo.vote" item="vo1" key="key">
+			<label title="{$vo1}">
+			  <input type='<if condition="$vo.votetype eq 1">radio<else/>checkbox</if>' name="vote_{$vo.voteid}" id="vote{$key}" value="{$key}" />
+			{$vo1}</label><br />
+			</foreach>
+			</form>
+			<span class="fright"><a href="javascript:viewresearch({$vo.voteid});">查看结果&gt;&gt;</a></span><input class="tj_left" type="image" onclick="submitvote({$vo.voteid});" src="{$Think.const.SITE}/Public/images/vote_button.jpg" />
+			</foreach>
+		</div>
+      </div>
+      <div class="right_r2">
+       <h2><a class="cursor">本期主持</a></h2>
+       <div class="chair">
+		<p>{$other.authorsummary|mb_substr=0,22,'utf8'}</p>
+		<div class="zhc">
+                      <div class="zhc_pic">
+                      <img src="{$other.avatarpic}" style=" width:100px; height:100px;"/>
+                      </div>
+                      <h3><a href="{$other.blogurl}/{$other.authordomain}" target="_blank">{$other.author}</a></h3>
+                 </div> 
+	</div>
+       </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    </div>
+    <div class="main_f"></div>
+  </div>
+  <div class="Blank"></div>
+  <div id="main">
+    <div class="ty">
+	 <div class="plys">
+      <h2><a name="acommentlist"></a><span>(共有{$other.count}位网友参与，{$other.commcount}条精华评论)</span></h2>
+      <div class="clear"></div>
+	  
+	<div class="ty_text">
+	     <div id="gv_conference_list_-7_{$info.id}_{$other.authorid}-{$other.loginuser}"></div>
+	</div>
+	
+        <div class="new_pl">
+          <div class="ty_text">
+               <div class="pagebox_bk">
+			<div id="mutipage1"></div>
+	         </div>
+        </div>	
+        </div>
+	
+        <div class="Blank"></div>
+     </div>
+    </div>
+  <div class="clear"></div>
+  <div class="Blank"></div>
+  <if condition="$info.endtext neq ''">
+  <div class="ty">
+	<div class="past_events">
+		<h1><span class="fright"><a href="{$Think.const.SITE}/spec/index-274/1.html" target="_blank">更多&gt;&gt;</a></span><a></a></h1>
+	<div class="text_pic">
+        <img src="{$Think.const.SITE}/Public/images/conference/ad2.jpg" />
+        <p>{$info.endtext}</p>
+        <div class="clear"></div>
+        </div>
+	</div>
+    </div>
+   </if>
+</div>
+<div class="Blank"></div>
+  <div id="main">
+	<div class="comment_bk" id="comment_foot">
+		<h1>
+        	<a name="acomment" style="cursor: pointer;" class="comment_tit">发表评论</a>
+        	<div id="islogin_top" class="login_com">
+           	  	<form onsubmit="return false;" id="conference_login_bottom">
+				<if condition="$other.loginuser eq ''">
+					<label>用户名:&nbsp;</label><input type="text" class="txt_com" name="username"><label>&nbsp;密码:&nbsp;</label><input type="password" class="txt_com" name="password"><input type="submit" class="login_btn" value="" onclick="login_on('conference_login_bottom','conference');"><a class="register" target="_blank" href="{$Think.const.SITE}/user/reg.html">注册</a>
+				<else/>
+				<label>欢迎您，</label><a href="{$siteuser}/home/" class="register">{$other.loginusername}</a><a href="javascript:login_quit('conference_login_bottom','conference');" class="register">退出</a>
+				</if>
+			 </form>
+                </div>
+                </h1>
+		<ul><li><img src="{$Think.const.SITE}/Public/images/conference/expression_1.gif" title="/微笑" id="/ws" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_2.gif" title="/撇嘴" id="/ps" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_3.gif" title="/色" id="/se" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_4.gif" title="/发呆" id="/fd" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_5.gif" title="/酷" id="/ku" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_6.gif" title="/流泪" id="/ll" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_7.gif" title="/害羞 " id="/hx" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_8.gif" title="/闭嘴" id="/bz" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_9.gif" title="/睡" id="/sh" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_10.gif" title="/大哭" id="/dk" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_11.gif" title="/尴尬" id="/gg" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_12.gif" title="/发怒" id="/dn" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_13.gif" title="/调皮" id="/tp" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_14.gif" title="/呲牙" id="/cy" style="cursor: pointer;"></li>
+		<li><img src="{$Think.const.SITE}/Public/images/conference/expression_15.gif" title="/惊讶" id="/jy" style="cursor: pointer;"></li>
+		</ul>
+		<div class="comment_main">
+			   <form onsubmit="return false;">
+			   <textarea class="comment_foot" id="footlable" name="content"></textarea>
+			  <p>网友评论仅供其表达个人看法，并不表明战略网同意其观点或证实其描述。</p>
+			   <div class="comment_sub">
+                                 <input class="tj_button" src="{$Think.const.SITE}/Public/images/conference/shout_tj.jpg" onclick="conference_submit('comment_foot', '-7_{$info.id}_2');" type="image">
+			   	<label>&nbsp;匿名</label><input class="niming" name="anonymous" value="1" type="checkbox">
+			  </div>
+			  <div class="clear"></div>
+			   </form>
+		</div>
+	</div>
+
+</div>
+<div class="clear"></div>
+<div class="Blank"></div>
+<if condition="$oldlist neq ''">
+<div id="main">
+	<div class="past_events">
+		<h1><span class="fright"><a href="{$iisssite}/spec/index-274/1.html" target="_blank">更多>></a></span><a></a></h1>
+		<div class="past_events_m">
+		       <foreach name="oldlist" item="vo">
+				<p>
+					<a href="{$vo.url}" title="{$vo.subject}" target="_blank"><img src="{$Think.const.ATTPATH}/{$vo.pic}" /></a>
+					<a href="{$vo.url}" title="{$vo.subject}" target="_blank">{$vo.shortsubject||mb_substr=0,14,'utf8'}</a>
+				</p>
+			  </foreach>
+		</div>
+	</div>
+</div>
+</if>
+<div class="Blank"></div>
+<include file="./Application/Home/View/site.bottom.html" />
+<script type="text/javascript">var vjAcc = '860010-00402';</script><script type="text/javascript" src="http://analysis.chinaiiss.com/script/a.js"></script>
+</body>
+</html>

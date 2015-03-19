@@ -104,7 +104,7 @@ function recommenttop(id){
 <div id="review_left">
  <foreach name="goodcomm" item="vo">
 <div class="review" id="cmmtop_{$vo.id}">
-<dl><dt class="r"><a href="{$Think.const.IISSSITE}/pk/app/{$pkinfo.id}" class="blue morelist">查看正方全部评论>></a><img src="{$Think.const.SITE}/Public/images/pk/best_y.jpg" /><Br /><em>{$vo.postdate|date="Y-m-d H:i:s",###}</em><a target="_blank" href="#">{$vo.username}</a></dt>
+<dl><dt class="r"><a href="{$Think.const.IISSSITE}/pk/app/{$pkinfo.id}/1" class="blue morelist">查看正方全部评论>></a><img src="{$Think.const.SITE}/Public/images/pk/best_y.jpg" /><Br /><em>{$vo.postdate|date="Y-m-d H:i:s",###}</em><a target="_blank" href="#">{$vo.username}</a></dt>
              <dd>标题：{$vo.subject}</dd>
             <if condition="$vo.quotecomm neq ''">
            <dd>
@@ -130,12 +130,12 @@ function recommenttop(id){
 <div id="review_r"></div>
 <div id="gv_comments_list_-1_{$pkinfo.id}"></div>
 
-<div id="rev_m"><a href="{$Think.const.IISSSITE}/pk/app/{$pkinfo.id}" class="blueonline">查看正方全部评论>></a></div></div>
+<div id="rev_m"><a href="{$Think.const.IISSSITE}/pk/app/{$pkinfo.id}/1" class="blueonline">查看正方全部评论>></a></div></div>
 <div id="review_right">
 
 <foreach name="badcomm" item="vo">
 <div class="reviews" id="cmmtop_{$vo.id}">
-<dl><dt class="n"><a href="{$Think.const.IISSSITE}/pk/opp/{$pkinfo.id}" class="blue morelist">查看反方全部评论>></a><img src="{$Think.const.SITE}/Public/images/pk/best_n.jpg" /><Br /><em>{$vo.postdate|date="Y-m-d H:i:s",###}</em><a class="blue" target="_blank" href="#">{$vo.username}</a></dt>
+<dl><dt class="n"><a href="{$Think.const.IISSSITE}/pk/opp/{$pkinfo.id}/1" class="blue morelist">查看反方全部评论>></a><img src="{$Think.const.SITE}/Public/images/pk/best_n.jpg" /><Br /><em>{$vo.postdate|date="Y-m-d H:i:s",###}</em><a class="blue" target="_blank" href="#">{$vo.username}</a></dt>
              <dd>标题：{$vo.subject}</dd>
            <if condition="$vo.quotecomm neq ''">
            <dd>
@@ -162,7 +162,7 @@ function recommenttop(id){
 
 <div id="review_n"></div>
 <div id="gv_comments_tlist_-1_{$pkinfo.id}"></div>
-<div id="rev_m"><a href="{$Think.const.IISSSITE}/pk/opp/{$pkinfo.id}" class="blueonline">查看反方全部评论>></a></div>
+<div id="rev_m"><a href="{$Think.const.IISSSITE}/pk/opp/{$pkinfo.id}/1" class="blueonline">查看反方全部评论>></a></div>
 </div>
 <div class="clear"></div>
 

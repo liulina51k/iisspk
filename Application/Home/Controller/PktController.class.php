@@ -7,32 +7,55 @@ class PktController extends Controller {
        parent::__construct();
        $this->_instance = D('Pk');
     }
-    //pk台列表页
+    //pkt台首页
+    public function index(){
+       $pid = I('id');
+       $pkarr = $this->_instance->get_pk($pid);
+       $this->assign('pkinfo',$pkarr['info'][0]);
+       $this->assign('pklist',$pkarr['list']);
+       $this->assign('goodcomm',$pkarr['goodcomm']);
+       $this->assign('badcomm',$pkarr['badcomm']);
+       $this->assign('result',$pkarr['result']);
+       $this->assign('data',$pkarr['data']);
+       if($pid > 223)
+           $this->display("Pk/index");
+       else 
+           $this->display("Pk/index2");
+    }
+    //pkt台列表页
     public function plist(){
-       $data = $this->_instance->pkt_list();
-       $this->assign('show',$data['show']);
+       $data = $this->_instance->pk_list();
+       $this->assign('show',$data['showpkt']);
        $this->assign('list',$data['list']);
        $this->display();
     }
     //正方评论列表
     public function app(){
-       $data = $this->_instance->comment_goodlist();
+       $pid = I('id');
+       $data = $this->_instance->comment_goodlist($pid);
        $this->assign('pknowinfo',$data['pknowinfo'][0]);
        $this->assign('pkoldlist',$data['pkoldlist']);
        $this->assign('goodcomm',$data['goodcomm']['artlist']);
-       $this->assign('show',$data['show']);
-       $this->display();
+       $this->assign('show',$data['showpkt']);
+       if($pid > 223)
+           $this->display();
+       else 
+           $this->display("Pk/app");
     }
     //反方评论列表
     public function opp(){
-       $data = $this->_instance->comment_badlist();
+       $pid = I('id');
+       $data = $this->_instance->comment_badlist($pid);
        $this->assign('pknowinfo',$data['pknowinfo'][0]);
        $this->assign('pkoldlist',$data['pkoldlist']);
        $this->assign('badcomm',$data['badcomm']['artlist']);
-       $this->assign('show',$data['show']);
-       $this->display();
+       $this->assign('show',$data['showpkt']);
+       if($pid > 223)
+           $this->display();
+       else 
+           $this->display("Pk/opp");
     }
-    //pk规则说明
+    //pkt规则说明
     public function help(){
 	  $refer = I("server.HTTP_REFERER");//获得请求来源
       $this->assign('refer',$refer);

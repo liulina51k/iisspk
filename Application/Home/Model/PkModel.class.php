@@ -55,37 +55,17 @@ class PkModel extends Model{
         
         $p = I('p',1);//获得p参数的值
         $curpage = $p;
-        $show = pkPage($count,12,$curpage,makesiteurl('','pk','plist','{pagenum}'),1);//取得分页url样式
-        $data = array('show'=>$show,'list'=>$list);
-        return $data;
-    }
-     /*
-     * 取得pkt话题列表
-     */
-    public function pkt_list(){
-        $count = $this->count();// 查询满足要求的总记录数
-        $page = new \Think\Page($count,12); //生成tp自带的分页类对象
-        $list = $this->order('pubdate desc')->limit($page->firstRow.','.$page->listRows)->select();//取得列表
-        
-        foreach($list as $k => $v){
-        	$list[$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
-        	$list[$k]['point_bad'] = floor(($v['opposevote']/($v['agreevote']+$v['opposevote']))*100);
-        	$list[$k]['pkurl'] = IISSSITE.'/pk/index/'.$v['id'];
-        }
-        
-        $p = I('p',1);//获得p参数的值
-        $curpage = $p;
-        $show = showPage($count,12,$curpage,makesiteurl('','pkt','plist','{pagenum}'),'pkt');//取得分页url样式
-        $data = array('show'=>$show,'list'=>$list);
+        $showpk  = pkPage($count,12,$curpage,makesiteurl('','pk','plist','{pagenum}'),1);//取得分页url样式
+        $showpkt = showPage($count,12,$curpage,makesiteurl('','pkt','plist','{pagenum}'),'pkt');//取得分页url样式
+        $data = array('showpk'=>$showpk,'showpkt'=>$showpkt,'list'=>$list);
         return $data;
     }
     /*
      * 取得pk正方评论列表
      */
-    public function comment_goodlist(){
-        $id = I('id');
-        $pknowinfo = $this->where("id=$id")->select();
-        $pkoldlist = $this->where("id!=$id")->order('pubdate desc')->limit(8)->select();
+    public function comment_goodlist($pid){
+        $pknowinfo = $this->where("id=$pid")->select();
+        $pkoldlist = $this->where("id!=$pid")->order('pubdate desc')->limit(8)->select();
         
         foreach($pkoldlist as $k => $v){
         	$pkoldlist[$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
@@ -102,7 +82,7 @@ class PkModel extends Model{
 	    $ocomment = new \Comment();//生成评论类对象
         //正方评论列表
         
-		$goodcomm = $ocomment->getPKCommentList(-1, $id, $ppp, $curpage, 0);
+		$goodcomm = $ocomment->getPKCommentList(-1, $pid, $ppp, $curpage, 0);
 		foreach($goodcomm['artlist'] as $k=>$v){
 			$goodcomm['artlist'][$k]['postip'] = self::getAddress($v['postip']);
 			if(!empty($v['quote'])){
@@ -110,18 +90,18 @@ class PkModel extends Model{
 			}
 		}
 		
-        $goodcount = $ocomment->getCommCount($id,-1,0);//取得评论总数
-		$show = showPage($goodcount,$ppp,$curpage,IISSSITE."/pkt/app/$id/{pagenum}",'pkt');
-        $data = array('pknowinfo'=>$pknowinfo,'pkoldlist'=>$pkoldlist,'goodcomm'=>$goodcomm,'show'=>$show);
+        $goodcount = $ocomment->getCommCount($pid,-1,0);//取得评论总数
+        $showpk = showPage($goodcount,$ppp,$curpage,IISSSITE."/pk/app/$pid/{pagenum}",'pkt');
+		$showpkt = showPage($goodcount,$ppp,$curpage,IISSSITE."/pkt/app/$pid/{pagenum}",'pkt');
+        $data = array('pknowinfo'=>$pknowinfo,'pkoldlist'=>$pkoldlist,'goodcomm'=>$goodcomm,'showpk'=>$showpk,'showpkt'=>$showpkt);
         return $data;
     }
     /*
      * 取得pk反方评论列表
      */
-    public function comment_badlist(){
-        $id = I('id');
-        $pknowinfo = $this->where("id=$id")->select();
-        $pkoldlist = $this->where("id!=$id")->order('pubdate desc')->limit(8)->select();
+    public function comment_badlist($pid){
+        $pknowinfo = $this->where("id=$pid")->select();
+        $pkoldlist = $this->where("id!=$pid")->order('pubdate desc')->limit(8)->select();
         
         foreach($pkoldlist as $k => $v){
         	$pkoldlist[$k]['point_good'] = floor(($v['agreevote']/($v['agreevote']+$v['opposevote']))*100);
@@ -137,7 +117,7 @@ class PkModel extends Model{
         import("Components.Comment");
 	    $ocomment = new \Comment();//生成评论类对象
         //正方评论列表
-		$badcomm = $ocomment->getPKCommentList(-1, $id, $ppp, $curpage, 1);
+		$badcomm = $ocomment->getPKCommentList(-1, $pid, $ppp, $curpage, 1);
 		foreach($badcomm['artlist'] as $k=>$v){
 			$badcomm['artlist'][$k]['postip'] = self::getAddress($v['postip']);
 			if(!empty($v['quote'])){
@@ -145,9 +125,10 @@ class PkModel extends Model{
 			}
 		}
 		
-        $badcount = $ocomment->getCommCount($id,-1,1);//取得评论总数
-		$show = showPage($badcount,$ppp,$curpage,SITE."/pkt/opp/$id/{pagenum}",'pkt');
-        $data = array('pknowinfo'=>$pknowinfo,'pkoldlist'=>$pkoldlist,'badcomm'=>$badcomm,'show'=>$show);
+        $badcount = $ocomment->getCommCount($pid,-1,1);//取得评论总数
+		$showpk = showPage($badcount,$ppp,$curpage,IISSSITE."/pk/opp/$pid/{pagenum}",'pkt');
+		$showpkt = showPage($badcount,$ppp,$curpage,IISSSITE."/pkt/opp/$pid/{pagenum}",'pkt');
+        $data = array('pknowinfo'=>$pknowinfo,'pkoldlist'=>$pkoldlist,'badcomm'=>$badcomm,'showpk'=>$showpk,'showpkt'=>$showpkt);
         return $data;
     }
    public function getAddress($ip){

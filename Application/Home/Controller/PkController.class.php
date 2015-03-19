@@ -25,23 +25,41 @@ class PkController extends Controller {
     //pk台列表页
     public function plist(){
        $data = $this->_instance->pk_list();
-       $this->assign('show',$data['show']);
+       $this->assign('show',$data['showpk']);
        $this->assign('list',$data['list']);
        $this->display();
     }
     //正方评论列表
     public function app(){
-       $id = I('id');
-       $pknowinfo = $this->_instance->where("id=$id")->select();
-       $this->assign('pknowinfo',$pknowinfo[0]);
-       $this->display();
+       $pid = I('id');
+       if($pid <= 223){
+	       $pknowinfo = $this->_instance->where("id=$pid")->select();
+	       $this->assign('pknowinfo',$pknowinfo[0]);
+           $this->display();
+       }else{
+       	   $data = $this->_instance->comment_goodlist($pid);
+	       $this->assign('pknowinfo',$data['pknowinfo'][0]);
+	       $this->assign('pkoldlist',$data['pkoldlist']);
+	       $this->assign('goodcomm',$data['goodcomm']['artlist']);
+	       $this->assign('show',$data['showpk']);
+           $this->display("app2");
+       }
     }
     //反方评论列表
     public function opp(){
-       $id = I('id');
-       $pknowinfo = $this->_instance->where("id=$id")->select();
-       $this->assign('pknowinfo',$pknowinfo[0]);
-       $this->display();
+       $pid = I('id');
+       if($pid <= 223){
+       	   $pknowinfo = $this->_instance->where("id=$pid")->select();
+           $this->assign('pknowinfo',$pknowinfo[0]);
+           $this->display();
+       }else{
+       	   $data = $this->_instance->comment_badlist($pid);
+	       $this->assign('pknowinfo',$data['pknowinfo'][0]);
+	       $this->assign('pkoldlist',$data['pkoldlist']);
+	       $this->assign('badcomm',$data['badcomm']['artlist']);
+	       $this->assign('show',$data['showpk']);
+           $this->display("opp2");
+       }
     }
     //pk规则说明
     public function help(){

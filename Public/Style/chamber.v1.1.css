@@ -1,0 +1,150 @@
+#main{margin-bottom:10px;}
+body{background:url(../images/conference/top_headbg.jpg) repeat-x top; line-height:100%; }
+.data_m span a:hover,.data_m li a:hover,.review a.name:hover,.message_m .theme p a:hover,.chair p span a:hover,.epilog p span a:hover,.comment_bk h1 span a:hover{color:#ff0000;}
+/*翻页样式开始*/
+/*
+.pagebox{zoom:1; font-size:12px "宋体",sans-serif; text-align:center; padding-bottom:5px}
+.pagebox span{text-align:center; background:#fff; display:inline-block; display:-moz-inline-stack; vertical-align:middle; zoom:1;_display:inline;margin:0px 1px;color:#3568b9; height:23px;}
+.pagebox span a{border:1px #a6bdd0 solid; color:#a6bdd0; text-decoration:none; padding:0 8px; cursor:pointer;height:17px;padding-top:4px;display:inline-block;display:-moz-inline-stack;overflow:hidden;zoom:1;}
+.pagebox span.gray_block{border:1px #ddd solid; width:53px; height:17px;padding-top:4px;text-align:center; color:#999; cursor:default;}
+.pagebox span.onlist{padding:0 8px;height:17px;padding-top:4px;color:#fff; cursor:default; background:#003366;border:1px solid #003366;}
+*/
+/*顶部样式*/
+.top_head{width:980px;height:40px;background:url(../images/conference/top_headbg.jpg) repeat-x top; margin:0 auto; }
+.top_head img{ float:left; margin-top:9px;}
+.top_head p{ text-align:right;}
+.top_head p a{ padding:0px 8px; line-height:40px;}
+.top_head p a.red{color:#990000;}
+.banner_bg{margin:0 0 10px;}
+.banner{ height:300px; width:980px; margin:0px auto;background: url(../images/conference/chamber_headbg.jpg) no-repeat center;}
+/*头图与标题部分样式*/
+.banner_left{width:460px;padding:115px 0 0 65px;float:left;text-align:left;}
+.banner_left h1{font:40px "微软雅黑","黑体";font-weight:600;line-height:57px;}
+.banner_left p{font:22px "微软雅黑","黑体";font-weight:600;}
+.banner_right{width:439px;float:right;text-align:left;}
+.banner_right p{color:#fff;text-align:right;padding:12px 28px 31px 0px;}
+.banner_right p span{color:#ccc;}
+.banner_right p a{color:#FF0000;font-weight:bold;}
+.banner_right img{width:350px;height:200px;}
+/*导语与结语部分样式*/
+.lead{background:#f3f8fe url(../images/conference/chamber_img.jpg) no-repeat;background-position:-120px -10px; height:120px;}
+.epilog{background:#f3f8fe url(../images/conference/chamber_img.jpg) no-repeat;background-position:-120px 0px; height:140px;}
+.lead p,.epilog p{font:14px Arial,"宋体";line-height:24px; color:#666;width:auto; padding:12px 10px 0px 85px;word-break:break-all; overflow:auto;word-wrap : break-word ;}
+.epilog{background-position:-120px -140px;}
+.epilog p span{background:#d3e0ed;padding:10px 7px 5px;float:left; text-align:center;margin:0 10px 0 0;}
+.epilog p span img{width:70px;height:70px;margin:0 0 6px 0;}
+.epilog p span a{font:12px Arial, "宋体";color:#003366;font-weight:bold;line-height:24px;}
+/*左右样式*/
+.main_l{width:620px;float:left;}
+.main_r{width:350px;float:right;}
+.main_r .block h1 a{font:14px  Arial,"宋体";font-weight:bold;padding:0 0 0 13px;line-height:30px;}
+/*主持人观点样式*/
+.text_main{background:url(../images/conference/text_mbg.jpg) repeat-x top;border:1px solid #e0e0e0;padding:0 18px 14px;margin:0 0 10px;}
+.text_main h1{height:33px;background:url(../images/conference/text_m_h1bg.jpg) repeat-x bottom;margin:0px 0px 15px;}
+.text_main h1 a{display:block;height:33px;width:115px;background:url(../images/conference/chamber_img.jpg) no-repeat;background-position:0px 0px;}
+.text_main p{font:14px Arial,"宋体";line-height:24px;text-indent:2em;}
+.text_main p img{float:right;padding:4px;background:#f4f9fe;border:1px solid #dfeaf4;width:300px;height:218px;margin:0 0 0 10px;}
+/*评论框部分样式*/
+.comment_bk{background:#f3f8fe;border:1px solid #d3e0ed;}
+.comment_bk h1{height:28px;background:url(../images/conference/comment_h1bg.jpg) repeat-x;}
+.comment_bk .comment_tit{float: left;padding-left:10px;line-height:28px;font-size: 14px;}
+.comment_bk .login_com{float:left;padding:3px 0px 0px 15px;}
+.comment_bk .login_com label,.comment_bk .login_com input,.comment_bk .login_com a{display:block; float:left;}
+.comment_bk .login_com label{font-size: 12px;color: #666;line-height: 24px;height: 24px;}
+.comment_bk .login_com .txt_com{height: 18px;width: 84px;}
+.comment_bk .login_com .register{color: #193e58;text-decoration: underline;line-height: 24px;height: 24px;margin-right:5px;}
+.comment_bk .login_com .login_btn{margin-left:5px;margin-right:5px;height: 20px;width: 50px;line-height:20px;border:none;background:url(../images/pk/login_bot.jpg) no-repeat;cursor:pointer;}
+.comment_bk .comment_main{padding:5px 10px 10px 10px;}
+.comment_bk .comment_main .comment_sub{float:right;height:20px; line-height:20px;padding-top:5px;}
+.comment_bk .comment_main .comment_sub label{color:#666666;}
+.comment_bk ul{padding:0 0 0 14px;}
+.comment_bk li{float:left;margin:4px 5px 9px 0px;height:24px;}
+.comment_bk textarea{width:99.5%;height:85px;padding:2px 0 0;color:#666666;font-family:Arial, Helvetica, sans-serif;border:1px solid #becae4;border-bottom:1px solid #d5e3f1;background:#fff url(../images/conference/block_bk_loginbg.jpg) repeat-x top;margin:0px;}
+.comment_bk textarea.line_one{height:21px;overflow-y:hidden}
+/*右侧通用样式*/
+.main_r .block{border:1px solid #e0e0e0;width:auto;}
+.main_r .block h1{height:36px; background:url(../images/conference/main_r_h1bg.jpg) repeat-x;}
+.main_r .block h1 span a{font:12px "宋体";font-weight:100;color:#666;line-height:30px;padding:0 10px 0 0;}
+/*相关资料样式*/
+.data_m{margin:8px 15px 11px;}
+.data_m span a{font:12px "宋体";color:#003366;font-weight:bold;line-height:21px;}
+.data_m p,.chair p{color:#888; line-height:21px;}
+.data_m img{border:1px solid #e8eff7; float:left; width:125px;height:80px; margin:0 8px 16px 0;}
+.data_m ul{padding:0px;margin:0px;overflow:hidden;}
+.data_m li a{background:url(../images/conference/new_bg.jpg) no-repeat left;padding-left:10px;text-decoration:underline;color:#004499;line-height:21px;}
+/*投票调查样式*/
+.vote_main{padding-top:8px;margin:0px 15px;}
+.vote_main h5{font:12px "宋体";font-weight:bold;color:#004499; text-align:center;line-height:26px;}
+.vote_main form{padding:0px 0px 5px;;border-bottom:1px dashed #ccc;}
+.vote_main input{vertical-align:middle; height:30px;}
+.vote_main input.tj_left{margin:14px 0 15px 0; height:23px;}
+.vote_main span{ line-height:52px; margin-right:180px;}
+.vote_main span a{font-size:14px;text-decoration:underline;}
+/*本期主持样式*/
+.chair{padding:4px 15px 14px;height:148px;}
+.chair p{padding:3px 0 0;}
+.chair p span{background:#ebf2fc;padding:7px 7px 5px;float:left; text-align:center;margin:0 12px 0 0;}
+.chair p span img{width:100px;height:100px;margin:0 0 6px 0;}
+.chair p span a{font:14px  Arial,"宋体";font-weight:bold;color:#004499;line-height:24px;}
+/*评论版块样式*/
+.message_bk h1,.past_events h1{height:30px;background:url(../images/conference/message_h1bg.jpg) repeat-x;}
+.message_bk h1 a,.past_events h1 a{display:block;height:30px;width:80px;background:url(../images/conference/chamber_img.jpg) no-repeat;}
+.message_bk h1 a{background-position:0px -40px;}
+.past_events h1 a{background-position:0px -75px;}
+.message_m{border:1px solid #e0e0e0;background:#f8fbfe url(../images/conference/message_mbg.jpg) repeat-x top;border-top:1px solid #fff;padding:0 18px;}
+.message_m .theme{padding:21px 0 3px;}
+.message_m .theme a.grayfont{font:12px Arial,"宋体";color:#888;}
+.message_m .theme p span,.message_m .theme p a{font:14px Arial,"宋体";font-weight:bold;color:#000;padding:0px 5px; line-height:36px;}
+.message_m h2{height:21px;padding:7px 0 0 13px;background:#eff4fa;font:14px Arial,"宋体";font-weight:bold;color:#163a5e;}
+/*评论列表部分样式开始*/
+.review{border-top:1px dashed #d5deee;}
+.none_bor{border:none;}
+.review dt{height:14px;margin:12px 0px 10px 0px; padding-top:7px;color:#999;font:12px  Arial,"宋体";}
+.review dt img{padding:5px 5px 0px 0px;margin-bottom:4px;}
+.review dt a.name,.review dd a.name{color:#0b3b8c;margin:0 10px;}
+.review dt a.oname,.review dd a.oname{color:#0b3b8c;margin:0 10px 10px 0px;}
+.review dt a.name{color:#0b3b8c;}
+.review dt.chair_d a.name,.review div p.chair_s a.name{color:#990000;font-weight:bold;margin:0 10px 0 0;}
+.review div p.chair_s p.chair_p{margin:0px;}
+.review p.chair_p{padding:8px 10px 4px;line-height:24px;border:1px solid #ebebeb;background-color:#fffbd9;margin:0 0 6px;}
+.review dd em{padding:0px 10px 0px 0px;float:right;font:12px Arial,"宋体";color:#999;}
+.review dt a,.hot_blue .review dt a{color:#003366;}
+.review dd{line-height:24px;}
+.review dd a{color:#999;}
+.review dd p{font:14px  Arial,"宋体";line-height:24px}
+.review div{padding:4px 5px;line-height:24px;border:1px solid #D1D5DB;background-color:#F5F8FD;margin:0 0 4px; overflow:hidden;}
+.review div p{padding:3px 5px 0px 5px;overflow:hidden;}
+.review dd.bot_about{float:right;height:36px;}
+.review dd.bot_about span{padding:0px 0px 6px 5px;text-align:center;color:#004499;}
+.review dd.bot_about span a{color:#004499;background:#fff url(../images/conference/bot_about_abg.jpg) repeat-x center;padding:4px 8px 2px;border:1px solid #dbdee8;}
+.review dd.bot_about span.zhichi{background:#fafbfd;border:1px solid #dbdee8;border-left:none;padding:4px 8px 2px;margin:0;}
+.review dd.bot_about span.zhichi a{background:none;color:#cc0000;padding:0;border:none;}
+.pagebox_bk{text-align:center;border-top:1px dashed #d5deee;padding:21px 0px 16px;}
+.review div dd.bot_about,.review div dl{height:30px;}
+/*往期回顾样式开始*/
+.past_events_m{border:1px solid #e0e0e0;background:#fff url(../images/conference/past_events_mbg.jpg) repeat-x top;border-top:1px solid #fff;height:100px;padding:20px 0 0 4px;height:170px;}
+.past_events_m p{text-align:center;padding:0px 0px 8px 20px;float:left;display:inline;}
+.past_events_m p img{width:160px;height:117px;padding:4px;border:1px solid #d1e0f0;}
+.past_events_m p a{display:block;line-height:28px;text-decoration:underline;}
+.past_events_m p img:hover{border:1px solid #ff0000;}
+.cursor{cursor:pointer;}
+/*搬救兵弹窗样式开始*/
+.help_block{width:500px;height:150px;text-align:center;background:url(../images/conference/help_blockbg.jpg) no-repeat;margin:300px auto 0;}
+.help_block span{margin:3px;}
+.help_block p{padding:98px 0 0 0;}
+/*评论框弹窗样式开始*/
+.comment_box{position:absolute;left:324px;top:194px;width:600px;z-index:1;text-align:left;}
+.hand{cursor:pointer;}
+.comment_box h1 span.close_in input{float:right;margin:0 8px 0 0;height:14px;}
+.message_bk h1 span,.past_events h1 span{background:url(../conference/message_h1bg_r.jpg) no-repeat right top;height:30px;padding:0 12px 0 0;text-align:right; overflow:hidden;}
+.past_events h1 span a{background:none;color:#E2EFFC;font-weight:100;padding:9px 0 0;}
+.comment_bk .comment_main p{ padding-top:13px; color: #666; display: block; }
+.message_m h3{
+    background-image: url("../images/conference/new_pl_line.jpg");
+    background-position: left top;
+    background-repeat: repeat-x;
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 19px;
+}

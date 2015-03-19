@@ -20,22 +20,17 @@ function comments_usercount2(id, param){
 }
 //提交评论
 function comments_submit(id, param, type, length){
-	
 	var ev = getEvent();
 	slength = (typeof(length)=="undefined") ? 200 : length;
 	
 	if($("#"+id+" textarea[name='content']").val()==''){
 		alert('请添写留言内容');return false;
 	}
-	var categoryid=param.split('_');
-	if(categoryid[0] == '-1'){
-		
-	}else{
-		if($("#"+id+" input[name='username']").length){
-			$("#"+id+" input[name='username']").focus();
-			return false;
-		}
-	}
+	
+    if($("#"+id+" input[name='username']").length){
+		$("#"+id+" input[name='username']").focus();
+        return false;
+    }
 	
 	//pk
 	
@@ -64,15 +59,11 @@ function comments_submit(id, param, type, length){
 	}
 	*/
 	//2012-10-23添加 ent
-	var content = $("#"+id+" textarea[name='content']").val();
-	content = content.replace(/<[^>].*?>/g,"");
-	// var content = preg_replace(['&', '<', '>', '"', '_'], ['&amp;', '&lt;', '&gt;', '&quot;', ' '], content);
-	param += '_'+content;
+	param += '_'+preg_replace(['&', '<', '>', '"', '_'], ['&amp;', '&lt;', '&gt;', '&quot;', ' '], $("#"+id+" textarea[name='content']").val());
 	
 	if($("#"+id+" textarea[name='content']").val().length>slength){
 		alert('内容请少于'+slength+'字。');return false;
 	}
-	
 	var anonymous = 0;
 	if($("#"+id+" input[name='anonymous']").attr("checked")){
          anonymous = $("#"+id+" input[name='anonymous']").val();
@@ -387,10 +378,7 @@ function comments_submit_plk(id, type, length) {
 	var categoryid = $("#" + id + " input[name='categoryid']").val();
 	var infoid = $("#" + id + " input[name='specialid']").val();
 	var param = categoryid+'_'+infoid;
-	var content = $("#"+id+" textarea[name='content']").val();
-	content = content.replace(/<[^>].*?>/g,"");
-	param += '_'+content;
-	
+	param += '_'+ preg_replace([ '&', '<', '>', '"', '_' ], [ '&amp;', '&lt;','&gt;', '&quot;', ' ' ], $("#" + id + " textarea[name='content']").val());
 	if ($("#" + id + " textarea[name='content']").val().length > slength) {
 		showmessage(2,'内容请少于' + slength + '字。');return false;
 	}
@@ -455,10 +443,7 @@ function pkcomments_submit(id, type, length) {
 	var categoryid = $("#" + id + " input[name='categoryid']").val();
 	var infoid = $("#" + id + " input[name='specialid']").val();
 	var param = categoryid+'_'+infoid;
-	var content = $("#"+id+" textarea[name='content']").val();
-	content = content.replace(/<[^>].*?>/g,"");
-	param += '_'+content;
-	
+	param += '_'+ preg_replace([ '&', '<', '>', '"', '_' ], [ '&amp;', '&lt;','&gt;', '&quot;', ' ' ], $("#" + id + " textarea[name='content']").val());
 	if ($("#" + id + " textarea[name='content']").val().length > slength) {
 		showmessage(2,'内容请少于' + slength + '字。');return false;
 	}

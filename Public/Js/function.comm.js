@@ -301,7 +301,7 @@ function pkvote(id, type, text, url){
 	}
 
 	if(cookie==''){
-		var geturl = "http://enchinaiiss.com/do.php?inajax=1&do=pk&ac=vote&parameter="+id+"_"+type+"&r="+rand()+"&json=1&jsoncallback=?";
+		var geturl = siteurl+"/do.php?inajax=1&do=pk&ac=vote&parameter="+id+"_"+type+"&r="+rand()+"&json=1&jsoncallback=?";
 		$.getJSON(geturl, function(json){
 				  var redata = checkReturn(json.data);
 				  if(redata==""){

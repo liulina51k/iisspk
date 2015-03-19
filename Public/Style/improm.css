@@ -1,0 +1,168 @@
+.jqifade {
+	POSITION: absolute; BACKGROUND-COLOR: #aaaaaa
+}
+DIV.jqi {
+	BORDER-RIGHT: #eeeeee 1px solid; PADDING-RIGHT: 7px; BORDER-TOP: #eeeeee 1px solid; PADDING-LEFT: 7px; FONT-SIZE: 11px; PADDING-BOTTOM: 7px; BORDER-LEFT: #eeeeee 1px solid; WIDTH: 400px; PADDING-TOP: 7px; BORDER-BOTTOM: #eeeeee 1px solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; POSITION: absolute; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left; -moz-border-radius: 10px; -webkit-border-radius: 10px
+}
+DIV.jqi .jqicontainer {
+	FONT-WEIGHT: bold
+}
+DIV.jqi .jqiclose {
+	FONT-WEIGHT: bold; RIGHT: -2px; WIDTH: 18px; CURSOR: default; COLOR: #bbbbbb; POSITION: absolute; TOP: 4px
+}
+DIV.jqi .jqimessage {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; COLOR: #444444; LINE-HEIGHT: 20px; PADDING-TOP: 10px
+}
+DIV.jqi .jqibuttons {
+	BORDER-RIGHT: #eeeeee 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #eeeeee 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; BORDER-LEFT: #eeeeee 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #eeeeee 1px solid; BACKGROUND-COLOR: #f4f4f4; TEXT-ALIGN: right
+}
+DIV.jqi BUTTON {
+	BORDER-RIGHT: #f4f4f4 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #f4f4f4 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; MARGIN: 0px 10px; BORDER-LEFT: #f4f4f4 1px solid; COLOR: #ffffff; PADDING-TOP: 3px; BORDER-BOTTOM: #f4f4f4 1px solid; BACKGROUND-COLOR: #2f6073
+}
+DIV.jqi BUTTON:hover {
+	BACKGROUND-COLOR: #728a8c
+}
+DIV.jqi BUTTON.jqidefaultbutton {
+	BACKGROUND-COLOR: #bf5e26
+}
+.jqiwarning .jqi .jqibuttons {
+	BACKGROUND-COLOR: #bf5e26
+}
+.impromptuwarning .impromptu {
+	BACKGROUND-COLOR: #aaaaaa
+}
+.impromptufade {
+	POSITION: absolute; BACKGROUND-COLOR: #ffffff
+}
+DIV.impromptu {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; WIDTH: 300px; PADDING-TOP: 10px; POSITION: absolute; BACKGROUND-COLOR: #cccccc; TEXT-ALIGN: left
+}
+DIV.impromptu .impromptuclose {
+	FLOAT: right; MARGIN: -35px -10px 0px 0px; CURSOR: pointer; COLOR: #213e80
+}
+DIV.impromptu .impromptucontainer {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; COLOR: #ffffff; PADDING-TOP: 5px; BACKGROUND-COLOR: #213e80
+}
+DIV.impromptu .impromptumessage {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; BACKGROUND-COLOR: #415ea0
+}
+DIV.impromptu .impromptubuttons {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+DIV.impromptu BUTTON {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 3px; MARGIN: 0px 10px; PADDING-TOP: 3px
+}
+.colsJqifadewarning .colsJqi {
+	BACKGROUND-COLOR: #b0be96
+}
+.colsJqifade {
+	POSITION: absolute; BACKGROUND-COLOR: #ffffff
+}
+DIV.colsJqi {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; WIDTH: 400px; PADDING-TOP: 10px; POSITION: absolute; BACKGROUND-COLOR: #d0deb6; TEXT-ALIGN: left
+}
+DIV.colsJqi .colsJqiclose {
+	FLOAT: right; MARGIN: -35px -10px 0px 0px; CURSOR: pointer; COLOR: #bbbbbb
+}
+DIV.colsJqi .colsJqicontainer {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; COLOR: #ffffff; PADDING-TOP: 5px; HEIGHT: 160px; BACKGROUND-COLOR: #e0eec6
+}
+DIV.colsJqi .colsJqimessage {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 10px; WIDTH: 280px; PADDING-TOP: 10px; HEIGHT: 140px; BACKGROUND-COLOR: #c0cea6
+}
+DIV.colsJqi .jqibuttons {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+DIV.colsJqi BUTTON {
+	BORDER-RIGHT: #777777 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #777777 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 12px; BACKGROUND: url(../images/button_bg.jpg) #ffffff repeat-x left top; PADDING-BOTTOM: 3px; MARGIN: 5px 5px 5px 10px; BORDER-LEFT: #777777 1px solid; WIDTH: 75px; PADDING-TOP: 3px; BORDER-BOTTOM: #777777 1px solid
+}
+DIV.colsJqi BUTTON:hover {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; BORDER-LEFT: #aaaaaa 1px solid; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+.brownJqiwarning .brownJqi {
+	BACKGROUND-COLOR: #cccccc
+}
+.brownJqifade {
+	POSITION: absolute; BACKGROUND-COLOR: #ffffff
+}
+DIV.brownJqi {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; WIDTH: 300px; PADDING-TOP: 10px; POSITION: absolute; BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
+}
+DIV.brownJqi .brownJqiclose {
+	FONT-SIZE: 11px; FLOAT: right; MARGIN: -20px 0px 0px; CURSOR: pointer; COLOR: #777777
+}
+DIV.brownJqi .brownJqicontainer {
+	BORDER-RIGHT: #5f5d5a 1px solid; BORDER-TOP: #5f5d5a 1px solid; FONT-WEIGHT: bold; BORDER-LEFT: #5f5d5a 1px solid; COLOR: #ffffff; BORDER-BOTTOM: #5f5d5a 1px solid; POSITION: relative; BACKGROUND-COLOR: transparent
+}
+DIV.brownJqi .brownJqimessage {
+	BORDER-TOP: #c6b8ae 1px solid; BORDER-BOTTOM: #c6b8ae 1px solid; POSITION: relative; BACKGROUND-COLOR: #f7f6f2
+}
+DIV.brownJqi .brownJqimessage H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 15px; BACKGROUND: url(../images/brown_theme_gradient.jpg) #ffffff repeat-x left top; PADDING-BOTTOM: 7px; MARGIN: 0px; COLOR: #4d4a47; PADDING-TOP: 7px
+}
+DIV.brownJqi .brownJqimessage P {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; COLOR: #777777; PADDING-TOP: 10px
+}
+DIV.brownJqi .brownJqimessage IMG.helpImg {
+	LEFT: 10px; BOTTOM: -25px; POSITION: absolute
+}
+DIV.brownJqi .brownJqibuttons {
+	TEXT-ALIGN: right
+}
+DIV.brownJqi BUTTON {
+	BORDER-RIGHT: #777777 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #777777 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 12px; BACKGROUND: url(../images/brown_theme_gradient.jpg) #ffffff repeat-x left top; PADDING-BOTTOM: 3px; MARGIN: 5px 5px 5px 10px; BORDER-LEFT: #777777 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #777777 1px solid
+}
+DIV.brownJqi BUTTON:hover {
+	BORDER-RIGHT: #aaaaaa 1px solid; BORDER-TOP: #aaaaaa 1px solid; BORDER-LEFT: #aaaaaa 1px solid; BORDER-BOTTOM: #aaaaaa 1px solid
+}
+.cleanbluewarning .cleanblue {
+	BACKGROUND-COLOR: #acb4c4
+}
+.cleanbluefade {
+	POSITION: absolute; BACKGROUND-COLOR: #aaaaaa
+}
+DIV.cleanblue {
+	BORDER-RIGHT: #213e80 1px solid; BORDER-TOP: #213e80 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #213e80 1px solid; WIDTH: 300px; BORDER-BOTTOM: #213e80 1px solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; POSITION: absolute; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: left
+}
+DIV.cleanblue .cleanbluecontainer {
+	PADDING-RIGHT: 5px; BORDER-TOP: #213e80 14px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BACKGROUND-COLOR: #ffffff
+}
+DIV.cleanblue .cleanblueclose {
+	FONT-WEIGHT: bold; FLOAT: right; MARGIN: -19px -12px 0px 0px; WIDTH: 18px; CURSOR: default; COLOR: #ffffff
+}
+DIV.cleanblue .cleanbluemessage {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 11px; PADDING-BOTTOM: 10px; COLOR: #333333; LINE-HEIGHT: 20px; PADDING-TOP: 10px
+}
+DIV.cleanblue .cleanbluebuttons {
+	BORDER-RIGHT: #eeeeee 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #eeeeee 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; BORDER-LEFT: #eeeeee 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #eeeeee 1px solid; BACKGROUND-COLOR: #f4f4f4; TEXT-ALIGN: right
+}
+DIV.cleanblue BUTTON {
+	BORDER-RIGHT: #f4f4f4 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #f4f4f4 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; MARGIN: 0px 10px; BORDER-LEFT: #f4f4f4 1px solid; COLOR: #ffffff; PADDING-TOP: 3px; BORDER-BOTTOM: #f4f4f4 1px solid; BACKGROUND-COLOR: #314e90
+}
+DIV.cleanblue BUTTON:hover {
+	BORDER-RIGHT: #d4d4d4 1px solid; BORDER-TOP: #d4d4d4 1px solid; BORDER-LEFT: #d4d4d4 1px solid; BORDER-BOTTOM: #d4d4d4 1px solid
+}
+.extbluewarning .extblue {
+	BORDER-RIGHT: red 1px solid; BORDER-TOP: red 1px solid; BORDER-LEFT: red 1px solid; BORDER-BOTTOM: red 1px solid
+}
+.extbluefade {
+	POSITION: absolute; BACKGROUND-COLOR: #ffffff
+}
+DIV.extblue {
+	BORDER-RIGHT: #6289b6 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #6289b6 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; BORDER-LEFT: #6289b6 1px solid; WIDTH: 300px; PADDING-TOP: 0px; BORDER-BOTTOM: #6289b6 1px solid; POSITION: absolute; BACKGROUND-COLOR: #cad8ea; TEXT-ALIGN: left
+}
+DIV.extblue .extblueclose {
+	MARGIN: 2px -2px 0px 0px; CURSOR: pointer; COLOR: red; BACKGROUND-COLOR: #cad8ea; TEXT-ALIGN: right
+}
+DIV.extblue .extbluecontainer {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; FONT: 11px Verdana; COLOR: #000000; PADDING-TOP: 0px; BACKGROUND-COLOR: #cad8ea
+}
+DIV.extblue .extbluemessage {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 15px 15px; PADDING-TOP: 0px; BACKGROUND-COLOR: #cad8ea
+}
+DIV.extblue .extbluebuttons {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+DIV.extblue BUTTON {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 10px; PADDING-BOTTOM: 1px; MARGIN: 0px 10px; PADDING-TOP: 1px; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #cccccc
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={$Think.config.DB_CHARSET}" />
+<meta name="description" content="反方评论,{$pknowinfo.title},战略网" />
+<meta name="keywords" content="反方评论,战略网,战略网" />
+<title>反方评论-战略网-辩论pk台-战略网</title>
+<link href="{$Think.const.SITE}/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link href="{$Think.const.SITE}/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
+<link href="{$Think.const.SITE}/Public/style/plk_new.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/jquery.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.pk.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.cookie.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.comments.js"></script>
+<script type="text/javascript" src="{$Think.const.SITE}/Public/js/function.login.js"></script>
+<script>
+
+
+//评论支持点击
+function regoodtop(id){
+	$.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: $("#categoryid").val()+'_'+id+'_good'}, function(data){
+		$('#topgood'+id).text(parseInt( $('#topgood'+id).text())+1);
+	});
+
+}
+//评论反对点击
+function rebadtop(id){
+	$.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: $("#categoryid").val()+'_'+id+'_bad'}, function(data){
+		$('#topbad'+id).text(parseInt( $('#topbad'+id).text())+1);
+	});
+
+}
+//回复此评论
+function recommenttop(id){
+	off = $("#cmm_"+id).offset();
+	$.get(siteurl+"/do.php", {inajax:1,ado:'pk', ac:'pk_reap', parameter: $("#categoryid").val()+'_'+id}, function(data){
+		comment('发表评论', checkReturn(data), off.top+20, off.left-200,500,0);
+	});
+
+}
+function clicks(id) {
+	ids=$("li [id="+id+"]").parents('.comment_box').attr('id');
+	$("."+ids).attr('value',$("."+ids).attr('value')+$("li [id="+id+"]").attr("id"));
+}
+function setform(id){
+	$("#"+id+" input[name='subject']").val('标题:');
+	$("#"+id+" textarea[name='content']").val('内容:');
+}
+function showmessage(type,message){
+	$(".plk_tishi1").hide();
+	$(".plk_tishi2").hide();
+	$(".plk_tishi3").hide();
+	var str = '<p>' + message + '</p>';
+	$(".plk_tishi_nrr_0"+type).html(str);
+	$(".plk_tishi"+type).show();
+	
+	if(type!='3'){
+		//添加读取cookie
+	    usercomment = $.cookie('usercomment');
+	    if('' != usercomment && null!= usercomment && undefined != usercomment){
+	        $("#boxbody textarea[name='content']").val(usercomment);
+	        $.cookie('usercomment','');
+	    }
+	}
+	return false;
+}
+$(function (){
+	$(".plk_text").live("click",function(){
+    	$(".plk_tishi1").hide();
+    	$(".plk_tishi2").hide();
+    	$(".plk_tishi3").hide();
+		$(".plk_text_nr").focus();
+    });
+});
+
+</script>
+</head>
+<body>
+<input id="infoid" type="hidden" value="{$pknowinfo.id}" />
+<input id="categoryid" type="hidden" value="-1" />
+<include file="./Application/Home/View/site.head.html" />
+<div id="main_list">
+  <a href="{$Think.const.IISSSITE}/pk/index/{$pknowinfo.id}" title="{$pknowinfo.title}" class="tm"><h1>{$pknowinfo.title}</h1></a><h2>所有评论仅代表网友意见，战略网保持中立</h2>
+  <div class="top_bg_list"></div>
+  <div class="main_l_list">
+  <!--左侧选项卡-->
+    <div class="tabs">
+        <span class="topsBtnDiv">
+            <ul>
+            <li><a href="{$Think.const.IISSSITE}/pk/app/{$pknowinfo.id}/1"><span>正方评论</span></a></li>
+            <li><a href="{$Think.const.IISSSITE}/pk/opp/{$pknowinfo.id}/1" class="current"><span>反方评论</span></a></li>
+            </ul>
+        </span>
+        <div class="tabsdiv">
+			<foreach name="badcomm" item="vo">
+			<div class="review">
+				<dl class="margin15">
+					<dt class="no_bg"><em>{$vo.floor}楼</em>{$vo.postip}<a>{$vo.username}</a>{$vo.postdate|date="Y-m-d H:i:s",###}</dt>
+					<dd class="font14">
+						{$vo.quotehtml}<p>{$vo.content}</p>
+					</dd>
+					<dd class="bot_bit">
+						<ul>
+							<li><a class="support" href="javascript:regoodtop({$vo.id});">支持</a><span class="colorred"><b id="topgood{$vo.id}">{$vo.good}</b>票</span></li>
+							<li><a class="support" href="javascript:rebadtop({$vo.id});">反对</a><span class="colorblue"><b id="topbad{$vo.id}">{$vo.bad}</b>票</span></li>
+							<li id="cmm_{$vo.id}"><a class="blackonline" href="javascript:recommenttop({$vo.id});">回复此评论</a></li>
+							<li class="zf" id="cmmm_{$vo.id}"><a id="appyes" class="blackonline share_a" style="cursor:pointer" name="transmit_button2" href="javascript:transmit_pk({$pknowinfo.id},'{$vo.content|strip_tags}','cmmm_{$vo.id}');">转发</a></li>
+						</ul>
+						<br class="clear" />
+					</dd>
+					<dd class="dd_boder"></dd>
+				</dl>
+			</div>
+			</foreach>
+			{$show}
+		</div>
+    </div>
+  </div>
+  <div class="main_r_list">
+    <div class="block_list">
+      <span class="fright"><img src="{$Think.const.SITE}/Public/images/pk/pk_h1bg_r.jpg"></span><a class="wqht"></a>
+      </div>
+      <div class="pk_new_list">
+      <ul>
+		<foreach name="pkoldlist" item="vo" key="k">
+        <li><a href="{$vo.pkurl}" title="{$vo.title}" target="_blank"><span id="pktitle{$vo.id}">{$vo.title}</span></a>
+        <div class="pk_jdt_list">
+            <div class="pk_jdt_num_list"><b id="agree{$vo.id}">{$vo.agreevote}</b> / <b id="oppose{$vo.id}">{$vo.opposevote}</b></div>
+            <div class="pk_jdt_a_list"><a class="zczhengfang"  onclick="pkvote({$vo.id}, 'agree');" style="cursor:pointer"></a><a class="zcfanfang" onclick="pkvote({$vo.id}, 'oppose');" style="cursor:pointer"></a></div>
+            <div class="pk_jdt_nr_list"><span class="zhengfang" style="width:{$vo.point_good}%"></span><span class="fanfang" style="width:{$vo.point_bad}%"></span></div>
+        </div>
+        </li>
+		</foreach>
+      </ul>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<div class="Blank"></div>
+<include file="./Application/Home/View/site.bottom.html" />
+</body>
+</html>

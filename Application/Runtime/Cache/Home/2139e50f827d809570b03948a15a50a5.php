@@ -5,30 +5,29 @@
 <meta name="description" content="反方评论,<?php echo ($pknowinfo["title"]); ?>,战略网" />
 <meta name="keywords" content="反方评论,<?php echo ($pknowinfo["title"]); ?>,战略网" />
 <title>反方评论-<?php echo ($pknowinfo["title"]); ?>-辩论pk台-战略网</title>
-<link href="<?php echo ($site); ?>/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
-<link href="<?php echo ($site); ?>/Public/style/pk.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/jquery.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comm.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.login.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.pk.js?04021"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.cookie.js"></script>
+<link href="<?php echo (SITE); ?>/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link href="<?php echo (SITE); ?>/Public/style/pk2.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.pk.js?04021"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.cookie.js"></script>
 </head>
 <body>
 <input id="infoid" type="hidden" value="<?php echo ($pknowinfo["id"]); ?>" />
 <input id="categoryid" type="hidden" value="-1" />
-<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo ($site); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo ($site); ?>/Public/images/top_pk_logo.jpg"> </a>
+<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo (SITE); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo (SITE); ?>/Public/images/top_pk_logo.jpg"> </a>
   <p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
-  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo ($attpath); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
+  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo (ATTPATH); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
 </div>
 <div id="main">
 	<div id="pk_titles">
-<a href="<?php echo ($site); ?>/pk/index/<?php echo ($pknowinfo["id"]); ?>" title="<?php echo ($pknowinfo["title"]); ?>" class="tm"><?php echo ($pknowinfo["title"]); ?></a><br /><a class="grayfont">所有评论仅代表网友意见，战略网保持中立</a> <a href="<?php echo ($site); ?>/pk/index/<?php echo ($pknowinfo["id"]); ?>" class="blue">查看PK</a>
+<a href="<?php echo (IISSSITE); ?>/pk/index/<?php echo ($pknowinfo["id"]); ?>" title="<?php echo ($pknowinfo["title"]); ?>" class="tm"><?php echo ($pknowinfo["title"]); ?></a><br /><a class="grayfont">所有评论仅代表网友意见，战略网保持中立</a> <a href="<?php echo (IISSSITE); ?>/pk/index/<?php echo ($pknowinfo["id"]); ?>" class="blue">查看PK</a>
 </div><div class="clear"></div>
 </div>
 <div id="main">
 	<div class="review_bk">
 		<div id="main_rev">
-			<div id="rev_ybg"><span id='mutipagetop'></span><img class="fist" src="<?php echo ($site); ?>/Public/images/pk/rev_y.jpg" /><a href="<?php echo ($site); ?>/pk/opp/<?php echo ($pknowinfo["id"]); ?>/1"><img src="<?php echo ($site); ?>/Public/images/pk/rev_n.jpg" border="0" /></a><a href="<?php echo ($site); ?>/pk/plist/1"><img src="<?php echo ($site); ?>/Public/images/pk/rev_pk.jpg" border="0" /></a><br>
+			<div id="rev_ybg"><span class="pktoppage" id='mutipagetop'></span><img class="fist" src="<?php echo (SITE); ?>/Public/images/pk/rev_y.jpg" /><a href="<?php echo (IISSSITE); ?>/pk/opp/<?php echo ($pknowinfo["id"]); ?>/1"><img src="<?php echo (SITE); ?>/Public/images/pk/rev_n.jpg" border="0" /></a><a href="<?php echo (IISSSITE); ?>/pk/plist/1"><img src="<?php echo (SITE); ?>/Public/images/pk/rev_pk.jpg" border="0" /></a><br>
 			</div>
 			<div id="gv_comments_pklist_-1_<?php echo ($pknowinfo["id"]); ?>"></div>
 			<div class="bor_top">

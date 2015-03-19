@@ -11,7 +11,7 @@ function pk_viewnum(id, param){
  *@param id 对应标签上的id
  */
 function transmit_pk(pkid,title,id) {
-
+    alert(1);
 	//获取被点击的标签的ID 整个页面是唯一的!
 	var obj = $('#'+id);
 	//判断是左边的点击还是右边的点击  左边差200PX正好  右边差688PX正好

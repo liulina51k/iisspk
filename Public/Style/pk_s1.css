@@ -197,7 +197,7 @@ a.support,.colorred,.colorblue,.review li a.blackonline{ background:url(../image
 .comment_bk textarea.line_one{height:21px;overflow-y:hidden}
 .comment_bk #form .comment_sub {float: right;height: 20px;line-height: 20px;width: 130px;}
 .comment_bk .comment_sub .niming{margin-right:5px;}
-.comment_bk .login_com{float:right;padding:3px 0px 0px 15px;margin-right:25px;}
+.comment_bk .login_com{float:right;padding:3px 0px 0px 15px;margin-right:10px;}
 .comment_bk .login_com label,.comment_bk .login_com input,.comment_bk .login_com a{display:block; float:left;}
 .comment_bk .login_com label{font-size: 12px;color: #666;line-height: 24px;height: 24px;}
 .comment_bk .login_com .txt_com{ height: 18px; width: 84px; background-image: url(../../images/pk/dhk_line.jpg); background-repeat: repeat-x; background-position: left top; border: 1px solid #3A9CC9; }

@@ -13,7 +13,7 @@ array_pop($siteroot);
 define('I_ROOT', implode(DS, $siteroot));
 
 define('SITE','http://chinaiisspk.com');
-define('IISSSITE','http://chinaiisspk.com');
+define('IISSSITE','http://enchinaiiss.com');
 define('ATTPATH','http://images.enchinaiiss.com/attachment');
 
 $mtime = explode(' ', microtime());

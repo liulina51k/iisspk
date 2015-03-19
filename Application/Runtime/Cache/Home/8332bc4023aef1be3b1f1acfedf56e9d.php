@@ -5,13 +5,15 @@
 <meta name="description" content="反方评论,<?php echo ($pknowinfo["title"]); ?>,战略网" />
 <meta name="keywords" content="反方评论,战略网,战略网" />
 <title>反方评论-战略网-辩论pk台-战略网</title>
-<link href="<?php echo ($site); ?>/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
-<link href="<?php echo ($site); ?>/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
-<link href="<?php echo ($site); ?>/Public/style/plk_new.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/jquery.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.comm.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.pk.js"></script>
-<script type="text/javascript" src="<?php echo ($site); ?>/Public/js/function.cookie.js"></script>
+<link href="<?php echo (SITE); ?>/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<link href="<?php echo (SITE); ?>/Public/style/pk_s1.css" rel="stylesheet" type="text/css">
+<link href="<?php echo (SITE); ?>/Public/style/plk_new.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.comm.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.pk.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.cookie.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.comments.js"></script>
+<script type="text/javascript" src="<?php echo (SITE); ?>/Public/js/function.login.js"></script>
 <script>
 
 
@@ -77,20 +79,20 @@ $(function (){
 <body>
 <input id="infoid" type="hidden" value="<?php echo ($pknowinfo["id"]); ?>" />
 <input id="categoryid" type="hidden" value="-1" />
-<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo ($site); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo ($site); ?>/Public/images/top_pk_logo.jpg"> </a>
+<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo (SITE); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo (SITE); ?>/Public/images/top_pk_logo.jpg"> </a>
   <p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
-  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo ($attpath); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
+  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo (ATTPATH); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
 </div>
 <div id="main_list">
-  <a href="<?php echo ($iisssite); ?>/pk/index/<?php echo ($pknowinfo["id"]); ?>" title="<?php echo ($pknowinfo["title"]); ?>" class="tm"><h1><?php echo ($pknowinfo["title"]); ?></h1></a><h2>所有评论仅代表网友意见，战略网保持中立</h2>
+  <a href="<?php echo (IISSSITE); ?>/pk/index/<?php echo ($pknowinfo["id"]); ?>" title="<?php echo ($pknowinfo["title"]); ?>" class="tm"><h1><?php echo ($pknowinfo["title"]); ?></h1></a><h2>所有评论仅代表网友意见，战略网保持中立</h2>
   <div class="top_bg_list"></div>
   <div class="main_l_list">
   <!--左侧选项卡-->
     <div class="tabs">
         <span class="topsBtnDiv">
             <ul>
-            <li><a href="<?php echo ($site); ?>/pkt/app/<?php echo ($pknowinfo["id"]); ?>/1"><span>正方评论</span></a></li>
-            <li><a href="<?php echo ($site); ?>/pkt/opp/<?php echo ($pknowinfo["id"]); ?>/1" class="current"><span>反方评论</span></a></li>
+            <li><a href="<?php echo (IISSSITE); ?>/pkt/app/<?php echo ($pknowinfo["id"]); ?>/1"><span>正方评论</span></a></li>
+            <li><a href="<?php echo (IISSSITE); ?>/pkt/opp/<?php echo ($pknowinfo["id"]); ?>/1" class="current"><span>反方评论</span></a></li>
             </ul>
         </span>
         <div class="tabsdiv">
@@ -118,7 +120,7 @@ $(function (){
   </div>
   <div class="main_r_list">
     <div class="block_list">
-      <span class="fright"><img src="<?php echo ($site); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><a class="wqht"></a>
+      <span class="fright"><img src="<?php echo (SITE); ?>/Public/images/pk/pk_h1bg_r.jpg"></span><a class="wqht"></a>
       </div>
       <div class="pk_new_list">
       <ul>

@@ -1,0 +1,50 @@
+@charset "utf-8";
+body {background: url(../images/conference/n/top_headbg.jpg) repeat-x scroll 50% top transparent; font-family: Tahoma,Geneva,sans-serif,"宋体"; font-size: 12px;line-height: 100%;margin: 0; padding: 0;text-align: left; width: 100%;}
+.hide { display:none }
+.top{ background:url(../images/conference/n/top_headbg.jpg) repeat-x top;}
+.top_head { width:980px; height:40px; background:url(../images/conference/n/top_headbg.jpg) repeat-x top; margin:0 auto }
+.top_head a:hover { color:#c00000 }
+.top_head img { float:left; margin-top:9px }
+.top_head p { text-align:right }
+.top_head p a { padding:0 8px; line-height:40px }
+.top_head p a.red { color:#990000 }
+.top_head p span a { color:#004499 }
+
+
+#zcr{ width:978px; height:650px; margin:0 auto; background-color:#f5f9fd; border:1px solid #d9e9f9; border-top:4px solid #092552;}
+.zcr_left{ text-align:left; height:630px; background:url(../images/conference/n/zcr_bg.jpg) repeat-x bottom; width:670px; float:left; margin:10px 10px; _margin:10px 5px;}
+.zcr_LOGO{ margin:10px;}
+.zcr_left h1{ text-align:center; font-size:18px; font-family:"微软雅黑"; color:#333;  font-weight:normal; line-height:32px}
+.zcr_form{ color:#333; width:660px; margin:15px 0px 15px 10px;}
+.zcr_form dl{ width:650px; height:38px;}
+.zcr_form dl dt{ width:90px; height:21px; float:left; line-height:21px; text-align:right; padding-right:10px;}
+.zcr_form dl dt img{ margin:0 5px;}
+.zcr_form dl dd{ width:375px; height:21px; float:left; line-height:21px;}
+.zcr_form dl dd.t1{ width:120px; float:left; padding-left:12px; color:#F00;}
+.zcr_form dl dd.t2{ width:140px; float:left; padding-left:12px; color:#999;}
+.zcr_form dl dd.t2 strong{ color:#F00; font-weight:normal; margin:0px 3px;}
+.zcr_form dl dd.t3{ float:left; width: 462px; height:290px;}
+.zcr_form dl dd.t7{ width:85px; float:left; padding-left:2px; _padding:0px; color:#F00; margin-top:273px;}
+.zcr_form dl.t_h{ height:25px; line-height:25px;}
+.zcr_form dl dd.t4{ width:100px;}
+.zcr_form dl dd.t5{ width:100px;  height:25px; margin:0 10px; display:inline; }
+.zcr_form dl dd.t6{ width:100px; line-height:25px;}
+.zcr_form dl dd.t6 a{ color:#049; text-decoration:underline;}
+.zcr_form dl dd.t5 .input2{ width:100px; height:25px;}
+.zcr_form dl dd input.input1{ width:375px; height:21px;}
+.zcr_form dl.tj{ margin:34px 0 0 0; }
+.zcr_form dl.tj dt.tj_dt{ width:290px; float:left;}
+.zcr_form dl.tj dt.tj_dt input.button{ background:url(../images/conference/n/tijiao_button2.jpg); width:90px; height:26px; border:none; cursor:pointer;}
+.zcr_form dl.tj dd.tj_dd{ width:24px; float:left; height:26px; line-height:26px; margin-left:10px; }
+.zcr_form dl.tj dd.tj_dd_zi{ float:left; width:130px; color:#999; margin-top:2px; *margin-top:5px; _margin-top:5px;}
+.zcr_form dl.tj dd.tj_dd input.checkbox{ margin-top:6px;}
+.zcr_form dl.bjq{ height:310px;}
+.input4 { margin-top: 20px; vertical-align: top; margin-bottom: 10px; height: 293px;}
+.input4 span { float: left; }
+.input4_right { width: 462px; height:290px;  border:1px solid #c5c5c5; }
+
+.zcr_right{ float:right; width:265px; margin-right:20px;}
+.zcr_right h2{ height:32px; line-height:32px; color:#082552; text-align:left; font-family:"微软雅黑"; font-size:18px; font-weight:normal; margin:50px 0px 20px 0px; }
+.zcr_right h2 img{ margin:0px 6px 0px 10px; vertical-align:middle; }
+.zcr_right p{ line-height:21px; color:#333; font-size:12px; text-align:left; padding-bottom:5px;}
+.zcr_right p.font14{ font-size:14px; line-height:24px;}
