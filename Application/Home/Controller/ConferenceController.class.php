@@ -1,7 +1,6 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
-class ConferenceController extends Controller {
+class ConferenceController extends BaseController {
     private $_instance;
     public function __construct() {
         parent::__construct();
@@ -17,7 +16,7 @@ class ConferenceController extends Controller {
         $this -> assign('related',$info['related']);
         if($id > 245)
             $this -> display("conference.index.v3.0");
-        elseif($id > 201)
+        elseif($id > 201)  
             $this -> display("conference.index.v2.0");
         elseif($id > 66)
             $this -> display("conference.index.v1.0");
@@ -46,48 +45,53 @@ class ConferenceController extends Controller {
 		$db = M();
 	    import("Components.User");
 	    $ouser = new \User();//生成用户对象
+	    
 	    $uid  = $ouser -> getUserid();
 	    $uname   = $ouser -> getUserName();
 		
 		$_IGLOBAL['supe_uid'] = $uid;
 		$_IGLOBAL['supe_username'] = $uname;
+		$blogurl = 'http://blog.top0001.com';
 		//用户名
+		/*
 		if($uid){
 			$con['other']['iiss_supeid'] = 'true';
 		}else{
-			U('请登录后再进行相关操作，如果你不是会员请先注册。', IISSSITE.'/user/reg.html', 5);
-		}
-		
+			parent :: showmessage('请登录后再进行相关操作，如果你不是会员请先注册。', IISSSITE.'/user/reg.html', 5);
+		}*/
 		$val = $db -> table("iissblog_user") -> where("uid = $uid") -> select();
 		if(empty($val)){
-			U('您还没开通博客，请先开通博客。', IISSSITE.'/user/blog.html', 5);
+			parent :: showmessage('您还没开通博客，请先开通博客。', IISSSITE.'/user/blog.html', 5);
 		}
 		if(submitcheck('sendsubmit')){
-			printr(1);
+			printr(2);
 		}else{
 			import("Components.Editor");
 	        $oeditor = new \Editor();
 			
-	        import("Components.Sysdata");
-	        $osysdata = new \Sysdata();
+	        import("Components.Sysdata");  
+	        $osysdata = new \Sysdata('sysconfig');
 			//验证码
 			$verify=$osysdata -> getDataValue('sysconfig', 'spaceblog_verify');
 			$result=$osysdata -> getDataValue('sysconfig', 'spaceblog_result');
 			if(!empty($verify)){
 				$key=array_rand($verify);
-				strtosm('vkey', $key);
-				strtosm('verifykey', $verify[$key]);
-				strtosm('resultkey', $result[$key]);
+				$con['other']['vkey'] = $key;
+				$con['other']['verifykey'] = $verify[$key];
+				$con['other']['resultkey'] = $result[$key];
 			}
-			strtosm('uid', $uid);
-			strtosm('username', $uname);
-			strtosm('blogurl', IConfig::BLOGURL);
+			$con['other']['uid'] = $uid;
+			$con['other']['username'] = $uname;
+			$con['other']['blogurl'] = 'http://blog.enchinaiiss.com';
 			//获得编辑器
-			strtosm('editor',IEditor::getXh('xheditor-mini', '', 'message', '12', '80', 'width:464px;height:282px'));
-
+			$editor = $oeditor -> getXh('xheditor-mini', '', 'message', '12', '80', 'width:464px;height:282px');
+			$con['other']['editor'] = $editor;
+			
 			$topid = 59;
 			$arrsubnav = array();
-			$arrnav = IIissdata::getSiteNavi();
+			import("Components.Iissdata");
+	        $osysdata = new \Iissdata();
+			$arrnav = $osysdata -> getSiteNavi();
 			foreach($arrnav as $item){
 				if($item['categoryid']==$topid){
 					$arrsubnav = $item['sub'];
@@ -101,9 +105,11 @@ class ConferenceController extends Controller {
 				$submenu[] = '<a href="'.$item['link'].'" title="'.$item['naviname'].'" '.$target.'>'.$item['naviname'].'</a>';
 			}
 			unset($arrsubnav);
-
-			strtosm('submenu',$submenu);
-			strtosm('topcategoryid',$topid);
+            
+			$con['other']['topcategoryid'] = $topid;
+			$con['submenu'] = $submenu;
+			$this -> assign ('other',$con['other']);
+			$this -> assign ('submenu',$con['submenu']);
 
 			$this -> display('conference.add');
 		}

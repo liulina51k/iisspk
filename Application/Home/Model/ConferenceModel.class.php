@@ -86,7 +86,7 @@ class ConferenceModel extends Model{
 			$oclog->writeLog($infoid,$topid,$categoryid,$ip,$viewertempid,$viewerawaysid,$url);
 		}
 		
-		$dayampm = getDayAMPM();
+		$dayampm = getDayAMPM(); 
 		//获取论坛中心地址 和 个人用户中心地址
 		$bbsurl  = 'http://bbs.top0001.com';
 		$userurl = 'http://user.top0001.com';

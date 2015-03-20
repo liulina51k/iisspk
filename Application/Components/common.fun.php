@@ -10,6 +10,52 @@ function printr($msg){
 	print_r($msg);die;
 	echo '</pre>';
 }
+/*
+* 对话框,URL跳转
+* @param string $msgkey:       对话框内显示的信息
+* @param string $url_forward:  要跳转的URL
+* @param int    $second:       此对话框停留的时间
+*/
+function showmessage($msgkey, $url_forward='', $second=5, $tpl='') {
+    
+    global $_IGLOBAL;
+
+	//清除缓存
+	ob_end_clean();
+
+	if(empty($_IGLOBAL['inajax']) && $url_forward && empty($second)) {
+		header("HTTP/1.1 301 Moved Permanently");
+		header("Location: $url_forward");
+	} else {
+
+		$message = $msgkey;
+
+		if($_IGLOBAL['inajax']) {
+			if($url_forward) {
+				$message = "<a href=\"$url_forward\">$message</a><ajaxok>";
+			}
+			echo 'true||##alert(\''.$message.'\');';
+			//ob_out();
+		} else {
+
+			$message = stristr($message, '</a>') == false ? "<a href=\"$url_forward\">$message</a>" : $message;
+			if($url_forward) {
+				$message .= "<script>setTimeout(\"window.location.href ='$url_forward';\", ".($second*1000).");</script>";
+			}else{
+				if($second>0){
+					$message = str_replace("=\"\">", "=\"javascript:history.go(-1);\">", $message);
+					//$message .= "<script>setTimeout(\"location.href='".IConfig::BASE."'\", ".($second*1000).");</script>";
+				}
+			}
+		    $data['second'] = $second;
+		    $data['message'] = $message;
+			//if(isset($usertpl)) $tpl = $usertpl;
+			//template('showmessage.html');
+			return $data;
+		}
+	}
+	exit();
+}
 /**
 * 字符串解密加密
 */
@@ -116,8 +162,7 @@ function formhash() {
 
 //判断提交是否正确
 function submitcheck($var) {
-    
-	if(!empty($_POST[$var]) && $_SERVER['REQUEST_METHOD'] == 'POST') {
+	if(!empty($_POST[$var]) && $_SERVER['REQUEST_METHOD'] == 'POST') {printr(1);
 		if((empty($_SERVER['HTTP_REFERER']) || preg_replace("/https?:\/\/([^\:\/]+).*/i", "\\1", $_SERVER['HTTP_REFERER']) == preg_replace("/([^\:]+).*/", "\\1", $_SERVER['HTTP_HOST'])) && $_POST['formhash'] == formhash()) {
 			return true;
 		} else {

@@ -10,9 +10,9 @@ class Sysdata
 {
     private $_objcache;
     
-	public function __construct(){
-		import("Components.Cache");
-		$this -> _objcache = new \Cache();
+	public function __construct($var){
+		 import("Components.Cache");
+		 $this -> _objcache = new \Cache('sysdata/data_'.$var.'.php');
 	}
      /*
 	 * 获取缓存数据,先读取缓存，如果缓存不存在或过期就从数据库读取
@@ -27,13 +27,13 @@ class Sysdata
 				  if($query){
                        $dataarr[$var] = sstripslashes(mb_unserialize($query[0]['datavalue']));
 					   //把结果写入缓存
-					   $this -> _objcache->arrayToFile('sysdata/data_'.$var.'.php', $dataarr[$var]);
+					   $this -> _objcache -> arrayToFile('sysdata/data_'.$var.'.php', $dataarr[$var]);
 				  }else{printr(1);
                        $dataarr[$var] = '';
 				  }
 			  }
 		 }
-
+													
 		 if(empty($varfield)){
 			  return $dataarr[$var];
 		 }else{
@@ -85,7 +85,7 @@ class Sysdata
 		 }else{
             $this -> _objcache->delCache('sysdata');
 		 }
-
+ 
 	 }
 
 }

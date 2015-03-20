@@ -74,7 +74,7 @@ function checkform(){
 		$("#codetip").show();
 		$('#verifycode').focus();
 		return false;
-	}else{
+	}else{alert(passVerify);
         if(passVerify<1){
 		
 			$("#yz").css("display","inline");
@@ -119,8 +119,8 @@ function getverify(){
 	<div class="zcr_left">
 	<div class="zcr_LOGO"><img src="<?php echo (SITE); ?>/Public/images/conference/n/yst_LOGO.jpg" width="140" height="41" /></div>
 	<h1>全球议事厅申请做主持人在线投稿</h1>
-	<form id="form2" name="form2" method="post" action="add.html" onsubmit="return checkform();">
-	<input type="hidden" name="formhash" value="<?php echo ($formhash); ?>" /><input value='<?php echo ($uid); ?>' type='hidden' id='uid'>
+	<form id="form2" name="form2" method="post" action="" onsubmit="return checkform();">
+	<input type="hidden" name="formhash" value="<?php echo ($formhash); ?>" /><input value='<?php echo ($other["uid"]); ?>' type='hidden' id='uid'>
         <div class="zcr_form">
 			<dl>
 				<dt><img src="<?php echo (SITE); ?>/Public/images/conference/n/zcrsq_top.jpg"/>文章标题：</dt>
@@ -130,7 +130,7 @@ function getverify(){
 			</dl>
 			<dl>
 				<dt>文章作者：</dt>
-				<dd><?php echo ($username); ?></dd>
+				<dd><?php echo ($other["username"]); ?></dd>
             </dl>
             <dl>
 				<dt><img src="<?php echo (SITE); ?>/Public/images/conference/n/zcrsq_top.jpg"/>主持人观点：</dt>
@@ -141,13 +141,13 @@ function getverify(){
 			<dl class="bjq">
 				<dt><img src="<?php echo (SITE); ?>/Public/images/conference/n/zcrsq_top.jpg"/>观点阐述：</dt>
 				<dd class="t3">
-				<div class="input4_right"><?php echo ($editor); ?></div>
+				<div class="input4_right"><?php echo ($other["editor"]); ?></div>
 				</dd>
 				<dd class="t7 hide" id="ctip">请输入观点阐述</dd>
 			</dl>
             <dl class="t_h">
 				<dt>验证码：</dt>
-				<dd class="t4"><img id="imgquestion" width="100" height="25" src="<?php echo (SITE); ?>/Public/send/getverify" title="请输入问题答案" /></dd>
+				<dd class="t4"><img id="imgquestion" width="100" height="25" src="<?php echo (IISSSITE); ?>/send/getverify" title="请输入问题答案" /></dd>
 				<dd class="t5"><input id="verifycode" name="verifycode" type="text" class="input2" /></dd>
 				<dd class="t6"><a href="javascript:getverify();" >看不清 换一个</a> <img src="<?php echo (SITE); ?>/Public/images/send/check_default.gif" name="check" id='0' style="width:16px;height:16px;" /></dd>
 				<dd class="t6 t1 hide" id="codetip">请输入验证码</dd>

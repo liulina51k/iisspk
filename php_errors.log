@@ -331,3 +331,27 @@
 [19-Mar-2015 17:39:07 PRC] PHP Fatal error:  Call to undefined function sstripslashes() in D:\chinaiiss\iisspk\Application\Components\Sysdata.class.php on line 28
 [19-Mar-2015 17:39:49 PRC] PHP Fatal error:  Call to undefined function mb_unserialize() in D:\chinaiiss\iisspk\Application\Components\Sysdata.class.php on line 28
 [19-Mar-2015 17:40:45 PRC] PHP Fatal error:  Class 'IFactory' not found in D:\chinaiiss\iisspk\Application\Components\Cache.class.php on line 63
+[20-Mar-2015 10:53:24 PRC] PHP Fatal error:  Call to a member function write() on a non-object in D:\chinaiiss\iisspk\Application\Components\Cache.class.php on line 70
+[20-Mar-2015 10:57:14 PRC] PHP Fatal error:  Call to undefined function Home\Controller\strtosm() in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 78
+[20-Mar-2015 11:07:48 PRC] PHP Fatal error:  Call to undefined function Home\Controller\strtosm() in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 78
+[20-Mar-2015 11:16:06 PRC] PHP Fatal error:  Call to private Iissdata::__construct() from context 'Home\Controller\ConferenceController' in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 92
+[20-Mar-2015 14:20:13 PRC] PHP Fatal error:  Cannot access empty property in D:\chinaiiss\iisspk\Application\Components\Common.fun.php on line 52
+[20-Mar-2015 14:26:30 PRC] PHP Fatal error:  Using $this when not in object context in D:\chinaiiss\iisspk\Application\Components\Common.fun.php on line 58
+[20-Mar-2015 17:00:04 PRC] PHP Fatal error:  Class 'Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 4
+[20-Mar-2015 17:00:20 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 4
+[20-Mar-2015 17:01:00 PRC] PHP Fatal error:  Class 'BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 4
+[20-Mar-2015 17:01:01 PRC] PHP Fatal error:  Class 'BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 4
+[20-Mar-2015 17:01:22 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 4
+[20-Mar-2015 17:01:24 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 4
+[20-Mar-2015 17:01:24 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 4
+[20-Mar-2015 17:01:27 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 4
+[20-Mar-2015 17:04:04 PRC] PHP Fatal error:  Class 'BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 4
+[20-Mar-2015 17:04:22 PRC] PHP Fatal error:  Class 'Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 4
+[20-Mar-2015 17:06:56 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3
+[20-Mar-2015 17:06:57 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3
+[20-Mar-2015 17:06:58 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3
+[20-Mar-2015 17:06:59 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3
+[20-Mar-2015 17:07:01 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3
+[20-Mar-2015 17:07:02 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3
+[20-Mar-2015 17:07:52 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3
+[20-Mar-2015 17:10:36 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3

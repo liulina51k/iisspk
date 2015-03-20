@@ -39,7 +39,7 @@ class Clicklog
     public function setFileByModelId($model)
     {
 		$filename = str_replace('.', '_', $_SERVER['SERVER_ADDR']).'_'.date('YmdH',$this->_odate->getTime()).'_'.$model.'.txt';
-        $file =  I_SITE.DS.'data'.DS.'log'.DS.$this->_odate->getFullYear().$this->_odate->getMonth().DS.$this->_odate->getDate().DS.$filename;
+        $file = APP_PATH.'Data'.DS.'log'.DS.$this->_odate->getFullYear().$this->_odate->getMonth().DS.$this->_odate->getDate().DS.$filename;
         $this->_file = $file;
         $this->_ofile->setFile($file);
         $this->_ofile->setPath($file);

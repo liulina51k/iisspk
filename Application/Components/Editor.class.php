@@ -43,7 +43,7 @@ class Editor
 	  */
 	  public static function getXh($xname, $text='', $name = 'message', $rows='12', $cols='80',$style='width:80%')
 	  {
-		  $xheditor = '<script type="text/javascript" src="'.APP_PATH.'Components/xheditor/xheditor.js"></script>';
+		  $xheditor = '<script type="text/javascript" src="'.IISS.'/Application/Components/xheditor/xheditor.js"></script>';
 
 		  $xheditor .= "<textarea id='$name' name='$name' class='$xname' rows='$rows' cols='$cols' style='$style'>{$text}</textarea>";
 

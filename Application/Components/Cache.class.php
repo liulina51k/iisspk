@@ -13,8 +13,9 @@
 class Cache
 {
 
-	private $cache_dir = './Application/data/';  //存放缓存文件的位于根目录的位置
+	private $cache_dir = 'Data/';  //存放缓存文件的位于根目录的位置
 	private $cache_Folder = 'admin,sysdata';//存放缓存文件的文件夹
+	private $_objfile;
 	//private $cache_time = 604800;//缓存时间 1天=86400秒 默认7天
 
 	/**
@@ -23,9 +24,9 @@ class Cache
 	* @param int $expireTime:缓存的时间
 	*/
 	function __construct($cachefile){
-        $this->cache_dir = I_SITE.DS.$this->cache_dir;
+        $this->cache_dir = APP_PATH.$this->cache_dir;
         import("Components.File");
-        $objfile = new \File($this->cache_dir.$cachefile);
+        $this -> _objfile = new \File($this->cache_dir.$cachefile);
 	}
 
 
@@ -58,16 +59,16 @@ class Cache
 	/**
 	* 把数组转换成缓存文件
 	*/
-	public function arrayToFile($arrvalue)
+	public function arrayToFile($cachefile,$arrvalue)
 	{
 		//写入缓存目录的文件
 		if(is_dir($this->cache_dir)){
-           $objfile->createFolder();
+           $this -> _objfile -> createFolder();
 		}
 
 		$s = "<?php\r\n";
 		$s .= '$value = '.var_export($arrvalue, TRUE).";\r\n";
-		$objfile->write($s);
+		$this -> _objfile -> write($s);
 
 	}
 
@@ -78,10 +79,10 @@ class Cache
 
 		//写入缓存目录的文件
 		if(is_dir($this->cache_dir)){
-           $objfile->createFolder();
+           $this -> _objfile -> createFolder();
 		}
 
-		$objfile->write($xmlinfo);
+		$this -> _objfile -> write($xmlinfo);
 	}
 
     /**
@@ -104,10 +105,10 @@ class Cache
 
 		if(is_dir($filepath)){
 
-           $objfile->delFolder($filepath, 0);
+           $this -> _objfile -> delFolder($filepath, 0);
         }else{
 
-		   $objfile->delete($filepath);
+		   $this -> _objfile -> delete($filepath);
 
 		}
 	}

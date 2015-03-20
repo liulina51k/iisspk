@@ -230,7 +230,7 @@
 	   	<div class="pl_nr" id="comment_bottom">
 			<form onsubmit="return false;" id="conference_login_reply_<?php echo ($infoid); ?>">
 			<textarea name="content" id="artcomment" cols="" rows="" class="plk" placeholder="请输入评论内容"></textarea>
-			<?php if($loginusername != ''): ?><div class="dl_warp" id="flogin">
+			<?php if($loginusername == ''): ?><div class="dl_warp" id="flogin">
 				<div class="dl"><input name="username" type="text" class="dlk"  value="用户名" onblur="if($(this).val()=='')$(this).val('用户名');" placeholder="用户名" onfocus="enterSubmit($(this));if($(this).val()=='用户名')$(this).val('');"  buttonid="artcomlogin"><label class="passwordTips" name="passwordTips">密码</label><input name="password" type="password" class="dlk" onfocus="enterSubmit($(this));$('.passwordTips').html('');" onblur="if($(this).val()=='')$('.passwordTips').html('密码');"  buttonid="artcomlogin"></div>
 				<div class="zc_ico"><span><a href="<?php echo (SITE); ?>/user/reg.html" target="_blank">注册</a></span><a href="###" onclick="out_login('sina')"><img src="<?php echo (SITE); ?>/Public/images/conference/n/sina.jpg"></a><a href="###" onclick="out_login('qq')"><img src="<?php echo (SITE); ?>/Public/images/conference/n/QQ.jpg"></a></div>
 				<div class="fb"><span class="tj_button"><a href="###" onclick="return conference_submit('comment_bottom', '-7_<?php echo ($info["id"]); ?>_2');" id="artcomlogin">登录/发布</a></span><input name="anonymous" class="nm" type="checkbox"><span>匿名</span></div>
@@ -274,7 +274,7 @@
         <div class="m_r_01_zi"><h2><?php echo ($other["author"]); ?></h2><h3>本期议事厅主持人</h3></div>
         <div class="clear"></div>
         <div class="m_r_01_p"><p><?php echo (nl2br(mb_substr($other["authorsummary"],0,108,'utf8'))); ?></p></div>
-        <div class="zhuchiren"><a href="<?php echo (SITE); ?>/conference/add.html"><img src="<?php echo (SITE); ?>/Public/images/conference/n/zcr.jpg" width="140" height="30" alt="我要做主持人" /></a></div>
+        <div class="zhuchiren"><a href="http://chinaiisspk.com/conference/add.html"><img src="<?php echo (SITE); ?>/Public/images/conference/n/zcr.jpg" width="140" height="30" alt="我要做主持人" /></a></div>
     </div>
     <div class="Blank"></div>
     <div id="main_r_w" style="height:570px; width:300px;">
@@ -307,7 +307,7 @@
 </div>
 <!--往期回顾-->
 <?php if($oldlist != ''): ?><div class="wqhg" id="wangqi">
-    <div class="tab_02"><span class="more"><a href="<?php echo (SITE); ?>/spec/index-274/1.html" target="_blank">更多</a></span><span>往期回顾</span></div>
+    <div class="tab_02"><span class="more"><a href="<?php echo (IISSSITE); ?>/spec/index-274/1.html" target="_blank">更多</a></span><span>往期回顾</span></div>
     <div class="wqhg_nr">
     <ul>
 	<?php if(is_array($oldlist)): foreach($oldlist as $key=>$vo): ?><li>
