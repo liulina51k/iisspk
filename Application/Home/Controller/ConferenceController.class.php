@@ -9,6 +9,10 @@ class ConferenceController extends BaseController {
     //pk台首页
     public function index(){
         $id = I('id');
+        $flag = $this->_instance -> where("id = $id") -> getField("flag");
+        if(strstr($flag,'m')){
+			parent :: showmessage("你访问的页面不存在");
+		}
         $info = $this->_instance->getConference($id,0);
         $this -> assign('info',$info['info']);
         $this -> assign('oldlist',$info['oldlist']);
@@ -26,6 +30,10 @@ class ConferenceController extends BaseController {
      //pk台首页
     public function preview(){
         $id = I('id');
+        $flag = $this->_instance -> where("id = $id") -> getField("flag");
+        if(strstr($flag,'m')){
+			parent :: showmessage("你访问的页面不存在");
+		}
         $info = $this -> _instance -> getConference($id,1);
         $this -> assign('info',$info['info']);
         $this -> assign('oldlist',$info['oldlist']);

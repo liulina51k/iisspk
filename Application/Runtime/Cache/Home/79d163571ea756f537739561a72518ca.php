@@ -202,7 +202,7 @@
 <div class="main">
 <div class="main_left">
     <div class="tab"><span><img src="<?php echo (SITE); ?>/Public/images/conference/n/tab_ico.jpg"/>主持人观点</span></div>
-    <div class="zcr"><p><?php echo ($info["starttext"]); ?></p><a href="<?php echo (SITE); ?>/conference/index/<?php echo ($info["id"]); ?>#flag">回复主持人观点</a></div>
+    <div class="zcr"><p><?php echo ($info["starttext"]); ?></p><a href="<?php echo (IISSSITE); ?>/conference/index/<?php echo ($info["id"]); ?>#flag">回复主持人观点</a></div>
     <div class="clear"></div>
     <div class="main_zw"><p><?php echo (nl2br($info["viewtext"])); ?></p></div>
     <div class="share">
@@ -291,9 +291,9 @@
             <h2>投票调查</h2>
 			<div class="vote_main">
 	            <?php if(is_array($other["arrvote"])): foreach($other["arrvote"] as $key=>$vo): ?><script>var idstr = 'click|conference_vote_<?php echo ($info["id"]); ?>'+'$'+conference_subject+'调查@@<?php echo (SITE); ?>/vote/<?php echo ($vo["voteid"]); ?>.html@@<?php echo ($info["subject"]); ?>_调查';</script>
-				<h5><?php echo ($vo["title"]); ?></h5>
+				<h3><?php echo ($vo["title"]); ?></h3>
 				<form id="form<?php echo ($vo["voteid"]); ?>" name="form<?php echo ($vo["voteid"]); ?>" onsubmit="return false;">
-				<?php if(is_array($vo["vote"])): foreach($vo["vote"] as $key=>$vo1): ?><label title="<?php echo ($vo1); ?>">
+				<?php if(is_array($vo["vote"])): foreach($vo["vote"] as $key=>$vo1): ?><label title="<?php echo ($vo1); ?>" style="margin-left:-10px;">
 				  <input type='<?php if($vo["votetype"] == 1): ?>radio<?php else: ?>checkbox<?php endif; ?>' name="vote_<?php echo ($vo["voteid"]); ?>" id="vote<?php echo ($key); ?>" value="<?php echo ($key); ?>" />
 				<?php echo ($vo1); ?></label><br /><?php endforeach; endif; ?>
 				</form>

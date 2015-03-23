@@ -199,7 +199,7 @@
 <div class="main">
 <div class="main_left">
     <div class="tab"><span><img src="{$Think.const.SITE}/Public/images/conference/n/tab_ico.jpg"/>主持人观点</span></div>
-    <div class="zcr"><p>{$info.starttext}</p><a href="{$Think.const.SITE}/conference/index/{$info.id}#flag">回复主持人观点</a></div>
+    <div class="zcr"><p>{$info.starttext}</p><a href="{$Think.const.IISSSITE}/conference/index/{$info.id}#flag">回复主持人观点</a></div>
     <div class="clear"></div>
     <div class="main_zw"><p>{$info.viewtext|nl2br}</p></div>
     <div class="share">
@@ -299,10 +299,10 @@
 			<div class="vote_main">
 	            <foreach name="other.arrvote" item="vo">
 				<script>var idstr = 'click|conference_vote_{$info.id}'+'$'+conference_subject+'调查@@{$Think.const.SITE}/vote/{$vo.voteid}.html@@{$info.subject}_调查';</script>
-				<h5>{$vo.title}</h5>
+				<h3>{$vo.title}</h3>
 				<form id="form{$vo.voteid}" name="form{$vo.voteid}" onsubmit="return false;">
 				<foreach name="vo.vote" item="vo1" key="key">
-				<label title="{$vo1}">
+				<label title="{$vo1}" style="margin-left:-10px;">
 				  <input type='<if condition="$vo.votetype eq 1">radio<else/>checkbox</if>' name="vote_{$vo.voteid}" id="vote{$key}" value="{$key}" />
 				{$vo1}</label><br />
 				</foreach>

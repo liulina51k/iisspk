@@ -4,10 +4,6 @@ use Think\Model;
 class ConferenceModel extends Model{
     public function getConference($id,$act){
     	$con['info'] = $this -> where("id = $id") -> find();
-    	/*if(empty($con['info'])) $this->error("你访问的页面不存在");
-		if(strstr($con['flag'],'m') && empty($act)){
-			$this->error("你访问的页面不存在");
-		}*/
     	
     	import("Components.Comment");
 	    $ocomment = new \Comment();//生成评论类对象
@@ -35,8 +31,8 @@ class ConferenceModel extends Model{
 		
 		$author = $con['info']['name'];
 		$bloguser = $db -> table('iissblog_user') -> where("name = '$author' or username = '$author'")  -> find();
-		//$uid = $bloguser['uid'];
-		//$con['authorsummary'] = $db -> table("iiss_member") -> where("id = $uid") -> getField("bio");
+		$uid = $bloguser['uid'];
+		$con['other']['authorsummary'] = file_get_contents(IISSSITE."/memberinfo.php?uid=$uid");
 		$con['other']['authordomain'] = $bloguser['domain'];
 		$con['other']['authorid'] = $bloguser['uid'];
 		$con['other']['author'] = $author;
@@ -88,8 +84,9 @@ class ConferenceModel extends Model{
 		
 		$dayampm = getDayAMPM(); 
 		//获取论坛中心地址 和 个人用户中心地址
-		$bbsurl  = 'http://bbs.top0001.com';
-		$userurl = 'http://user.top0001.com';
+		$bbsurl = C("BBSURL");
+		$userurl = C("USERURL");
+		$blogurl = C("BLOGURL");
 		$praise  = $db -> table("iiss_conference_author_praise") -> where("conferenceid = $id") -> getField("praise");
 		//strtosm('avatarpic', avatar($uid, 'middle'));
 		if($id>201){
@@ -102,6 +99,7 @@ class ConferenceModel extends Model{
 		$con['other']['dayampm'] = $dayampm;
 		$con['other']['bbsurl'] = $bbsurl;
 		$con['other']['userurl'] = $userurl;
+		$con['other']['blogurl'] = $blogurl;
 		$con['other']['praise'] = isset($praise) ? $praise : 0;
 		$con['other']['avatarpic'] = "http://ucenter.top0001.com/avatar.php?uid={$bloguser['uid']}&size=middle";
 		$con['other']['commcount'] = $commcount;

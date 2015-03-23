@@ -86,7 +86,7 @@ $(function () {
 </div>
 <!--内容部分开始-->
 <div id="main">
-	<div class="lead"><p class="more" style="vertical-align:middle;">{$info.starttext}</p></div>
+	<div class="lead"><p class="more" style="vertical-align:middle;">{$info.starttext|nl2br}</p></div>
 </div>
 <div id="main">
 <div class="main_l">
@@ -188,7 +188,7 @@ $(function () {
 <if condition="$info.endtext neq ''">
 <div id="main">
 	<div class="epilog">
-		  <p>{$info.endtext}</p>
+		  <p>{$info.endtext|nl2br}</p>
 	</div>
 </div>
 </if>

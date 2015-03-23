@@ -18,7 +18,7 @@ class BaseController extends Controller {
 		}
 	    $data['second'] = $second;
 	    $data['message'] = $message;
-	    $blogurl = 'http://blog.top0001.com';
+	    $blogurl = C("BLOGURL");
 		$this -> assign('second',$second);
 		$this -> assign('message',$message);
 		$this -> assign('blogurl',$blogurl);

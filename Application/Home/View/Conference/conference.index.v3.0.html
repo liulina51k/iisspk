@@ -226,7 +226,7 @@
 <div class="main">
 <div class="main_left">
     <div class="tab"><span><img src="{$Think.const.SITE}/Public/images/conference/n/tab_ico.jpg"/>主持人观点</span></div>
-    <div class="zcr"><p>{$info.starttext}</p><a href="{$Think.const.SITE}/conference/index/{$info.id}#flag">回复主持人观点</a></div>
+    <div class="zcr"><p>{$info.starttext}</p><a href="{$Think.const.IISSSITE}/conference/index/{$info.id}#flag">回复主持人观点</a></div>
     <div class="clear"></div>
     <div class="main_zw">{$info.viewtext|nl2br}</div>
     <div class="share">
@@ -254,7 +254,7 @@
 	   	<div class="pl_nr" id="comment_bottom">
 			<form onsubmit="return false;" id="conference_login_reply_{$info.id}">
 			<textarea name="content" id="artcomment" cols="" rows="" class="plk" placeholder="请输入评论内容"></textarea>
-			<if condition="$loginusername neq ''">
+			<if condition="$other.loginuser eq ''">
 			<div class="dl_warp" id="flogin">
 				<div class="dl"><input name="username" type="text" class="dlk"  value="用户名" onblur="if($(this).val()=='')$(this).val('用户名');" placeholder="用户名" onfocus="enterSubmit($(this));if($(this).val()=='用户名')$(this).val('');"  buttonid="artcomlogin"><label class="passwordTips" name="passwordTips">密码</label><input name="password" type="password" class="dlk" onfocus="enterSubmit($(this));$('.passwordTips').html('');" onblur="if($(this).val()=='')$('.passwordTips').html('密码');"  buttonid="artcomlogin"></div>
 				<div class="zc_ico"><span><a href="{$Think.const.SITE}/user/reg.html" target="_blank">注册</a></span><a href="###" onclick="out_login('sina')"><img src="{$Think.const.SITE}/Public/images/conference/n/sina.jpg"></a><a href="###" onclick="out_login('qq')"><img src="{$Think.const.SITE}/Public/images/conference/n/QQ.jpg"></a></div>

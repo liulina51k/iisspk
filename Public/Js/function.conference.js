@@ -37,8 +37,7 @@ function conference_submit(id, param){
 function conference_regood(id){
 	$.get(siteurl+"/do.php", {inajax:1,ado:'comment', ac:'comment_vote', parameter: $("#categoryid").val()+'_'+id+'_good',rv:new Date().getTime()}, function(data){
 		      $('#good'+id).text(parseInt( $('#good'+id).text())+1);
-		});
-
+	});
 }
 
 function conference_commentnum(id,param){
@@ -46,5 +45,5 @@ function conference_commentnum(id,param){
 }
 //退出登录2012-3-19
 function loginout(id,param){
-   doAjaxGetJSON(id,'conference','conference_loginout',param);
+    doAjaxGetJSON(id,'conference','conference_loginout',param);
 }

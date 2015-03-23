@@ -139,7 +139,7 @@ function show_allcomment(param){
 		</div>
         <ul class="pic_big_text">
 				<foreach name="related" item="vo" key="key">
-				<if condition="$key gt 0">
+				<if condition="$key gt 0 && $key lt 5">
                 <li><a href="{$vo.id}" title="{$vo.subject}" target="_blank">{$vo.subject|mb_substr=0,22,'utf8'}</a></li>
 		        </if>
 			    </foreach>
@@ -148,7 +148,7 @@ function show_allcomment(param){
       </div>
       <div class="right_r2">
        <h2><a class="cursor">投票调查</a></h2>
-                <div class="vote_main">
+            <div class="vote_main">
 			<foreach name="other.arrvote" item="vo">
 			<script>var idstr = 'click|conference_vote_{$info.id}'+'$'+conference_subject+'调查@@{$Think.const.SITE}/vote/{$vo.voteid}.html@@{$info.subject}_调查';</script>
 			<h5>{$vo.title}</h5>
@@ -161,7 +161,7 @@ function show_allcomment(param){
 			</form>
 			<span class="fright"><a href="javascript:viewresearch({$vo.voteid});">查看结果&gt;&gt;</a></span><input class="tj_left" type="image" onclick="submitvote({$vo.voteid});" src="{$Think.const.SITE}/Public/images/vote_button.jpg" />
 			</foreach>
-		</div>
+		   </div>
       </div>
       <div class="right_r2">
        <h2><a class="cursor">本期主持</a></h2>
@@ -208,10 +208,10 @@ function show_allcomment(param){
   <if condition="$info.endtext neq ''">
   <div class="ty">
 	<div class="past_events">
-		<h1><span class="fright"><a href="{$Think.const.SITE}/spec/index-274/1.html" target="_blank">更多&gt;&gt;</a></span><a></a></h1>
+		<h1><span class="fright"><a href="{$Think.const.IISSSITE}/spec/index-274/1.html" target="_blank">更多&gt;&gt;</a></span><a></a></h1>
 	<div class="text_pic">
         <img src="{$Think.const.SITE}/Public/images/conference/ad2.jpg" />
-        <p>{$info.endtext}</p>
+        <p>{$info.endtext|nl2br}</p>
         <div class="clear"></div>
         </div>
 	</div>
@@ -273,7 +273,7 @@ function show_allcomment(param){
 		       <foreach name="oldlist" item="vo">
 				<p>
 					<a href="{$vo.url}" title="{$vo.subject}" target="_blank"><img src="{$Think.const.ATTPATH}/{$vo.pic}" /></a>
-					<a href="{$vo.url}" title="{$vo.subject}" target="_blank">{$vo.shortsubject||mb_substr=0,14,'utf8'}</a>
+					<a href="{$vo.url}" title="{$vo.subject}" target="_blank">{$vo.shortsubject|mb_substr=0,13,'utf8'}</a>
 				</p>
 			  </foreach>
 		</div>
