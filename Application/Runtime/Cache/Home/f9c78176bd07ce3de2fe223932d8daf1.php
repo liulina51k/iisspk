@@ -110,9 +110,15 @@ function getverify(){
 </script>
 </head>
 <body>
-<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo (SITE); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo (SITE); ?>/Public/images/top_pk_logo.jpg"> </a>
-  <p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
-  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo (ATTPATH); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
+<div class="top_head"> 
+	<a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo (SITE); ?>/Public/images/top_head_logo.jpg"></a> 
+	<?php if(conference == 'pk'): ?><a href='<?php if($pkinfo["id"] != ''): echo (IISSSITE); ?>/pk/index/<?php echo ($pkinfo["id"]); else: echo ($refer); endif; ?>'>
+	<img class="comm_logo" alt="辩论PK台" src="<?php echo (SITE); ?>/Public/images/top_pk_logo.jpg"></a>
+	<?php else: ?>
+	<a href="<?php echo (IISSSITE); ?>/spec/index-274/1.html">
+	<img class="comm_logo" alt="全球议事厅"  src="<?php echo (SITE); ?>/Public/images/top_conference_logo.jpg"></a><?php endif; ?>
+	<p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
+   <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo (ATTPATH); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
 </div>
 <div class="Blank"></div>
 <div id="zcr">
@@ -141,7 +147,9 @@ function getverify(){
 			<dl class="bjq">
 				<dt><img src="<?php echo (SITE); ?>/Public/images/conference/n/zcrsq_top.jpg"/>观点阐述：</dt>
 				<dd class="t3">
-				<div class="input4_right"><?php echo ($other["editor"]); ?></div>
+				<div class="input4_right">
+				<script type="text/javascript" src="<?php echo (IISSSITE); ?>/include/xheditor/xheditor.js"></script><textarea id='message' name='message' class='xheditor-mini' rows='12' cols='80' style='width:464px;height:282px'></textarea>
+				</div>
 				</dd>
 				<dd class="t7 hide" id="ctip">请输入观点阐述</dd>
 			</dl>

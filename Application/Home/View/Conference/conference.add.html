@@ -74,7 +74,7 @@ function checkform(){
 		$("#codetip").show();
 		$('#verifycode').focus();
 		return false;
-	}else{alert(passVerify);
+	}else{
         if(passVerify<1){
 		
 			$("#yz").css("display","inline");
@@ -110,7 +110,7 @@ function getverify(){
 </script>
 </head>
 <body>
-<include file="./Application/Home/View/site.head.html" />
+<include file="./Application/Home/View/site.head.html" headtips="conference"/>
 <div class="Blank"></div>
 <div id="zcr">
 	<div class="zcr_left">
@@ -138,7 +138,9 @@ function getverify(){
 			<dl class="bjq">
 				<dt><img src="{$Think.const.SITE}/Public/images/conference/n/zcrsq_top.jpg"/>观点阐述：</dt>
 				<dd class="t3">
-				<div class="input4_right">{$other.editor}</div>
+				<div class="input4_right">
+				<script type="text/javascript" src="{$Think.const.IISSSITE}/include/xheditor/xheditor.js"></script><textarea id='message' name='message' class='xheditor-mini' rows='12' cols='80' style='width:464px;height:282px'></textarea>
+				</div>
 				</dd>
 				<dd class="t7 hide" id="ctip">请输入观点阐述</dd>
 			</dl>

@@ -27,7 +27,7 @@ class ConferenceModel extends Model{
 		$db = M();
 		$con['other']['arrvote'] = $db -> table("iiss_vote") -> where("infoid = $id and categoryid = -7") -> select();
 		if(isset($con['other']['arrvote'][0]['vote']))
-		    $con['other']['arrvote'][0]['vote'] = unserialize($con['other']['arrvote'][0]['vote']);
+		    $con['other']['arrvote'][0]['vote'] = mb_unserialize($con['other']['arrvote'][0]['vote']);
 		
 		$author = $con['info']['name'];
 		$bloguser = $db -> table('iissblog_user') -> where("name = '$author' or username = '$author'")  -> find();
@@ -88,7 +88,6 @@ class ConferenceModel extends Model{
 		$userurl = C("USERURL");
 		$blogurl = C("BLOGURL");
 		$praise  = $db -> table("iiss_conference_author_praise") -> where("conferenceid = $id") -> getField("praise");
-		//strtosm('avatarpic', avatar($uid, 'middle'));
 		if($id>201){
 			//评论数
 			$commcount = $ocomment->getNumByInfoId($id, -7);
@@ -101,11 +100,9 @@ class ConferenceModel extends Model{
 		$con['other']['userurl'] = $userurl;
 		$con['other']['blogurl'] = $blogurl;
 		$con['other']['praise'] = isset($praise) ? $praise : 0;
-		$con['other']['avatarpic'] = "http://ucenter.top0001.com/avatar.php?uid={$bloguser['uid']}&size=middle";
+		$con['other']['avatarpic'] = C("UCENTERURL")."/avatar.php?uid={$bloguser['uid']}&size=middle";
 		$con['other']['commcount'] = $commcount;
 		return $con;
     }
-    public function addCon(){
-        
-    }
+   
 }

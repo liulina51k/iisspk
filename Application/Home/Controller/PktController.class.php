@@ -27,6 +27,7 @@ class PktController extends Controller {
        $data = $this->_instance->pk_list();
        $this->assign('show',$data['showpkt']);
        $this->assign('list',$data['list']);
+       $this->assign('refer',$data['refer']);
        $this->display();
     }
     //正方评论列表

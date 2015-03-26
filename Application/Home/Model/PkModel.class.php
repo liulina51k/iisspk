@@ -26,8 +26,8 @@ class PkModel extends Model{
         $nowtime  = getDayAMPM();
         
         //获取论坛中心地址 和 个人用户中心地址
-		$bbsurl  = 'http://bbs.top0001.com';
-		$userurl = 'http://user.top0001.com';
+		$bbsurl  = C("BBSURL");
+		$userurl = C("USERURL");
 		$pkarr['goodcomm'] = $ocomment->getPKReComment(1,$pid, 0);//取得最佳观点
 		$pkarr['badcomm']  = $ocomment->getPKReComment(1,$pid, 1);//取得反方最佳观点
 		
@@ -43,6 +43,7 @@ class PkModel extends Model{
      * 取得pk话题列表
      */
     public function pk_list(){
+    	global $_IGLOBAL;
         $count = $this->count();// 查询满足要求的总记录数
         $page = new \Think\Page($count,12); //生成tp自带的分页类对象
         $list = $this->order('pubdate desc')->limit($page->firstRow.','.$page->listRows)->select();//取得列表
@@ -57,7 +58,9 @@ class PkModel extends Model{
         $curpage = $p;
         $showpk  = pkPage($count,12,$curpage,makesiteurl('','pk','plist','{pagenum}'),1);//取得分页url样式
         $showpkt = showPage($count,12,$curpage,makesiteurl('','pkt','plist','{pagenum}'),'pkt');//取得分页url样式
-        $data = array('showpk'=>$showpk,'showpkt'=>$showpkt,'list'=>$list);
+        $refer=explode('/',$_IGLOBAL['refer']);
+		$refer=isset($refer['5']) ? IISSSITE.'/pk/index/'.$refer['5'] : $_IGLOBAL['refer'];
+        $data = array('showpk'=>$showpk,'showpkt'=>$showpkt,'list'=>$list,'refer'=>$refer);
         return $data;
     }
     /*

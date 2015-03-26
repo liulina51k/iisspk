@@ -12,7 +12,6 @@
 
 class Cache
 {
-
 	private $cache_dir = 'Data/';  //存放缓存文件的位于根目录的位置
 	private $cache_Folder = 'admin,sysdata';//存放缓存文件的文件夹
 	private $_objfile;

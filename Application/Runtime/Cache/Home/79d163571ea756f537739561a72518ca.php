@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo (C("DB_CHARSET")); ?>">
-<meta name="description" content="<?php echo ($context); ?>">
+<meta name="description" content="<?php echo ($info["starttext"]); ?>">
 <meta name="keywords" content="<?php echo ($info["subject"]); ?>" />
 <title><?php if($info["seosubject"] != ''): echo ($info["seosubject"]); else: echo ($info["subject"]); ?>_全球议事厅_<?php endif; ?>战略网</title>
 <link href="<?php echo (SITE); ?>/Public/style/basic.css" rel="stylesheet" type="text/css">
@@ -178,9 +178,15 @@
 <body>
 <input id="categoryid" type="hidden" value="-7" />
 <input id="txturl" type="hidden" value="<?php echo (SITE); ?>/conference/index/<?php echo ($info["id"]); ?>" />
-<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo (SITE); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo (SITE); ?>/Public/images/top_pk_logo.jpg"> </a>
-  <p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
-  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo (ATTPATH); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
+<div class="top_head"> 
+	<a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo (SITE); ?>/Public/images/top_head_logo.jpg"></a> 
+	<?php if(conference == 'pk'): ?><a href='<?php if($pkinfo["id"] != ''): echo (IISSSITE); ?>/pk/index/<?php echo ($pkinfo["id"]); else: echo ($refer); endif; ?>'>
+	<img class="comm_logo" alt="辩论PK台" src="<?php echo (SITE); ?>/Public/images/top_pk_logo.jpg"></a>
+	<?php else: ?>
+	<a href="<?php echo (IISSSITE); ?>/spec/index-274/1.html">
+	<img class="comm_logo" alt="全球议事厅"  src="<?php echo (SITE); ?>/Public/images/top_conference_logo.jpg"></a><?php endif; ?>
+	<p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
+   <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo (ATTPATH); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
 </div>
 <div class="banner_index">
 	<div class="fanjiao">
@@ -230,7 +236,7 @@
 	   	<div class="pl_nr" id="comment_bottom">
 			<form onsubmit="return false;" id="conference_login_reply_<?php echo ($infoid); ?>">
 			<textarea name="content" id="artcomment" cols="" rows="" class="plk" placeholder="请输入评论内容"></textarea>
-			<?php if($loginusername == ''): ?><div class="dl_warp" id="flogin">
+			<?php if($other["loginusername"] == ''): ?><div class="dl_warp" id="flogin">
 				<div class="dl"><input name="username" type="text" class="dlk"  value="用户名" onblur="if($(this).val()=='')$(this).val('用户名');" placeholder="用户名" onfocus="enterSubmit($(this));if($(this).val()=='用户名')$(this).val('');"  buttonid="artcomlogin"><label class="passwordTips" name="passwordTips">密码</label><input name="password" type="password" class="dlk" onfocus="enterSubmit($(this));$('.passwordTips').html('');" onblur="if($(this).val()=='')$('.passwordTips').html('密码');"  buttonid="artcomlogin"></div>
 				<div class="zc_ico"><span><a href="<?php echo (SITE); ?>/user/reg.html" target="_blank">注册</a></span><a href="###" onclick="out_login('sina')"><img src="<?php echo (SITE); ?>/Public/images/conference/n/sina.jpg"></a><a href="###" onclick="out_login('qq')"><img src="<?php echo (SITE); ?>/Public/images/conference/n/QQ.jpg"></a></div>
 				<div class="fb"><span class="tj_button"><a href="###" onclick="return conference_submit('comment_bottom', '-7_<?php echo ($info["id"]); ?>_2');" id="artcomlogin">登录/发布</a></span><input name="anonymous" class="nm" type="checkbox"><span>匿名</span></div>

@@ -355,3 +355,5 @@
 [20-Mar-2015 17:07:02 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3
 [20-Mar-2015 17:07:52 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3
 [20-Mar-2015 17:10:36 PRC] PHP Fatal error:  Class 'Home\Controller\BaseController' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 3
+[25-Mar-2015 10:21:20 PRC] PHP Parse error:  syntax error, unexpected '[' in D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php on line 115
+[25-Mar-2015 11:13:32 PRC] PHP Fatal error:  Class 'Editor' not found in D:\chinaiiss\iisspk\Application\Home\Controller\ConferenceController.class.php on line 82

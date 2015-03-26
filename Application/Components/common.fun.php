@@ -11,17 +11,29 @@ function printr($msg){
 	echo '</pre>';
 }
 /*
+* 把字符串或数据转换安全模式
+* @string array/string $string: 要过滤的数据
+* @return: 返回过滤后的数据
+*/
+function saddslashes($string) {
+	if(is_array($string)) {
+		foreach($string as $key => $val) {
+			$string[$key] = saddslashes($val);
+		}
+	} else {
+		$string = addslashes($string);
+	}
+	return $string;
+}
+/*
 * 对话框,URL跳转
 * @param string $msgkey:       对话框内显示的信息
 * @param string $url_forward:  要跳转的URL
 * @param int    $second:       此对话框停留的时间
 */
-function showmessage($msgkey, $url_forward='', $second=5, $tpl='') {
+function showmessage($msgkey, $url_forward='', $second=5) {
     
     global $_IGLOBAL;
-
-	//清除缓存
-	ob_end_clean();
 
 	if(empty($_IGLOBAL['inajax']) && $url_forward && empty($second)) {
 		header("HTTP/1.1 301 Moved Permanently");
@@ -37,7 +49,9 @@ function showmessage($msgkey, $url_forward='', $second=5, $tpl='') {
 			echo 'true||##alert(\''.$message.'\');';
 			//ob_out();
 		} else {
-
+			$site = SITE;
+			$iisssite = IISSSITE;
+			$blogurl = C("BLOGURL");
 			$message = stristr($message, '</a>') == false ? "<a href=\"$url_forward\">$message</a>" : $message;
 			if($url_forward) {
 				$message .= "<script>setTimeout(\"window.location.href ='$url_forward';\", ".($second*1000).");</script>";
@@ -47,15 +61,206 @@ function showmessage($msgkey, $url_forward='', $second=5, $tpl='') {
 					//$message .= "<script>setTimeout(\"location.href='".IConfig::BASE."'\", ".($second*1000).");</script>";
 				}
 			}
-		    $data['second'] = $second;
-		    $data['message'] = $message;
-			//if(isset($usertpl)) $tpl = $usertpl;
-			//template('showmessage.html');
-			return $data;
+			if(strstr($message,$blogurl)){
+				$jumpname = '博客';
+			}else{
+				$jumpname = '首页';
+			}
+			$str = <<<SHOWMESSAGE
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>网页信息提示页面</title>
+<link href="$site/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="$site/Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="$site/Public/js/function.comm.js"></script>
+<body>
+<div id="main">
+	<div class="bug_block">
+		<div class="bug_outside">
+			<div class="bug_inside">
+			<img src="$site/Public/images/blog/blog_bug.jpg" width="67" height="67" />
+			<p><span>$message</span><br />{$second}秒钟页面将自动跳转至{$jumpname}</p>
+		</div>
+		<div class="bug_insides">
+			<a class="blue" href="javascript:history.go(-1);">返回上一页</a><a class="blue" href="$iisssite">返回首页</a><a class="grayfont" href="$iisssite">战略网</a>
+		</div>
+		</div></div>
+	</div>
+</div>
+</body>
+</html>
+SHOWMESSAGE;
+          echo $str;
 		}
 	}
 	exit();
 }
+//获取字符串
+function getstr($string, $length, $in_slashes=0, $out_slashes=0, $censor=0, $html=0, $json=0) {
+	global $_IGLOBAL;
+//	$string = trim($string);
+
+	if($in_slashes) {
+		//传入的字符有slashes
+		$string = sstripslashes($string);
+	}
+	if($html < 0) {
+		//去掉html标签
+		$string = preg_replace("/(\<[^\<]*\>|\r|\n|\s|\[.+?\])/is", ' ', $string);
+		$string = shtmlspecialchars($string);
+	} elseif ($html == 0) {
+		//转换html标签
+		$string = shtmlspecialchars($string);
+	}
+
+	if($censor) {
+		//词语屏蔽
+		//取得系统设置参数
+		$disablewords = file_get_contents(IISSSITE."/sysinfo.php?var=sysconfig&datavalue=disablewords");
+		$replacewords = file_get_contents(IISSSITE."/sysinfo.php?var=sysconfig&datavalue=replacewords");
+		$reviewwords = file_get_contents(IISSSITE."/sysinfo.php?var=sysconfig&datavalue=reviewwords");
+		$comments_check = file_get_contents(IISSSITE."/sysinfo.php?var=sysconfig&datavalue=comments_check");
+		$_IGLOBAL['ischeck'] = $comments_check ? 0 : 1;//评论审核
+
+		if($disablewords && preg_match('/'.$disablewords.'/i', $string)) {
+			if($json){
+				return false;
+			}else{
+				showmessage('内容里含有非法字符');
+			}
+		}elseif(!empty($replacewords)) {
+			 $reparr = explode('|', $replacewords);
+             foreach($reparr as $value){
+				$rarr = array();
+				$rarr = explode('=', $value);
+			    $arr['find'][]= isset($rarr[0]) ? '/'.$rarr[0].'/i' : '';
+				$arr['replace'][]= isset($rarr[1]) ? $rarr[1] : '';
+			 }
+
+			 $string = @preg_replace($arr['find'], $arr['replace'], $string);
+		}
+		if(!empty($reviewwords)){
+			if(preg_match('/'.$reviewwords.'/i', $string)) {
+				$_IGLOBAL['ischeck'] = 0;
+			}
+		}
+		
+	}
+	if($length && strlen($string) > $length) {
+		//截断字符
+		$wordscut = '';
+		if(strtolower(C("DB_CHARSET")) == 'utf-8') {
+			//utf8编码
+			$n = 0;
+			$tn = 0;
+			$noc = 0;
+			while ($n < strlen($string)) {
+				$t = ord($string[$n]);
+				if($t == 9 || $t == 10 || (32 <= $t && $t <= 126)) {
+					$tn = 1;
+					$n++;
+					$noc++;
+				} elseif(194 <= $t && $t <= 223) {
+					$tn = 2;
+					$n += 2;
+					$noc += 2;
+				} elseif(224 <= $t && $t < 239) {
+					$tn = 3;
+					$n += 3;
+					$noc += 2;
+				} elseif(240 <= $t && $t <= 247) {
+					$tn = 4;
+					$n += 4;
+					$noc += 2;
+				} elseif(248 <= $t && $t <= 251) {
+					$tn = 5;
+					$n += 5;
+					$noc += 2;
+				} elseif($t == 252 || $t == 253) {
+					$tn = 6;
+					$n += 6;
+					$noc += 2;
+				} else {
+					$n++;
+				}
+				if ($noc >= $length) {
+					break;
+				}
+			}
+			if ($noc > $length) {
+				$n -= $tn;
+			}
+			$wordscut = substr($string, 0, $n);
+		} else {
+			for($i = 0; $i < $length - 1; $i++) {
+				if(ord($string[$i]) > 127) {
+					$wordscut .= $string[$i].$string[$i + 1];
+					$i++;
+				} else {
+					$wordscut .= $string[$i];
+				}
+			}
+		}
+		$string = $wordscut;
+	}
+
+	if($out_slashes) {
+		$string = saddslashes($string);
+	}
+	return $string;
+}
+//事件发布
+function feed_add($icon, $title_template='', $title_data=array(), $body_template='', $body_data=array(), $body_general='', $images=array(), $image_links=array(), $target_ids='', $friend='', $appid=3, $returnid=0) {
+	global $_IGLOBAL;
+
+	$db = M();
+
+	$feedarr = array(
+		'appid' => $appid,//获取appid myop为0
+		'icon' => $icon,
+		'uid' => $_IGLOBAL['supe_uid'],
+		'username' => $_IGLOBAL['supe_username'],
+		'dateline' => $_IGLOBAL['timestamp'],
+		'title_template' => $title_template,
+		'body_template' => $body_template,
+		'body_general' => $body_general,
+		'image_1' => empty($images[0])?'':$images[0],
+		'image_1_link' => empty($image_links[0])?'':$image_links[0],
+		'image_2' => empty($images[1])?'':$images[1],
+		'image_2_link' => empty($image_links[1])?'':$image_links[1],
+		'image_3' => empty($images[2])?'':$images[2],
+		'image_3_link' => empty($image_links[2])?'':$image_links[2],
+		'image_4' => empty($images[3])?'':$images[3],
+		'image_4_link' => empty($image_links[3])?'':$image_links[3],
+		'target_ids' => $target_ids,
+		'friend' => $friend
+	);
+	$feedarr = sstripslashes($feedarr);//去掉转义
+	$feedarr['title_data'] = serialize(sstripslashes($title_data));//数组转化
+	$feedarr['body_data'] = serialize(sstripslashes($body_data));//数组转化
+	$feedarr['hash_template'] = md5($feedarr['title_template']."\t".$feedarr['body_template']);//喜好hash
+	$feedarr['hash_data'] = md5($feedarr['title_template']."\t".$feedarr['title_data']."\t".$feedarr['body_template']."\t".$feedarr['body_data']);//合并hash
+	$feedarr = saddslashes($feedarr);//增加转义
+	
+	//去重
+	$query = $db->query("SELECT feedid FROM iissblog_feed WHERE uid='$feedarr[uid]' AND hash_data='$feedarr[hash_data]' LIMIT 0,1");
+	if($oldfeed = $query[0]) {
+		$db -> table("iissblog_feed") -> where("feedid={$oldfeed['feedid']}") -> save($feedarr);
+		return 0;
+	}
+	
+	if($returnid) {
+		$db -> table("iissblog_feed") -> add($feedarr);
+		$feedid = $db -> table("iissblog_feed") -> field("max(feedid) feedid") -> find();
+		return $feedid['feedid'];
+	} else {
+		$db -> table("iissblog_feed") -> add($feedarr);
+		return 1;
+	}
+}
+
 /**
 * 字符串解密加密
 */
@@ -147,7 +352,18 @@ function ssetcookie($var, $value, $life=0) {
 	global $_IGLOBAL, $_SERVER;
 	setcookie($var, $value, $life?($_IGLOBAL['timestamp']+$life):0, C('COOKIE_PATH'), C('COOKIE_DOMAIN'), $_SERVER['SERVER_PORT']==443?1:0);
 }
+/**
+* 删除非本站链接
+*/
+function removelink($matches) {
 
+    if(strpos($matches[3], 'chinaiiss.com') || strpos($matches[3], 'chinaiiss.org') || strpos($matches[3], IISSSITE)) {
+		 return $matches[0];
+	}
+
+	return $matches[4];
+	// echo preg_replace_callback('~<a\s*href=[\"'](http:\/\/[^\/]([^>]*)(["\"\'])?(.*?)\\1>(.*?)<\/a>~i','removelink',$str);
+}
 //产生form防伪码
 function formhash() {
 	global $_IGLOBAL;
@@ -162,11 +378,11 @@ function formhash() {
 
 //判断提交是否正确
 function submitcheck($var) {
-	if(!empty($_POST[$var]) && $_SERVER['REQUEST_METHOD'] == 'POST') {printr(1);
-		if((empty($_SERVER['HTTP_REFERER']) || preg_replace("/https?:\/\/([^\:\/]+).*/i", "\\1", $_SERVER['HTTP_REFERER']) == preg_replace("/([^\:]+).*/", "\\1", $_SERVER['HTTP_HOST'])) && $_POST['formhash'] == formhash()) {
+	if(!empty($_POST[$var]) && $_SERVER['REQUEST_METHOD'] == 'POST') {
+		if($_POST['formhash'] == formhash()) {
 			return true;
 		} else {
-			U('你的行为疑是非法操作，被终止！', $_SERVER['HTTP_REFERER'], 5);
+			showmessage('你的行为疑是非法操作，被终止！', $_SERVER['HTTP_REFERER'], 5);
 		}
 	} else {
 		return false;
@@ -180,6 +396,22 @@ function sstripslashes($string) {
 		}
 	} else {
 		$string = stripslashes($string);
+	}
+	return $string;
+}
+/*
+* 取消HTML代码
+* @string array/string $string: 要处理的数据
+* @return: 返回处理后的数据
+*/
+function shtmlspecialchars($string) {
+	if(is_array($string)) {
+		foreach($string as $key => $val) {
+			$string[$key] = shtmlspecialchars($val);
+		}
+	} else {
+		$string = preg_replace('/&amp;((#(\d{3,5}|x[a-fA-F0-9]{4})|[a-zA-Z][a-z0-9]{2,5});)/', '&\\1',
+			str_replace(array('&', '"', '<', '>'), array('&amp;', '&quot;', '&lt;', '&gt;'), $string));
 	}
 	return $string;
 }

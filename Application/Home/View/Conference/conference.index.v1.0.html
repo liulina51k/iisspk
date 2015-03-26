@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset={$Think.config.DB_CHARSET}">
-<meta name="description" content="{$context}">
+<meta name="description" content="{$info.starttext}">
 <meta name="keywords" content="{$info.subject}" />
 <title><if condition="$info.seosubject neq ''">{$info.seosubject}<else/>{$info.subject}_全球议事厅_</if>战略网</title>
 <link href="{$Think.const.SITE}/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
@@ -73,7 +73,7 @@ function show_allcomment(param){
 <body>
 <input id="categoryid" type="hidden" value="-7" />
 <input id="txturl" type="hidden" value="{$Think.const.SITE}/conference/index/{$info.id}" />
-<include file="./Application/Home/View/site.head.html" />
+<include file="./Application/Home/View/site.head.html" headtips="conference"/>
 <div class="banner_bg">
 <div class="banner">
 	<div class="banner_left">

@@ -1,0 +1,622 @@
+[ 2015-03-25T10:17:36+08:00 ] 127.0.0.1 /conference/index/202
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.1875s ]
+SQL: SELECT `flag` FROM `iiss_conference` WHERE ( id = 202 ) LIMIT 1   [ RunTime:0.0469s ]
+SQL: SELECT * FROM `iiss_conference` WHERE ( id = 202 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iiss_conference` WHERE ( id < 202 and find_in_set('m',flag) = 0 ) ORDER BY pubdate desc LIMIT 5   [ RunTime:0.1094s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+SQL: SHOW COLUMNS FROM `iiss_vote` [ RunTime:0.0781s ]
+SQL: SELECT * FROM `iiss_vote` WHERE ( infoid = 202 and categoryid = -7 )  [ RunTime:0.0313s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0625s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( name = '高峰' or username = '高峰' ) LIMIT 1   [ RunTime:0.1406s ]
+SQL: update iiss_conference set clicks=clicks+1  where id=202 [ RunTime:0.0469s ]
+NOTIC: [2048] Declaration of Hours::add() should be compatible with that of Think\Model::add() D:\chinaiiss\iisspk\Application\Components\Hours.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `iiss_table` [ RunTime:0.0781s ]
+SQL: SELECT `table_name` FROM `iiss_table` WHERE ( table_name='iiss_viewrecord_201503' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select vid,count,dateline from iiss_viewrecord_201503 where modelid=0 and infoid=202 order by dateline desc Limit 1 [ RunTime:0.0469s ]
+SQL: SHOW COLUMNS FROM `iiss_table` [ RunTime:0.0000s ]
+SQL: SELECT `table_name` FROM `iiss_table` WHERE ( table_name='iiss_viewrecord_201503' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: insert into iiss_viewrecord_201503 (modelid,topid,categoryid, infoid, count, userid, dateline) value (0,-7,-7,202,1,0,1427249853) [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: lite D:\chinaiiss\iisspk\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+SQL: insert into iiss_hours (modelid,topid,categoryid,count,dateline) value (0,-7,-7,1,1427249853) [ RunTime:0.0625s ]
+NOTIC: [2048] mktime() [<a href='function.mktime'>function.mktime</a>]: You should be using the time() function instead D:\chinaiiss\iisspk\Application\Components\Date.class.php 第 101 行.
+NOTIC: [8] Undefined index: HTTP_REFERER D:\chinaiiss\iisspk\Application\Home\Model\ConferenceModel.class.php 第 80 行.
+SQL: SHOW COLUMNS FROM `iiss_conference_author_praise` [ RunTime:0.0625s ]
+SQL: SELECT `praise` FROM `iiss_conference_author_praise` WHERE ( conferenceid = 202 ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] curl_setopt() [<a href='function.curl-setopt'>function.curl-setopt</a>]: CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead D:\chinaiiss\iisspk\Application\Components\Comment.class.php 第 175 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: loginuser D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 17 行.
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 183 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 189 行.
+NOTIC: [8] Undefined variable: infoid D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 237 行.
+NOTIC: [8] Undefined index: url D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 320 行.
+NOTIC: [8] Undefined index: url D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 322 行.
+NOTIC: [8] Undefined index: url D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 320 行.
+NOTIC: [8] Undefined index: url D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 322 行.
+NOTIC: [8] Undefined index: url D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 320 行.
+NOTIC: [8] Undefined index: url D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 322 行.
+NOTIC: [8] Undefined index: url D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 320 行.
+NOTIC: [8] Undefined index: url D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 322 行.
+NOTIC: [8] Undefined index: url D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 320 行.
+NOTIC: [8] Undefined index: url D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\79d163571ea756f537739561a72518ca.php 第 322 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T10:17:37+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T10:17:37+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T10:21:20+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0156s ]
+NOTIC: [8] Use of undefined constant IISS - assumed 'IISS' D:\chinaiiss\iisspk\Application\Components\Editor.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T10:22:10+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant IISS - assumed 'IISS' D:\chinaiiss\iisspk\Application\Components\Editor.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T10:22:10+08:00 ] 127.0.0.1 /conference/IISS/Application/Components/xheditor/xheditor.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+ERR: 非法操作:IISS
+
+[ 2015-03-25T10:23:54+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant IISS - assumed 'IISS' D:\chinaiiss\iisspk\Application\Components\Editor.class.php 第 46 行.
+
+[ 2015-03-25T10:23:54+08:00 ] 127.0.0.1 /conference/IISS/Application/Components/xheditor/xheditor.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+ERR: 非法操作:IISS
+
+[ 2015-03-25T10:25:02+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T10:25:03+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T10:25:06+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T10:25:26+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T10:25:40+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T10:27:44+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2015-03-25T11:08:55+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:11:20+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T11:12:21+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T11:13:32+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:13:50+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T11:15:03+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:17:05+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:17:23+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:17:24+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:19:36+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:19:46+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:22:52+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+NOTIC: [8] Undefined variable: other D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+NOTIC: [8] Undefined variable: other D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T11:22:54+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+NOTIC: [8] Undefined variable: other D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+NOTIC: [8] Undefined variable: other D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T11:23:05+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+NOTIC: [8] Undefined variable: other D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+NOTIC: [8] Undefined variable: other D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T11:24:34+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:24:50+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:25:12+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:25:13+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:25:14+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:29:07+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:30:09+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+
+[ 2015-03-25T11:31:16+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+NOTIC: [8] Undefined variable: other D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+NOTIC: [8] Undefined variable: other D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-03-25T11:33:55+08:00 ] 127.0.0.1 /conference/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `iiss_conference` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `iissblog_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `iissblog_user` WHERE ( uid = 0 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant conference - assumed 'conference' D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 115 行.
+NOTIC: [8] Undefined variable: pkinfo D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 121 行.
+NOTIC: [8] Undefined variable: formhash D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+NOTIC: [8] Undefined variable: other D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 129 行.
+NOTIC: [8] Undefined variable: other D:\chinaiiss\iisspk\Application\Runtime\Cache\Home\f9c78176bd07ce3de2fe223932d8daf1.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
