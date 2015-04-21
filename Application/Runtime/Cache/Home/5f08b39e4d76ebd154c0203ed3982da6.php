@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo (C("DB_CHARSET")); ?>" />
-<meta name="description" content="<?php echo ($context); ?>" />
+<meta name="description" content="<?php echo ($info["starttext"]); ?>" />
 <meta name="keywords" content="<?php echo ($info["subject"]); ?>" />
 <title><?php echo ($info["subject"]); ?>-全球议事厅-战略网</title>
 <link href="<?php echo (SITE); ?>/Public/style/basic.v1.4.css" rel="stylesheet" type="text/css">
@@ -71,9 +71,15 @@ $(function () {
 <body>
 <input id="categoryid" type="hidden" value="-7" />
 <input id="txturl" type="hidden" value="<?php echo (SITE); ?>/conference/index/<?php echo ($info["id"]); ?>" />
-<div class="top_head"> <a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo (SITE); ?>/Public/images/top_head_logo.jpg"></a> <a href="http://www.chinaiiss.com/pk/index/435"> <img class="comm_logo" alt="辩论PK台" src="<?php echo (SITE); ?>/Public/images/top_pk_logo.jpg"> </a>
-  <p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
-  <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo (ATTPATH); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
+<div class="top_head"> 
+	<a href="http://www.chinaiiss.com/"><img class="comm_logo" alt="战略网" src="<?php echo (SITE); ?>/Public/images/top_head_logo.jpg"></a> 
+	<?php if(conference == 'pk'): ?><a href='<?php if($pkinfo["id"] != ''): echo (IISSSITE); ?>/pk/index/<?php echo ($pkinfo["id"]); else: echo ($refer); endif; ?>'>
+	<img class="comm_logo" alt="辩论PK台" src="<?php echo (SITE); ?>/Public/images/top_pk_logo.jpg"></a>
+	<?php else: ?>
+	<a href="<?php echo (IISSSITE); ?>/spec/index-274/1.html">
+	<img class="comm_logo" alt="全球议事厅"  src="<?php echo (SITE); ?>/Public/images/top_conference_logo.jpg"></a><?php endif; ?>
+	<p id="guid__"><a class="red" href="http://www.chinaiiss.com/" title="首页">首 页</a>|<a href="http://news.chinaiiss.com/" title="时政要闻">时政要闻</a>|<a href="http://mil.chinaiiss.com/" title="军事天地">军事天地</a>|<a href="http://observe.chinaiiss.com/" title="战略观察">战略观察</a>|<a href="http://grass.chinaiiss.com/" title="群英论见">群英论见</a>|<a href="http://history.chinaiiss.com/" title="历史长河">历史长河</a>|<a href="http://society.chinaiiss.com/" title="社会民生">社会民生</a>|<a href="http://world.chinaiiss.com/" title="世界博览">世界博览</a>|<a href="http://pic.chinaiiss.com/" title="图库">图 库</a>|<a href="http://blog.chinaiiss.com/" title="博客">博 客</a>|<a href="http://club.chinaiiss.com/" title="社区">社 区</a>|<a href="http://www.iissbbs.com/" title="论坛">论 坛</a>|<a href="http://book.chinaiiss.com/" title="读书">读书</a></p>
+   <?php if($pkinfo["id"] > 223): ?><div class="top_banner"><img src="<?php echo (ATTPATH); ?>/<?php echo ($pkinfo["imgurl"]); ?>" alt="<?php echo ($pkinfo["title"]); ?>"></div><?php endif; ?>
 </div>
 <div class="banner_bg">
 <div class="banner">
@@ -89,7 +95,7 @@ $(function () {
 </div>
 <!--内容部分开始-->
 <div id="main">
-	<div class="lead"><p class="more" style="vertical-align:middle;"><?php echo ($info["starttext"]); ?></p></div>
+	<div class="lead"><p class="more" style="vertical-align:middle;"><?php echo (nl2br($info["starttext"])); ?></p></div>
 </div>
 <div id="main">
 <div class="main_l">
@@ -176,7 +182,7 @@ $(function () {
 </div>
 <?php if($info["endtext"] != ''): ?><div id="main">
 	<div class="epilog">
-		  <p><?php echo ($info["endtext"]); ?></p>
+		  <p><?php echo (nl2br($info["endtext"])); ?></p>
 	</div>
 </div><?php endif; ?>
 <div id="main">
@@ -223,7 +229,7 @@ $(function () {
 </div>
 <?php if($oldlist != ''): ?><div id="main">
 	<div class="past_events">
-		<h1><span class="fright"><a href="<?php echo ($iisssite); ?>/spec/index-274/1.html" target="_blank">更多>></a></span><a></a></h1>
+		<h1><span class="fright"><a href="<?php echo (IISSSITE); ?>/spec/index-274/1.html" target="_blank">更多>></a></span><a></a></h1>
 		<div class="past_events_m">
 		       <?php if(is_array($oldlist)): foreach($oldlist as $key=>$vo): ?><p>
 					<a href="<?php echo ($vo["url"]); ?>" title="<?php echo ($vo["subject"]); ?>" target="_blank"><img src="<?php echo (ATTPATH); ?>/<?php echo ($vo["pic"]); ?>" /></a>

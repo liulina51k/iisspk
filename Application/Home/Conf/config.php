@@ -23,7 +23,8 @@ return array(
        'pk/plist/:p' => 'Pk/plist',
        'pk/app/:id/:p' => 'Pk/app',
        'pk/opp/:id/:p' => 'Pk/opp',
-       'conference/index/:id' => 'Conference/index',
-       'conference/preview/:id' => 'Conference/preview',
+       //'conference/index/:id' => 'Conference/index',
+       //'conference/preview/:id' => 'Conference/preview',
+       array('conference/:id','conference/index',array('ext'=>'html','method'=>'get')),
     ),
 );

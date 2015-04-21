@@ -1,14 +1,14 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
-class ConferenceController extends Controller {
+use Think\Controller\RestController;
+class ConferenceController extends RestController {
     private $_instance;
     public function __construct() {
         parent::__construct();
         $this->_instance = D('Conference');
     }
     //pk台首页
-    public function index(){
+    public function rest(){
         $id = I('id');
         $flag = $this->_instance -> where("id = $id") -> getField("flag");
         if(strstr($flag,'m')){

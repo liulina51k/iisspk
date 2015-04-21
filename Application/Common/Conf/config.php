@@ -7,5 +7,5 @@ return array(
 	'BBSURL'        =>    'http://bbs.top0001.com',  
 	'USERURL'       =>    'http://user.top0001.com',  
 	'BLOGURL'       =>    'http://blog.top0001.com',  
-	'UCENTERURL'       =>    'http://ucenter.top0001.com',  
+	'UCENTERURL'    =>    'http://ucenter.top0001.com',  
 );

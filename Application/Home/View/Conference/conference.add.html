@@ -33,7 +33,7 @@ $(function(){
 		$("#summarylen").text(160-subval.length);
 	});
 
-	$('#verifycode').change(function(){
+	$('#verifycode').change(function(){alert(1);
 	    var paramArray = {param1:'verify',code_str:encodeURI($('#verifycode').val()),"do":'send'};
 		$.get(siteurl+'/do.php',paramArray,function(data){
 			if(1==data){
@@ -102,7 +102,6 @@ function checkform(){
 		return false;
 	}
 	*/
-
 }
 function getverify(){
 	$('#imgquestion').attr('src', siteurl+'/send/getverify/'+rand());
